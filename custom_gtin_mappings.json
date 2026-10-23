@@ -2,8 +2,10 @@
   "6290361822401": {
     "gtin": "6290361822401",
     "code": "257718",
-    "nameEn": "FITSNACK 27% PROTEINBAR DOUBLECHOCO55G",
     "nameAr": "فيتسناك 27% بروتين بار شوكولا مزدوجة 5غ",
-    "addedAt": "2026-10-23T00:59:57.674Z"
+    "nameEn": "FITSNACK 27% PROTEINBAR DOUBLECHOCO55G",
+    "itemClass": "MDCN",
+    "unitPrice": 0,
+    "imageUrl": "https://i.ibb.co/6803274/257718.jpg"
   }
 }
