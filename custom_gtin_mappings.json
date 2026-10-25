@@ -268,5 +268,25 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-10-25T11:34:31.668Z"
+  },
+  "656750961049": {
+    "gtin": "656750961049",
+    "code": "301052",
+    "nameAr": "بيبينا اطفال حبوب 200 جرام",
+    "nameEn": "BIBENA ORGANIC MILK FREE CEREAL OAT 200G",
+    "itemClass": "MDCN",
+    "unitPrice": 0,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/بيبينا-حبوب-عضوية-للاطفال-شوفان-6-شهور-200-جم_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0MDE2NTZ8aW1hZ2Uvd2VicHxhRGszTDJoaVpTODVNell6TmpreE9EWTBNRGswTHpNd01UQTFNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxiMDA1MmI5NDYxZDNjYmMyNGMyYzEyNThkM2EzMjczNWVhMGI4OGU1NTgxODM2ZThlYmRjM2E2NzQzMWQxNGEz",
+    "addedAt": "2026-10-25T11:35:25.048Z"
+  },
+  "634240480355": {
+    "gtin": "634240480355",
+    "code": "256776",
+    "nameAr": "كيديالايت محلول معالجة الجفاف 3+1",
+    "nameEn": "KIDIALYTE ORS VALUE PACK 3+1",
+    "itemClass": "MDCN",
+    "unitPrice": 0,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/كيديالايت-محلول-معالجة-الجفاف-عبوة-التوفير-31-1-عبوة_0_1200.webp?context=bWFzdGVyfGltYWdlc3w5NzI0MnxpbWFnZS93ZWJwfGFHUXhMMmcwT1M4NU56RXpNamcyTnpjME9ERTBMekkxTmpjM05sOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDZlMTkzOTU0MmI0NjRlMTU4NWMxZTNjNjkxOTg2OWNkMmMxMmFkNzI1NzdlMDA3OGRmMmM4OGY2MTAyZjBkYWM",
+    "addedAt": "2026-10-25T11:36:53.048Z"
   }
 }
