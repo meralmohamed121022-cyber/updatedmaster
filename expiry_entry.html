@@ -1272,32 +1272,15 @@
                         <div style="font-size:14.5px; color:#fff; font-weight:900;" class="active-batch-name-display">دفعة عامة</div>
                     </div>
                 </div>
-                <div style="display:flex; gap:6px; flex-wrap:wrap;">
-                    <button type="button" class="btn btn-ghost btn-sm" onclick="app.promptRenameActiveBatch()" style="font-size:11.5px; padding:5px 10px; border-radius:8px;" title="تعديل اسم الدفعة">
-                        ✏️ تسمية
-                    </button>
-                    <button type="button" class="btn btn-sm" onclick="app.openBatchesHistoryModal()" style="background:linear-gradient(135deg, #2563eb, #1d4ed8); color:#fff; font-size:11.5px; padding:5px 10px; border-radius:8px;" title="تصفح وتبديل الدفعات">
-                        🔄 تبديل الدفعة
-                    </button>
-                    <button type="button" class="btn btn-sm" onclick="app.startNewBatch()" style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; font-weight:700; font-size:11.5px; padding:5px 10px; border-radius:8px;" title="إنشاء دفعة جديدة">
-                        ✨ دفعة جديدة
-                    </button>
-                </div>
             </div>
             
-            <!-- STATS KPIS -->
-            <div class="stats-kpi-grid">
-                <div class="kpi-card">
-                    <div class="kpi-val" id="kpiItems">0</div>
-                    <div class="kpi-label">عدد الأصناف المسجلة</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-val" style="color:var(--emerald);" id="kpiQty">0</div>
-                    <div class="kpi-label">إجمالي القطع / الكمية</div>
-                </div>
-                <div class="kpi-card">
-                    <div class="kpi-val" style="color:#60a5fa;" id="kpiTotalVal">0.00</div>
-                    <div class="kpi-label">إجمالي القيمة (SAR)</div>
+            <!-- STATS KPIS: عدد الأصناف المسجلة فقط -->
+            <div class="stats-kpi-grid" style="display:flex; margin-bottom:14px;">
+                <div class="kpi-card" style="padding:14px 20px; flex:1; display:flex; align-items:center; justify-content:space-between; border-radius:14px; background:rgba(30,41,59,0.7); border:1px solid rgba(59,130,246,0.3);">
+                    <div>
+                        <div class="kpi-label" style="font-size:13px; font-weight:700; color:#cbd5e1;">عدد الأصناف المسجلة في هذه الدفعة</div>
+                    </div>
+                    <div class="kpi-val" id="kpiItems" style="font-size:1.8rem; font-weight:900; color:var(--primary);">0</div>
                 </div>
             </div>
 
@@ -1314,28 +1297,33 @@
                     </button>
                 </div>
                 
+                <!-- Row 2: فلترة الأكواد غير السداسية + تصدير إكسيل + مسح الكل -->
                 <div style="display:flex; gap:8px; flex-wrap:wrap; width:100%;">
-                    <button class="btn" onclick="app.startNewBatch()" style="flex:1.2; min-width:180px; background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; font-weight:800; box-shadow:0 4px 14px rgba(139,92,246,0.4); border-radius:12px; padding:10px 14px;" title="إنشاء دفعة جرد جديدة وتسميتها">
-                        <span>✨ جرد دفعة جديدة (New Start)</span>
+                    <button type="button" class="btn btn-warning" id="btnFilterNon6DigitEntry" onclick="app.toggleNon6DigitFilter()" style="flex:1.4; min-width:200px; font-size:12px; font-weight:800; border-radius:12px; padding:10px 14px; display:inline-flex; align-items:center; justify-content:center; gap:8px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border:none; box-shadow:0 3px 10px rgba(245,158,11,0.35); cursor:pointer;" title="فلترة وعرض الأصناف التي تحتوي على باركود مصنعي أو كود غير سداسي لتعديلها وربطها بالماستر">
+                        <span>⚠️ أصناف بكود غير سداسي (GTIN)</span>
+                        <span class="tab-badge" id="badgeNon6DigitEntryCount" style="background:rgba(0,0,0,0.35); padding:2px 8px; border-radius:10px; font-size:11.5px; font-weight:900;">0</span>
                     </button>
-                    <button class="btn" onclick="app.openBatchesHistoryModal()" style="flex:1; min-width:130px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:#fff; font-weight:800; box-shadow:0 4px 14px rgba(37,99,235,0.35); border-radius:12px; padding:10px 14px;" title="تصفح وتبديل سجل الدفعات السابقة">
-                        <span>📜 سجل الدفعات</span>
-                        <span id="badgeBatchesHistoryCount" style="background:rgba(255,255,255,0.25); padding:1px 7px; border-radius:10px; font-size:11px; margin-inline-start:4px;">0</span>
-                    </button>
-                    <button class="btn btn-success" onclick="app.exportToExcel()" style="flex:1; min-width:130px; border-radius:12px; padding:10px 14px;">
+                    <button class="btn btn-success" onclick="app.exportToExcel()" style="flex:1; min-width:130px; border-radius:12px; padding:10px 14px; font-weight:800;">
                         <span>📊 تصدير إكسيل</span>
                     </button>
-                    <button class="btn btn-primary" onclick="app.mergeIntoPharmacyInventory()" style="flex:1.3; min-width:200px; background:linear-gradient(135deg, #f59e0b, #d97706); box-shadow:0 4px 14px rgba(245,158,11,0.4); border-radius:12px; padding:10px 14px;" title="دمج أصناف هذه الدفعة في فحص الإكسباير للصيدلية">
-                        <span>📥 دمج في فحص الإكسباير للصيدلية</span>
-                    </button>
-                    <button class="btn btn-danger" onclick="app.clearAllRecords()" style="flex:0.8; min-width:100px; border-radius:12px; padding:10px 14px;">
+                    <button class="btn btn-danger" onclick="app.clearAllRecords()" style="flex:0.8; min-width:100px; border-radius:12px; padding:10px 14px; font-weight:800;">
                         <span>🗑️ مسح الكل</span>
                     </button>
                 </div>
             </div>
 
+            <!-- VIEW TOGGLE & CONTAINERS -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; flex-wrap:wrap; gap:8px;">
+                <div style="font-size:12px; color:var(--text-light); font-weight:700;">
+                    <span>📌 عرض الأصناف مرتبة تلقائياً: الأحدث مسحاً في الأعلى</span>
+                </div>
+                <button type="button" class="btn btn-ghost btn-sm" id="btnToggleEntryMode" onclick="app.toggleEntryViewMode()" style="font-size:12px; padding:6px 14px; border-radius:10px; border:1px solid rgba(255,255,255,0.15); display:inline-flex; align-items:center; gap:6px;">
+                    <span id="lblToggleEntryMode">📱 عرض كروت</span>
+                </button>
+            </div>
+
             <!-- TABLE CONTAINER -->
-            <div class="table-responsive">
+            <div class="table-responsive" id="recordsTableWrapper">
                 <table class="styled-table" id="recordsTable">
                     <thead>
                         <tr>
@@ -1357,6 +1345,11 @@
                     </tbody>
                 </table>
             </div>
+
+            <!-- CARDS CONTAINER (MOBILE / RESPONSIVE) -->
+            <div id="entryCardsWrapper" class="entry-cards-container" style="display:none; flex-direction:column; gap:12px;">
+                <!-- Populated by JS -->
+            </div>
             
             <div id="tableEmptyState" style="text-align:center; padding:50px 20px; color:var(--text-light); display:none;">
                 <div style="font-size:42px; margin-bottom:10px;">📋</div>
@@ -1367,7 +1360,7 @@
     </div>
 
     <!-- MODAL: LINK GTIN TO 6-DIGIT CODE (ربط باركود غير مسجل بكود سداسي في الماستر) -->
-    <div class="modal-overlay" id="modalLinkGtin">
+    <div class="modal-overlay" id="modalLinkGtin" style="z-index: 100000;">
         <div class="modal-box" style="background:#1e293b; border:1.5px solid #f59e0b; border-radius:24px; padding:22px; max-width:480px; width:94%; max-height:90vh; overflow-y:auto; box-shadow:0 20px 50px rgba(0,0,0,0.7); box-sizing:border-box;">
             <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
                 <h3 style="font-size:16px; font-weight:800; color:#fef08a; margin:0; display:flex; align-items:center; gap:8px;">
@@ -1589,34 +1582,102 @@
         </div>
     </div>
 
-    <!-- MODAL: BATCHES HISTORY (سجل الدفعات السابقة) -->
-    <div class="modal-overlay" id="modalBatchesHistory">
-        <div class="modal-box" style="background:#1e293b; border:1.5px solid rgba(59,130,246,0.5); border-radius:24px; padding:22px 18px; max-width:620px; width:95%; max-height:90vh; overflow-y:auto; -webkit-overflow-scrolling:touch; text-align:start; box-shadow:0 20px 50px rgba(0,0,0,0.7); box-sizing:border-box;">
-            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:14px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+    <!-- MODAL: BATCHES HISTORY (سجل وفلترة الدفعات) -->
+    <div class="modal-overlay" id="modalBatchesHistory" style="padding:0; margin:0; align-items:stretch; justify-content:stretch; z-index:7000;">
+        <div class="modal-box" id="modalBatchesHistoryBox" style="background:#0b1120; border:none; border-radius:0; padding:14px 12px 60px 12px; width:100vw; height:100vh; max-width:100vw; max-height:100vh; display:block; overflow-y:auto; overflow-x:hidden; -webkit-overflow-scrolling:touch; text-align:start; box-sizing:border-box; margin:0; scroll-behavior:smooth;">
+            <!-- Header: يتحرك وينسحب طبيعياً مع السكرول -->
+            <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:12px; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
                 <div style="display:flex; align-items:center; gap:8px;">
-                    <span style="font-size:20px;">📜</span>
+                    <span style="font-size:24px;">📜</span>
                     <div>
-                        <h3 style="font-size:16px; font-weight:800; color:#fff; margin:0;">سجل الدفعات السابقة (Batches History)</h3>
-                        <div style="font-size:11px; color:#94a3b8; margin-top:2px;">اختر أي دفعة لفتحها ومتابعة العمل والتعديل عليها</div>
+                        <h3 style="font-size:16px; font-weight:800; color:#fff; margin:0;">سجل وفلترة الدفعات (Batches History)</h3>
+                        <div style="font-size:11px; color:#94a3b8; margin-top:2px;">تصفح الدفعات أو اعرض كروت كل الدفعات مجمعة ومفلترة بالتاريخ</div>
                     </div>
                 </div>
-                <div style="display:flex; align-items:center; gap:6px;">
-                    <button type="button" class="btn btn-sm" onclick="app.closeModal('modalBatchesHistory'); app.startNewBatch();" style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; font-size:11.5px; font-weight:700; padding:6px 10px; border-radius:8px;">+ دفعة جديدة</button>
-                    <button type="button" class="btn btn-ghost" style="padding:4px 8px; border-radius:50%; font-size:14px;" onclick="app.closeModal('modalBatchesHistory')">✕</button>
+                <div style="display:flex; align-items:center; gap:8px;">
+                    <button type="button" class="btn btn-sm" onclick="app.closeModal('modalBatchesHistory'); app.startNewBatch();" style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; font-size:12px; font-weight:800; padding:8px 14px; border-radius:10px; box-shadow:0 3px 10px rgba(139,92,246,0.35);">+ دفعة جديدة</button>
+                    <button type="button" class="btn btn-ghost" style="padding:6px 14px; border-radius:10px; font-size:13px; font-weight:800; background:rgba(255,255,255,0.1); color:#fff;" onclick="app.closeModal('modalBatchesHistory')">✕ إغلاق</button>
                 </div>
             </div>
 
-            <div style="margin-bottom:12px;">
-                <input type="text" id="inputBatchHistoryFilter" class="search-main" style="width:100%; padding:10px 14px; background:#0f172a; border:1px solid rgba(255,255,255,0.12); border-radius:12px; color:#fff; font-size:13px; box-sizing:border-box;" placeholder="بحث في الدفعات بالاسم أو التاريخ..." oninput="app.renderBatchesHistoryList()">
+            <!-- تبويبات التبديل بين عرض الدفعات وعرض كل الكروت -->
+            <div style="display:flex; gap:8px; margin-bottom:12px; background:rgba(0,0,0,0.4); padding:4px; border-radius:12px;">
+                <button type="button" id="btnBatchTabList" class="btn" onclick="app.switchBatchesModalTab('list')" style="flex:1; padding:10px 14px; font-size:12.5px; font-weight:800; border-radius:10px; background:linear-gradient(135deg, #2563eb, #1d4ed8); color:#fff; border:none; transition:all 0.2s ease;">
+                    📁 تصفح بالدفعات (<span id="countBatchesTab">0</span>)
+                </button>
+                <button type="button" id="btnBatchTabAllCards" class="btn btn-ghost" onclick="app.switchBatchesModalTab('all_cards')" style="flex:1; padding:10px 14px; font-size:12.5px; font-weight:800; border-radius:10px; color:#94a3b8; border:none; transition:all 0.2s ease;">
+                    📋 كروت كل الدفعات مجمعة (<span id="countAllBatchesItemsTab">0</span>)
+                </button>
             </div>
 
-            <div id="batchesHistoryListContainer" style="display:flex; flex-direction:column; gap:10px; max-height:58vh; overflow-y:auto; -webkit-overflow-scrolling:touch; padding-right:2px;">
+            <!-- SECTION 1: عرض قائمة الدفعات التقليدية -->
+            <div id="wrapperBatchesListView" style="display:flex; flex-direction:column; gap:10px;">
+                <div style="margin-bottom:6px;">
+                    <input type="text" id="inputBatchHistoryFilter" class="search-main" style="width:100%; padding:11px 14px; background:#0f172a; border:1px solid rgba(255,255,255,0.12); border-radius:12px; color:#fff; font-size:13px; box-sizing:border-box;" placeholder="🔍 بحث في الدفعات بالاسم أو التاريخ..." oninput="app.renderBatchesHistoryList()">
+                </div>
+                <div id="batchesHistoryListContainer" style="display:flex; flex-direction:column; gap:10px; padding-right:2px;"></div>
+            </div>
+
+            <!-- SECTION 2: عرض كروت كل الدفعات مجمعة مع فلتر التاريخ (ينسحب طبيعياً مع السكرول) -->
+            <div id="wrapperBatchesAllCardsView" style="display:none; flex-direction:column; gap:10px;">
+                <!-- شريط فلتر التاريخ والبحث -->
+                <div style="background:rgba(15,23,42,0.85); border:1px solid rgba(59,130,246,0.3); border-radius:14px; padding:10px 12px; display:flex; flex-direction:column; gap:10px;">
+                    <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
+                        <div style="flex:1; min-width:180px;">
+                            <label style="display:block; font-size:11px; color:#94a3b8; margin-bottom:4px; font-weight:700;">📅 فلترة بتاريخ الإدخال / المسح:</label>
+                            <input type="date" id="inputBatchHistoryDate" style="width:100%; padding:8px 12px; background:#0f172a; border:1px solid rgba(59,130,246,0.4); border-radius:10px; color:#fff; font-size:12.5px; box-sizing:border-box;" onchange="app.renderBatchesHistoryList()">
+                        </div>
+                        <div style="display:flex; gap:6px; align-items:flex-end; margin-top:auto;">
+                            <button type="button" class="btn btn-sm btn-ghost" onclick="app.setBatchDateFilterQuick('today')" style="padding:8px 12px; font-size:11.5px; border-radius:8px; border:1px solid rgba(255,255,255,0.2);">اليوم</button>
+                            <button type="button" class="btn btn-sm btn-ghost" onclick="app.setBatchDateFilterQuick('yesterday')" style="padding:8px 12px; font-size:11.5px; border-radius:8px; border:1px solid rgba(255,255,255,0.2);">أمس</button>
+                            <button type="button" class="btn btn-sm btn-ghost" onclick="app.setBatchDateFilterQuick('all')" style="padding:8px 12px; font-size:11.5px; border-radius:8px; border:1px solid rgba(255,255,255,0.2);">عرض الكل</button>
+                        </div>
+                    </div>
+
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <input type="text" id="inputBatchAllCardsSearch" class="search-main" style="flex:1; padding:9px 12px; background:#0f172a; border:1px solid rgba(255,255,255,0.12); border-radius:10px; color:#fff; font-size:12.5px; box-sizing:border-box;" placeholder="🔍 بحث بالاسم، الكود، أو اسم الدفعة (Enter للتمرير والوهج)..." oninput="app.renderBatchesHistoryList()" onkeydown="if(event.key==='Enter') app.searchInBatchesCards(this.value)">
+                        <button type="button" class="btn btn-warning btn-sm" id="btnFilterBatchesNon6Digit" onclick="app.toggleBatchesNon6DigitFilter()" style="padding:9px 12px; font-size:11.5px; font-weight:800; border-radius:10px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border:none; display:inline-flex; align-items:center; gap:6px; cursor:pointer; white-space:nowrap;" title="عرض الأصناف المسجلة بباركود غير سداسي فقط">
+                            <span>⚠️ غير سداسية (GTIN)</span>
+                            <span id="badgeBatchesNon6DigitCount" style="background:rgba(0,0,0,0.35); padding:1px 6px; border-radius:8px; font-size:11px;">0</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- إحصائيات سريعة للنتائج المفلترة -->
+                <div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:8px; text-align:center;">
+                    <div style="background:rgba(15,23,42,0.95); padding:8px; border-radius:10px; border:1px solid rgba(245,158,11,0.3);">
+                        <div style="font-size:10px; color:#94a3b8;">الأصناف المفلترة</div>
+                        <div id="statAllBatchesItems" style="font-size:15px; font-weight:800; color:#f59e0b;">0</div>
+                    </div>
+                    <div style="background:rgba(15,23,42,0.95); padding:8px; border-radius:10px; border:1px solid rgba(16,185,129,0.3);">
+                        <div style="font-size:10px; color:#94a3b8;">إجمالي القطع</div>
+                        <div id="statAllBatchesUnits" style="font-size:15px; font-weight:800; color:#10b981;">0</div>
+                    </div>
+                    <div style="background:rgba(15,23,42,0.95); padding:8px; border-radius:10px; border:1px solid rgba(59,130,246,0.3);">
+                        <div style="font-size:10px; color:#94a3b8;">إجمالي القيمة</div>
+                        <div id="statAllBatchesSAR" style="font-size:15px; font-weight:800; color:#60a5fa;">0.00 SAR</div>
+                    </div>
+                </div>
+
+                <!-- أزرار الإجراءات الشاملة (تصدير إكسيل + إضافة كل الدفعات للداتا) -->
+                <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                    <button type="button" class="btn btn-success" onclick="app.exportAllBatchesExcel()" style="flex:1; min-width:140px; padding:10px; font-size:12px; border-radius:10px; font-weight:800; display:flex; align-items:center; justify-content:center; gap:6px;">
+                        <span>📊 تصدير الأصناف المعروضة إكسيل</span>
+                    </button>
+                    <button type="button" class="btn btn-primary" onclick="app.mergeAllBatchesIntoInventory()" style="flex:1.3; min-width:180px; padding:10px; font-size:12px; border-radius:10px; font-weight:800; background:linear-gradient(135deg, #f59e0b, #d97706); display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 3px 10px rgba(245,158,11,0.35);">
+                        <span>📥 إضافة كل الأصناف المعروضة للداتا</span>
+                    </button>
+                </div>
+
+                <!-- حاوية عرض الكروت المجمعة تحت بعضها (تسري وتنساب طبيعياً مع الصفحة وتأخذ كامل الشاشة بالسكرول) -->
+                <div id="allBatchesCardsContainer" style="display:flex; flex-direction:column; gap:10px; padding-bottom:40px;">
+                </div>
             </div>
 
             <div id="emptyBatchesHistoryState" style="text-align:center; padding:35px 20px; color:#94a3b8; display:none;">
                 <div style="font-size:36px; margin-bottom:6px;">📭</div>
-                <div style="font-weight:700; font-size:14px;">لا توجد دفعات جرد مسجلة بعد</div>
-                <p style="font-size:12px; margin-top:4px;">عند الضغط على "جرد دفعة جديدة" سيتم حفظ الأصناف هنا تلقائياً بالاسم والتاريخ</p>
+                <div style="font-weight:700; font-size:14px;">لا توجد دفعات أو كروت مطابقة للبحث</div>
+                <p style="font-size:12px; margin-top:4px;">جرّب تغيير التاريخ أو اختيار "عرض الكل"</p>
             </div>
         </div>
     </div>
@@ -1883,6 +1944,7 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
                 // 6. Setup Hardware Barcode listener & manual input
                 app.setupInputs();
+                app.applyEntryViewMode();
 
                 // 7. Auto-start camera if mobile or requested
                 setTimeout(() => {
@@ -2083,11 +2145,16 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 const names = data.names || {};
                 const namesEn = data.namesEn || {};
                 const images = data.images || {};
+                const catsA = data.catsA || {};
+                const catsB = data.catsB || {};
+                const catsC = data.catsC || {};
+                const brands = data.brands || {};
 
                 const allCodes = new Set([
                     ...Object.keys(names),
                     ...Object.keys(namesEn),
-                    ...Object.keys(images)
+                    ...Object.keys(images),
+                    ...Object.keys(catsA)
                 ]);
 
                 for (const code of allCodes) {
@@ -2095,10 +2162,16 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     const nameAr = names[c] || '';
                     const nameEn = namesEn[c] || nameAr || `Item #${c}`;
                     const imgUrl = images[c] || '';
+                    const brand = brands[c] || 'OTHER';
                     app.DB_MAP.set(c, {
                         Code: c,
                         'أسم المنتج': nameAr,
                         'Item Description': nameEn,
+                        'Category Level A': catsA[c] || '',
+                        'Category Level B': catsB[c] || '',
+                        'Category Level C': catsC[c] || '',
+                        'Brand': brand,
+                        Brand: brand,
                         'Item Class': 'MDCN',
                         'Unit Price': 0.00,
                         itemurl: imgUrl
@@ -2173,38 +2246,36 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
             barcodeConsensus: { candidate: "", count: 0, firstSeen: 0 },
 
-            // خوارزمية فحص الـ Checksum الرياضي القياسي للباركود 13 رقم لمنع أي قراءات وهمية عند إمالة العلبة
-            isValidEAN13: (str) => {
-                if (!/^\d{13}$/.test(str)) return false;
+            // خوارزمية فحص الـ Checksum الرياضي القياسي الشامل لباركود GS1 (يدعم 8، 12، 13، 14 رقم) لمنع أي قراءات مشوهة أو مقلوبة أو مائلة
+            isValidGTIN: (str) => {
+                if (!str) return false;
+                const digits = String(str).replace(/\D/g, '');
+                const len = digits.length;
+                if (![8, 12, 13, 14].includes(len)) return false;
                 let sum = 0;
-                for (let i = 0; i < 12; i++) {
-                    sum += parseInt(str[i], 10) * (i % 2 === 0 ? 1 : 3);
+                const dataDigits = digits.slice(0, -1);
+                const checkDigit = parseInt(digits.slice(-1), 10);
+                const reversed = dataDigits.split('').reverse();
+                for (let i = 0; i < reversed.length; i++) {
+                    sum += parseInt(reversed[i], 10) * (i % 2 === 0 ? 3 : 1);
                 }
-                const check = (10 - (sum % 10)) % 10;
-                return check === parseInt(str[12], 10);
+                const calculatedCheck = (10 - (sum % 10)) % 10;
+                return calculatedCheck === checkDigit;
+            },
+
+            isValidEAN13: (str) => {
+                return /^\d{13}$/.test(str) && app.isValidGTIN(str);
             },
 
             isValidEAN8: (str) => {
-                if (!/^\d{8}$/.test(str)) return false;
-                let sum = 0;
-                for (let i = 0; i < 7; i++) {
-                    sum += parseInt(str[i], 10) * (i % 2 === 0 ? 3 : 1);
-                }
-                const check = (10 - (sum % 10)) % 10;
-                return check === parseInt(str[7], 10);
+                return /^\d{8}$/.test(str) && app.isValidGTIN(str);
             },
 
             isValidUPCA: (str) => {
-                if (!/^\d{12}$/.test(str)) return false;
-                let sum = 0;
-                for (let i = 0; i < 11; i++) {
-                    sum += parseInt(str[i], 10) * (i % 2 === 0 ? 3 : 1);
-                }
-                const check = (10 - (sum % 10)) % 10;
-                return check === parseInt(str[11], 10);
+                return /^\d{12}$/.test(str) && app.isValidGTIN(str);
             },
 
-            // فلتر الاستقرار وتأكيد القراءة الصالحة في أي اتجاه ومنع الأخطاء اللحظية
+            // فلتر الاستقرار وتأكيد القراءة الصالحة في أي اتجاه ومنع الأخطاء اللحظية عند قلب أو إمالة العلبة
             validateAndFilterBarcode: (raw) => {
                 if (!raw) return null;
                 const clean = String(raw).trim();
@@ -2222,20 +2293,17 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     return clean;
                 }
 
-                // 3. فحص الـ Checksum الرياضي للباركود العادي 1D لمنع القراءات المشوهة عند الإمالة والزوايا
+                // 3. فحص الـ Checksum الرياضي للباركود الخطي 1D لمنع القراءات المشوهة عند الإمالة والزوايا
                 const digitsOnly = clean.replace(/\D/g, '');
-                if (digitsOnly.length === 13) {
-                    if (!app.isValidEAN13(digitsOnly)) {
-                        return null; // فشل التحقق الرياضي للباركود
-                    }
-                } else if (digitsOnly.length === 12) {
-                    if (!app.isValidUPCA(digitsOnly)) {
+                // الباركودات الدوائية والتجارية القياسية تكون بأطوال 13 أو 12 أو 14 أو 8 أرقام فقط
+                if ([13, 12, 14, 8].includes(digitsOnly.length)) {
+                    if (!app.isValidGTIN(digitsOnly)) {
+                        // فشل التحقق الرياضي للباركود -> تم تجاهل القراءة الجزئية أو المائلة
                         return null;
                     }
-                } else if (digitsOnly.length === 8) {
-                    if (!app.isValidEAN8(digitsOnly)) {
-                        return null;
-                    }
+                } else {
+                    // إذا لم يكن كوداً ثنائي الأبعاد ولم يكن في الماستر، وكان بطول شاذ (مثل 5 أو 6 أو 7 أو 9 أو 10 أرقام ناتجة عن زاوية مائلة)، نرفضه فوراً
+                    return null;
                 }
 
                 // 4. فلتر التوافق واستقرار الإطار (Consensus): يتطلب تأكيد كادرين متتاليين في حالة الصنف غير المسجل
@@ -2307,8 +2375,9 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                         disableFlip: false,
                         videoConstraints: {
                             facingMode: app.scannerCameraFacing || "environment",
-                            width: { ideal: 1280 },
-                            height: { ideal: 720 }
+                            width: { ideal: 1920, min: 1280 },
+                            height: { ideal: 1080, min: 720 },
+                            advanced: [{ focusMode: "continuous" }]
                         },
                         formatsToSupport: formats,
                         experimentalFeatures: {
@@ -2936,6 +3005,21 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 }, 150);
             },
 
+            openAddGtinToCodeModal: (itemCode) => {
+                app.openLinkGtinModal('', null);
+                const cleanCode = String(itemCode || '').trim();
+                const inputCode = document.getElementById('inputLinkItemCodeValue');
+                if (inputCode && cleanCode) {
+                    inputCode.value = cleanCode;
+                    app.onItemCodeInputForGtinLink(cleanCode);
+                }
+                const inputGtin = document.getElementById('inputLinkGtinValue');
+                if (inputGtin) {
+                    inputGtin.value = '';
+                    setTimeout(() => inputGtin.focus(), 250);
+                }
+            },
+
             onItemCodeInputForGtinLink: (rawVal) => {
                 const clean = String(rawVal || '').trim();
                 const previewBox = document.getElementById('linkGtinItemPreview');
@@ -3059,8 +3143,34 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 } catch(e) {}
                 if (typeof app.saveLocalRecords === 'function') app.saveLocalRecords();
                 if (typeof app.saveRecords === 'function') app.saveRecords();
+
+                // تحديث السجلات في جميع الدفعات بسجل الدفعات أيضاً
+                try {
+                    const hist = typeof app.getBatchesHistory === 'function' ? app.getBatchesHistory() : [];
+                    let histChanged = false;
+                    (hist || []).forEach(b => {
+                        (b.records || []).forEach(r => {
+                            if (String(r.Code).trim() === gtin || (app.linkGtinTargetRecordId !== null && r.id === app.linkGtinTargetRecordId)) {
+                                r.Code = code;
+                                if (nameEn || nameAr) r.Description = nameEn || nameAr;
+                                if (itemClass) r['Item Class'] = itemClass;
+                                if (unitPrice) {
+                                    r['Unit Price'] = parseFloat(unitPrice).toFixed(2);
+                                    r['Total Value'] = (parseFloat(unitPrice) * (parseInt(r.Quantity || 1, 10))).toFixed(2);
+                                }
+                                if (imageUrl) r.image_url = imageUrl;
+                                histChanged = true;
+                            }
+                        });
+                    });
+                    if (histChanged && typeof app.saveBatchesHistory === 'function') {
+                        app.saveBatchesHistory(hist);
+                    }
+                } catch(e) {}
+
                 if (typeof app.renderTable === 'function') app.renderTable();
                 if (typeof app.renderEntryTable === 'function') app.renderEntryTable();
+                if (typeof app.renderBatchesHistoryList === 'function') app.renderBatchesHistoryList();
 
                 // إخفاء صندوق التحقق إذا كان مفتوحاً
                 if (typeof app.hideVerificationBox === 'function') {
@@ -3676,9 +3786,9 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 document.getElementById('entryTotalVal').innerText = total;
             },
 
-            // Format Current Date matching Excel attachment: DD/MM/YYYY h:mm:ss A
-            formatCurrentEntryDate: () => {
-                const now = new Date();
+            // Format Current Date matching Excel attachment: DD/MM/YYYY hh:mm:ss A
+            formatCurrentEntryDate: (dateInput) => {
+                const now = dateInput ? new Date(dateInput) : new Date();
                 const dd = String(now.getDate()).padStart(2, '0');
                 const mm = String(now.getMonth() + 1).padStart(2, '0');
                 const yyyy = now.getFullYear();
@@ -3689,8 +3799,88 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 const ampm = hours >= 12 ? 'PM' : 'AM';
                 hours = hours % 12;
                 hours = hours ? hours : 12;
+                const hh = String(hours).padStart(2, '0');
 
-                return `${dd}/${mm}/${yyyy} ${hours}:${minutes}:${seconds} ${ampm}`;
+                return `${dd}/${mm}/${yyyy} ${hh}:${minutes}:${seconds} ${ampm}`;
+            },
+
+            normalizeYearMonth: (raw) => {
+                if (!raw) return '';
+                const str = String(raw).trim();
+                const isoMatch = str.match(/^(\d{4})[-\/](\d{1,2})/);
+                if (isoMatch) {
+                    return `${isoMatch[1]}-${isoMatch[2].padStart(2, '0')}`;
+                }
+                const parts = str.split(/[\/\-\s]/);
+                if (parts.length >= 3) {
+                    let d = parts[0], m = parts[1], y = parts[2];
+                    if (y.length === 4) return `${y}-${m.padStart(2, '0')}`;
+                    if (d.length === 4) return `${d}-${m.padStart(2, '0')}`;
+                }
+                const dt = new Date(str);
+                if (!isNaN(dt.getTime())) {
+                    return `${dt.getFullYear()}-${String(dt.getMonth() + 1).padStart(2, '0')}`;
+                }
+                return str;
+            },
+
+            loadPharmacyInventory: async () => {
+                try {
+                    const uid = app.getCleanUserId ? app.getCleanUserId() : (localStorage.getItem('inv_uid') || localStorage.getItem('last_user_id') || '66');
+                    const res = await fetch(`${app.WORKER_URL}/api/inventory/load?userId=${encodeURIComponent(uid)}`);
+                    if (res.ok) {
+                        const json = await res.json();
+                        const prods = (json.products || []).filter(p => p.status !== 'deleted');
+                        app.data = prods;
+                        app.pharmacyData = prods;
+                    }
+                } catch(e) {
+                    console.warn("loadPharmacyInventory error:", e);
+                }
+            },
+
+            isItemInPharmacyData: (code, expiryDate) => {
+                const db = (app.data && app.data.length > 0) ? app.data : (app.pharmacyData || []);
+                if (!code || !db || !Array.isArray(db)) return false;
+                const cleanCode = String(code).trim().replace(/^0+/, '');
+                const normExp = app.normalizeYearMonth(expiryDate);
+                return db.some(it => {
+                    const itCode = String(it.code || '').trim().replace(/^0+/, '');
+                    if (itCode !== cleanCode) return false;
+                    if (!normExp) return true;
+                    const itExp = app.normalizeYearMonth(it.expiryDate);
+                    return !itExp || itExp === normExp;
+                });
+            },
+
+            deduplicateBatchRecords: (records) => {
+                if (!Array.isArray(records) || records.length <= 1) return records || [];
+                const map = new Map();
+                const result = [];
+                for (const r of records) {
+                    const code = String(r.Code || '').trim();
+                    const exp = app.normalizeYearMonth(r['Expiry Date']);
+                    const key = `${code}_${exp}`;
+                    if (map.has(key)) {
+                        const existing = map.get(key);
+                        const oldQty = parseInt(existing.Quantity, 10) || 1;
+                        const addQty = parseInt(r.Quantity, 10) || 1;
+                        const newQty = oldQty + addQty;
+                        existing.Quantity = String(newQty);
+                        const price = parseFloat(existing['Unit Price']) || parseFloat(r['Unit Price']) || 0;
+                        existing['Total Value'] = (newQty * price).toFixed(2);
+                        if (r.timestamp && (!existing.timestamp || r.timestamp > existing.timestamp)) {
+                            existing.timestamp = r.timestamp;
+                            existing.scannedAt = r.timestamp;
+                            existing['Entry Date'] = r['Entry Date'];
+                        }
+                    } else {
+                        const copy = { ...r };
+                        map.set(key, copy);
+                        result.push(copy);
+                    }
+                }
+                return result;
             },
 
             // SAVE ENTRY RECORD
@@ -3714,11 +3904,51 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 const location = document.getElementById('entryLocation').value.trim() || 'P0066';
                 const quantity = parseInt(document.getElementById('entryQuantity').value, 10) || 1;
                 const totalValue = (quantity * parseFloat(unitPrice)).toFixed(2);
-                const entryDate = app.formatCurrentEntryDate();
+                const nowTs = Date.now();
+                const entryDate = app.formatCurrentEntryDate(nowTs);
                 const imageUrl = app.currentProduct.itemurl || '';
 
+                // 🛡️ فحص ومنع تكرار الكارت لنفس الصنف ونفس تاريخ الإكسباير في الجلسة/الدفعة
+                const normExp = app.normalizeYearMonth(expiryVal);
+                const existingIdx = app.records.findIndex(r => {
+                    const codeMatch = String(r.Code || '').trim() === code;
+                    const expMatch = app.normalizeYearMonth(r['Expiry Date']) === normExp;
+                    return codeMatch && expMatch;
+                });
+
+                if (existingIdx >= 0) {
+                    const existing = app.records[existingIdx];
+                    const oldQty = parseInt(existing.Quantity, 10) || 1;
+                    const totalQty = oldQty + quantity;
+                    existing.Quantity = String(totalQty);
+                    existing['Unit Price'] = unitPrice;
+                    existing['Total Value'] = (totalQty * parseFloat(unitPrice)).toFixed(2);
+                    existing['Entry Date'] = entryDate;
+                    existing.timestamp = nowTs;
+                    existing.scannedAt = nowTs;
+                    if (location) existing.Location = location;
+                    existing.synced = false;
+
+                    // نقل الصنف للأعلى كأحدث صنف تم مسحه
+                    app.records.splice(existingIdx, 1);
+                    app.records.unshift(existing);
+
+                    app.saveLocalRecords();
+                    app.updatePreviewCount();
+
+                    app.notify(`تم زيادة كمية الصنف (#${code}) بمقدار (+${quantity}) لتصبح (${totalQty}) على نفس الكارت بدون تكرار! 📦`, "info");
+
+                    app.checkAutoSync();
+                    app.resetForm();
+                    return;
+                }
+
                 const newRecord = {
-                    id: Date.now(),
+                    id: nowTs,
+                    timestamp: nowTs,
+                    scannedAt: nowTs,
+                    batchId: app.activeBatchId || null,
+                    batchName: app.activeBatchName || 'دفعة عامة',
                     Code: code,
                     Description: description,
                     'Item Class': itemClass,
@@ -3739,8 +3969,8 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
                 app.notify(`تم تسجيل الصنف (${code}) بنجاح!`, "success");
 
-                // Try async sync to Cloudflare KV
-                app.syncSingleToCloud(newRecord);
+                // Auto-sync in batches of 10 items (or debounced after 30s)
+                app.checkAutoSync();
 
                 // Reset form for next item
                 app.resetForm();
@@ -3878,6 +4108,26 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     const data = localStorage.getItem('expiry_recorded_items');
                     if (data) {
                         app.records = JSON.parse(data);
+                        if (Array.isArray(app.records)) {
+                            const parseRecTime = (r) => {
+                                if (r && r.timestamp) return Number(r.timestamp);
+                                if (r && r.scannedAt) return Number(r.scannedAt);
+                                if (r && r['Entry Date']) {
+                                    const parsed = new Date(r['Entry Date']).getTime();
+                                    if (!isNaN(parsed) && parsed > 0) return parsed;
+                                }
+                                if (r && r.id) {
+                                    const num = Number(r.id);
+                                    if (!isNaN(num) && num > 1000000000) return num;
+                                }
+                                return 0;
+                            };
+                            app.records.sort((a, b) => {
+                                const diff = parseRecTime(b) - parseRecTime(a);
+                                if (diff !== 0) return diff;
+                                return (Number(b.id) || 0) - (Number(a.id) || 0);
+                            });
+                        }
                     }
                 } catch(e) {
                     app.records = [];
@@ -3907,17 +4157,83 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 }
             },
 
-            // TABLE RENDERING
+            entryViewMode: window.innerWidth <= 768 ? 'cards' : 'table',
+
+            toggleEntryViewMode: () => {
+                app.entryViewMode = app.entryViewMode === 'cards' ? 'table' : 'cards';
+                app.applyEntryViewMode();
+            },
+
+            applyEntryViewMode: () => {
+                const tbl = document.getElementById('recordsTableWrapper');
+                const cards = document.getElementById('entryCardsWrapper');
+                const lbl = document.getElementById('lblToggleEntryMode');
+                if (app.entryViewMode === 'cards') {
+                    if (tbl) tbl.style.display = 'none';
+                    if (cards) cards.style.display = 'flex';
+                    if (lbl) lbl.innerText = "📊 عرض جدول";
+                } else {
+                    if (tbl) tbl.style.display = 'block';
+                    if (cards) cards.style.display = 'none';
+                    if (lbl) lbl.innerText = "📱 عرض كروت";
+                }
+            },
+
+            filterNon6DigitOnly: false,
+            toggleNon6DigitFilter: () => {
+                app.filterNon6DigitOnly = !app.filterNon6DigitOnly;
+                const btn = document.getElementById('btnFilterNon6DigitEntry');
+                if (btn) {
+                    if (app.filterNon6DigitOnly) {
+                        btn.style.boxShadow = '0 0 15px rgba(245,158,11,0.9)';
+                        btn.style.outline = '2px solid #ffffff';
+                    } else {
+                        btn.style.boxShadow = '0 3px 10px rgba(245,158,11,0.35)';
+                        btn.style.outline = 'none';
+                    }
+                }
+                app.renderTable();
+            },
+
+            filterBatchesNon6DigitOnly: false,
+            toggleBatchesNon6DigitFilter: () => {
+                app.filterBatchesNon6DigitOnly = !app.filterBatchesNon6DigitOnly;
+                const btn = document.getElementById('btnFilterBatchesNon6Digit');
+                if (btn) {
+                    if (app.filterBatchesNon6DigitOnly) {
+                        btn.style.boxShadow = '0 0 15px rgba(245,158,11,0.9)';
+                        btn.style.outline = '2px solid #ffffff';
+                    } else {
+                        btn.style.boxShadow = 'none';
+                        btn.style.outline = 'none';
+                    }
+                }
+                app.renderBatchesHistoryList();
+            },
+
+            // TABLE & CARDS RENDERING (مرتبة بالأحدث مسحاً في الأعلى)
             renderTable: () => {
                 const tbody = document.getElementById('recordsTbody');
+                const cardsWrapper = document.getElementById('entryCardsWrapper');
                 const emptyState = document.getElementById('tableEmptyState');
                 const filter = (document.getElementById('tableFilterInput')?.value || '').toLowerCase().trim();
 
-                tbody.innerHTML = '';
+                if (tbody) tbody.innerHTML = '';
+                if (cardsWrapper) cardsWrapper.innerHTML = '';
 
-                let filtered = app.records;
+                let filtered = app.records || [];
+
+                // تحديث بادج عدد الأصناف غير السداسية في هذه الدفعة
+                const non6Count = (app.records || []).filter(r => String(r.Code || '').trim().length !== 6).length;
+                const badgeNon6 = document.getElementById('badgeNon6DigitEntryCount');
+                if (badgeNon6) badgeNon6.innerText = non6Count;
+
+                if (app.filterNon6DigitOnly) {
+                    filtered = filtered.filter(r => String(r.Code || '').trim().length !== 6);
+                }
+
                 if (filter) {
-                    filtered = app.records.filter(r => 
+                    filtered = filtered.filter(r => 
                         String(r.Code).toLowerCase().includes(filter) ||
                         String(r.Description).toLowerCase().includes(filter) ||
                         String(r.Location).toLowerCase().includes(filter) ||
@@ -3925,10 +4241,31 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     );
                 }
 
+                // 🎯 فرز دقيق وصارم لترتيب الأصناف: الأحدث مسحاً في الأعلى دائماً (Newest Scanned First)
+                const parseRecTime = (r) => {
+                    if (r.scannedAt && typeof r.scannedAt === 'number') return r.scannedAt;
+                    if (r.timestamp && typeof r.timestamp === 'number') return r.timestamp;
+                    if (typeof r.id === 'number' && r.id > 1500000000000) return r.id;
+                    if (r['Entry Date']) {
+                        try {
+                            const m = String(r['Entry Date']).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2}):(\d{2})\s*(AM|PM)?/i);
+                            if (m) {
+                                let h = parseInt(m[4], 10);
+                                if (m[7]?.toUpperCase() === 'PM' && h < 12) h += 12;
+                                if (m[7]?.toUpperCase() === 'AM' && h === 12) h = 0;
+                                return new Date(parseInt(m[3], 10), parseInt(m[2], 10) - 1, parseInt(m[1], 10), h, parseInt(m[5], 10), parseInt(m[6], 10)).getTime();
+                            }
+                        } catch(e) {}
+                    }
+                    return 0;
+                };
+
+                filtered = [...filtered].sort((a, b) => parseRecTime(b) - parseRecTime(a));
+
                 if (filtered.length === 0) {
-                    emptyState.style.display = 'block';
+                    if (emptyState) emptyState.style.display = 'block';
                 } else {
-                    emptyState.style.display = 'none';
+                    if (emptyState) emptyState.style.display = 'none';
                 }
 
                 let totalUnits = 0;
@@ -3938,9 +4275,7 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     totalUnits += parseInt(rec.Quantity || 0, 10);
                     totalSAR += parseFloat(rec['Total Value'] || 0);
 
-                    const tr = document.createElement('tr');
                     const imgUrl = rec.image_url || `https://placehold.co/100x100/1e293b/f59e0b?text=${rec.Code}`;
-
                     const cleanC = String(rec.Code || '').trim();
                     let resolvedCode = cleanC;
                     const barcodeMap = app.BARCODE_MAP || (typeof BARCODE_MAP !== 'undefined' && BARCODE_MAP);
@@ -3967,42 +4302,114 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                         if (realImg && (!rec.image_url || rec.image_url.includes('placehold'))) rec.image_url = realImg;
                     }
 
-                    const isUnreg = !masterItem && !mapEntry && (String(rec.Description || '').startsWith('صنف #') || String(rec.Description || '').startsWith('Item #') || (!dbMap || !dbMap.has(resolvedCode)));
+                    const isHexCode = (c) => /^\d{3,7}$/.test(String(c || '').trim());
+                    const isLongGtin = String(rec.Code || '').trim().length >= 8;
+                    const isUnreg = isLongGtin && !isHexCode(rec.Code) && !isHexCode(resolvedCode) && !masterItem && !mapEntry;
+                    const cleanExpiry = String(rec['Expiry Date'] || '').replace(/\s+12:00:00\s*AM/i, '').replace(/\s+00:00:00/i, '').trim();
 
-                    tr.innerHTML = `
-                        <td style="text-align:center;">
-                            <div class="tbl-thumb" onclick="app.openZoomModal('${imgUrl}', '${rec.Code}', '${rec.Description.replace(/'/g, "\\'")}')">
-                                <img src="${imgUrl}" alt="Item">
+                    // 1. إنشاء صف الجدول
+                    if (tbody) {
+                        const tr = document.createElement('tr');
+                        tr.innerHTML = `
+                            <td style="text-align:center;">
+                                <div class="tbl-thumb" onclick="app.openZoomModal('${imgUrl}', '${rec.Code}', '${rec.Description.replace(/'/g, "\\'")}')">
+                                    <img src="${imgUrl}" alt="Item">
+                                </div>
+                            </td>
+                            <td>
+                                <span class="badge-pill badge-code">#${rec.Code}</span>
+                                <div style="margin-top:4px; background:#ffffff; padding:2px 5px; border-radius:5px; display:inline-block; border:1px solid #cbd5e1; box-shadow:0 1px 3px rgba(0,0,0,0.2);">
+                                    <svg class="entry-tbl-barcode" data-code="${rec.Code}"></svg>
+                                </div>
+                            </td>
+                            <td style="max-width:280px; overflow:hidden; text-overflow:ellipsis;" title="${rec.Description}">
+                                <div style="font-weight:700;">${rec.Description}</div>
+                            </td>
+                            <td><span style="color:var(--text-light); font-weight:700;">${rec['Item Class']}</span></td>
+                            <td style="font-family:monospace;">${rec['Unit Price']}</td>
+                            <td><span class="badge-pill badge-loc">${rec.Location}</span></td>
+                            <td><span class="badge-pill badge-exp">${cleanExpiry}</span></td>
+                            <td style="font-weight:800; text-align:center;">${rec.Quantity}</td>
+                            <td style="font-weight:800; color:var(--emerald);">${rec['Total Value']}</td>
+                            <td style="font-size:11px; color:#38bdf8; font-family:monospace; font-weight:700; direction:ltr; unicode-bidi:isolate;" dir="ltr">🕒 ${rec['Entry Date']}</td>
+                            <td style="text-align:center; white-space:nowrap;">
+                                ${isUnreg ? `<button class="btn btn-warning" style="padding:4px 8px; font-size:11px; margin-inline-end:4px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border-radius:8px;" onclick="app.openLinkGtinModal('${rec.Code}', ${rec.id})" title="ربط هذا الباركود بكود سداسي في الماستر">🔗 ربط بالماستر</button>` : ''}
+                                <button class="btn btn-primary" style="padding:4px 8px; font-size:11px; margin-inline-end:4px; background:linear-gradient(135deg, #3b82f6, #1d4ed8); border-radius:8px;" onclick="app.editRecord(${rec.id})">✏️ تعديل</button>
+                                <button class="btn btn-danger" style="padding:4px 8px; font-size:11px; border-radius:8px;" onclick="app.deleteRecord(${rec.id})">🗑️ حذف</button>
+                            </td>
+                        `;
+                        tbody.appendChild(tr);
+                    }
+
+                    // 2. إنشاء كرت العرض للموبايل
+                    if (cardsWrapper) {
+                        const inDb = app.isItemInPharmacyData(rec.Code, rec['Expiry Date']);
+                        const cardDiv = document.createElement('div');
+                        cardDiv.className = 'record-item-card';
+                        cardDiv.style.cssText = `background:rgba(30,41,59,0.75); border:1.5px solid ${inDb ? 'rgba(16,185,129,0.5)' : 'rgba(245,158,11,0.35)'}; border-radius:16px; padding:14px; box-shadow:0 4px 15px rgba(0,0,0,0.3); transition:all 0.3s ease; position:relative;`;
+                        cardDiv.innerHTML = `
+                            <div style="display:flex; gap:12px; align-items:center; margin-bottom:10px;">
+                                <div class="tbl-thumb" style="width:52px; height:52px; min-width:52px; margin:0;" onclick="app.openZoomModal('${imgUrl}', '${rec.Code}', '${rec.Description.replace(/'/g, "\\'")}')">
+                                    <img src="${imgUrl}" alt="Thumb" style="width:100%; height:100%; object-fit:contain;">
+                                </div>
+                                <div style="flex:1; overflow:hidden;">
+                                    <div style="display:flex; justify-content:space-between; align-items:center; gap:6px; flex-wrap:wrap;">
+                                        <div style="display:flex; align-items:center; gap:6px;">
+                                            <span class="badge-pill badge-code" style="font-size:12px;">#${rec.Code}</span>
+                                            ${inDb ? `
+                                                <span style="background:rgba(16, 185, 129, 0.22); color:#10b981; border:1px solid rgba(16, 185, 129, 0.5); padding:2px 8px; border-radius:6px; font-weight:800; font-size:11px; display:inline-flex; align-items:center; gap:4px; box-shadow:0 0 10px rgba(16,185,129,0.25);">
+                                                    <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+                                                    في الداتا ✓
+                                                </span>
+                                            ` : `
+                                                <span style="background:rgba(245, 158, 11, 0.18); color:#fbbf24; border:1px solid rgba(245, 158, 11, 0.4); padding:2px 8px; border-radius:6px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
+                                                    <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#fbbf24;"></span>
+                                                    غير مدمج ⏳
+                                                </span>
+                                            `}
+                                        </div>
+                                        <div style="display:flex; gap:6px; align-items:center;">
+                                            <button class="btn btn-primary btn-sm" onclick="app.editRecord(${rec.id})" title="تعديل الصنف" style="padding:4px 8px; font-size:11px; border-radius:8px;">✏️</button>
+                                            <button class="btn btn-danger btn-sm" onclick="app.deleteRecord(${rec.id})" title="حذف الصنف" style="padding:4px 8px; font-size:11px; border-radius:8px;">🗑️</button>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:6px; background:#ffffff; padding:3px 8px; border-radius:7px; display:inline-block; border:1px solid #cbd5e1; box-shadow:0 1px 4px rgba(0,0,0,0.25);">
+                                        <svg class="entry-card-barcode" data-code="${rec.Code}"></svg>
+                                    </div>
+                                    <div style="font-weight:700; color:#fff; font-size:13.5px; margin-top:4px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${rec.Description}</div>
+                                    <div style="font-size:11px; color:#94a3b8; margin-top:2px;">${rec['Item Class']}</div>
+                                    ${isUnreg ? `
+                                        <button class="btn btn-warning btn-sm" onclick="app.openLinkGtinModal('${rec.Code}', ${rec.id})" title="ربط هذا الباركود بكود سداسي في الماستر" style="margin-top:7px; font-size:11px; font-weight:800; padding:5px 10px; border-radius:8px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border:none; width:100%; justify-content:center;">
+                                            <span>➕ إضافة للماستر (ربط بكود سداسي)</span>
+                                        </button>
+                                    ` : `
+                                        <button class="btn btn-ghost btn-sm" onclick="app.openAddGtinToCodeModal('${rec.Code}')" title="إضافة باركود أو GTIN إضافي لهذا الصنف في الماستر" style="margin-top:6px; font-size:10.5px; padding:2px 8px; border-radius:6px; border:1px dashed rgba(245,158,11,0.4); color:#fbbf24; display:inline-flex; align-items:center; gap:4px;">
+                                            <span>➕ إضافة باركود GTIN</span>
+                                        </button>
+                                    `}
+                                </div>
                             </div>
-                        </td>
-                        <td>
-                            <span class="badge-pill badge-code">#${rec.Code}</span>
-                            <div style="margin-top:4px; background:#ffffff; padding:2px 5px; border-radius:5px; display:inline-block; border:1px solid #cbd5e1; box-shadow:0 1px 3px rgba(0,0,0,0.2);">
-                                <svg class="entry-tbl-barcode" data-code="${rec.Code}"></svg>
+                            <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; font-size:12px; border-top:1px solid rgba(255,255,255,0.08); padding-top:10px; margin-top:6px;">
+                                <div><span style="color:#94a3b8;">تاريخ الانتهاء:</span> <span style="color:#fbbf24; font-weight:800; font-family:monospace;">${cleanExpiry}</span></div>
+                                <div><span style="color:#94a3b8;">الكمية:</span> <span style="color:#fff; font-weight:800;">${rec.Quantity}</span></div>
+                                <div><span style="color:#94a3b8;">الموقع:</span> <span style="color:#34d399; font-weight:800;">${rec.Location}</span></div>
+                                <div><span style="color:#94a3b8;">الإجمالي:</span> <span style="color:#10b981; font-weight:800;">${rec['Total Value']} SAR</span></div>
+                                <div style="grid-column:1 / -1; background:rgba(15,23,42,0.65); border:1px solid rgba(56,189,248,0.25); border-radius:8px; padding:6px 10px; display:flex; justify-content:space-between; align-items:center; margin-top:2px;">
+                                    <span style="color:#94a3b8; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
+                                        <span>🕒</span>
+                                        <span>وقت وتاريخ المسح:</span>
+                                    </span>
+                                    <span style="color:#38bdf8; font-weight:700; font-family:monospace; font-size:11.5px; direction:ltr; unicode-bidi:isolate;" dir="ltr">${rec['Entry Date']}</span>
+                                </div>
                             </div>
-                        </td>
-                        <td style="max-width:280px; overflow:hidden; text-overflow:ellipsis;" title="${rec.Description}">
-                            <div style="font-weight:700;">${rec.Description}</div>
-                        </td>
-                        <td><span style="color:var(--text-light); font-weight:700;">${rec['Item Class']}</span></td>
-                        <td style="font-family:monospace;">${rec['Unit Price']}</td>
-                        <td><span class="badge-pill badge-loc">${rec.Location}</span></td>
-                        <td><span class="badge-pill badge-exp">${rec['Expiry Date']}</span></td>
-                        <td style="font-weight:800; text-align:center;">${rec.Quantity}</td>
-                        <td style="font-weight:800; color:var(--emerald);">${rec['Total Value']}</td>
-                        <td style="font-size:11px; color:var(--text-light);">${rec['Entry Date']}</td>
-                        <td style="text-align:center; white-space:nowrap;">
-                            ${isUnreg ? `<button class="btn btn-warning" style="padding:4px 8px; font-size:11px; margin-inline-end:4px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border-radius:8px;" onclick="app.openLinkGtinModal('${rec.Code}', ${rec.id})" title="ربط هذا الباركود بكود سداسي في الماستر">🔗 ربط بالماستر</button>` : ''}
-                            <button class="btn btn-primary" style="padding:4px 8px; font-size:11px; margin-inline-end:4px; background:linear-gradient(135deg, #3b82f6, #1d4ed8); border-radius:8px;" onclick="app.editRecord(${rec.id})">✏️ تعديل</button>
-                            <button class="btn btn-danger" style="padding:4px 8px; font-size:11px; border-radius:8px;" onclick="app.deleteRecord(${rec.id})">🗑️ حذف</button>
-                        </td>
-                    `;
-                    tbody.appendChild(tr);
+                        `;
+                        cardsWrapper.appendChild(cardDiv);
+                    }
                 });
 
-                // توليد خطوط الباركود (الشرائط) القابلة للمسح في الجدول
+                // توليد خطوط الباركود (الشرائط) القابلة للمسح في الجدول والكروت
                 try {
-                    document.querySelectorAll('.entry-tbl-barcode').forEach(el => {
+                    document.querySelectorAll('.entry-tbl-barcode, .entry-card-barcode').forEach(el => {
                         const c = el.getAttribute('data-code');
                         if (c && typeof JsBarcode !== 'undefined') {
                             try {
@@ -4025,9 +4432,12 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 } catch(e) {}
 
                 // Update KPIs
-                document.getElementById('kpiItems').innerText = filtered.length;
-                document.getElementById('kpiQty').innerText = totalUnits;
-                document.getElementById('kpiTotalVal').innerText = totalSAR.toFixed(2);
+                const kItems = document.getElementById('kpiItems');
+                if (kItems) kItems.innerText = filtered.length;
+                const kQty = document.getElementById('kpiQty');
+                if (kQty) kQty.innerText = totalUnits;
+                const kVal = document.getElementById('kpiTotalVal');
+                if (kVal) kVal.innerText = totalSAR.toFixed(2);
             },
 
             deleteRecord: (id) => {
@@ -4336,7 +4746,7 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                             return {
                                 code: String(rec.Code).trim(),
                                 name: rec.Description || rec['أسم المنتج'] || `Item #${rec.Code}`,
-                                brand: rec['Item Class'] || 'MDCN',
+                                brand: rec['Brand'] || rec.Brand || rec['Item Class'] || 'MDCN', catA: rec['Category Level A'] || '', catB: rec['Category Level B'] || '', catC: rec['Category Level C'] || '',
                                 expiryDate: formattedExp,
                                 status: 'pending'
                             };
@@ -4426,7 +4836,28 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
             // --- نظام سجل الدفعات السابقة (BATCHES HISTORY SYSTEM) ---
             loadBatchesHistory: () => {
                 try {
-                    return JSON.parse(localStorage.getItem('expiry_batches_history') || '[]');
+                    let list = JSON.parse(localStorage.getItem('expiry_batches_history') || '[]');
+                    if (Array.isArray(list) && list.length > 0 && typeof app.deduplicateBatchRecords === 'function') {
+                        let changed = false;
+                        list.forEach(b => {
+                            if (Array.isArray(b.records) && b.records.length > 1) {
+                                const prev = b.records.length;
+                                b.records = app.deduplicateBatchRecords(b.records);
+                                if (b.records.length !== prev) {
+                                    changed = true;
+                                    b.count = b.records.length;
+                                    b.totalUnits = b.records.reduce((s, r) => s + (parseInt(r.Quantity, 10) || 1), 0);
+                                    b.totalVal = b.records.reduce((s, r) => s + (parseFloat(r['Total Value']) || 0), 0).toFixed(2);
+                                }
+                            }
+                        });
+                        if (changed) {
+                            try {
+                                localStorage.setItem('expiry_batches_history', JSON.stringify(list));
+                            } catch(e) {}
+                        }
+                    }
+                    return list;
                 } catch(e) {
                     return [];
                 }
@@ -4444,22 +4875,17 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
             syncBatchesToCloud: async (history) => {
                 try {
-                    const rawId = String(app.userId || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || localStorage.getItem('last_user_id') || '66').trim();
-                    const cleanId = rawId.replace(/^User\s*/i, '');
-                    const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
-
+                    const uid = app.getCleanUserId ? app.getCleanUserId() : '66';
                     const currentHistory = history || app.loadBatchesHistory();
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-batches/sync`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({
-                                userId: uid,
-                                batches: currentHistory,
-                                activeBatchId: app.activeBatchId
-                            })
-                        }).catch(() => {})
-                    ));
+                    await fetch(`${app.WORKER_URL}/api/expiry-batches/sync`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            userId: uid,
+                            batches: currentHistory,
+                            activeBatchId: app.activeBatchId
+                        })
+                    }).catch(() => {});
                 } catch(e) {
                     console.warn("Cloud batches sync error:", e);
                 }
@@ -4467,63 +4893,57 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
             loadCloudBatchesHistory: async () => {
                 try {
-                    const rawId = String(app.userId || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || localStorage.getItem('last_user_id') || '66').trim();
-                    const cleanId = rawId.replace(/^User\s*/i, '');
-                    const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
+                    const uid = app.getCleanUserId ? app.getCleanUserId() : '66';
+                    try {
+                        const res = await fetch(`${app.WORKER_URL}/api/expiry-batches/load?userId=${encodeURIComponent(uid)}`);
+                        if (res.ok) {
+                            const json = await res.json();
+                            if (json.success && Array.isArray(json.batches) && json.batches.length > 0) {
+                                const localHist = app.loadBatchesHistory();
+                                const localMap = new Map();
+                                localHist.forEach(b => localMap.set(String(b.id), b));
 
-                    for (const uid of targetIds) {
-                        try {
-                            const res = await fetch(`${app.WORKER_URL}/api/expiry-batches/load?userId=${encodeURIComponent(uid)}`);
-                            if (res.ok) {
-                                const json = await res.json();
-                                if (json.success && Array.isArray(json.batches) && json.batches.length > 0) {
-                                    const localHist = app.loadBatchesHistory();
-                                    const localMap = new Map();
-                                    localHist.forEach(b => localMap.set(String(b.id), b));
-
-                                    json.batches.forEach(b => {
-                                        const key = String(b.id);
-                                        if (!localMap.has(key)) {
+                                json.batches.forEach(b => {
+                                    const key = String(b.id);
+                                    if (!localMap.has(key)) {
+                                        localMap.set(key, b);
+                                    } else {
+                                        const loc = localMap.get(key);
+                                        if ((b.records && b.records.length > 0) && (!loc.records || loc.records.length < b.records.length)) {
                                             localMap.set(key, b);
-                                        } else {
-                                            const loc = localMap.get(key);
-                                            if ((b.records && b.records.length > 0) && (!loc.records || loc.records.length < b.records.length)) {
-                                                localMap.set(key, b);
-                                            }
-                                        }
-                                    });
-
-                                    const merged = Array.from(localMap.values());
-                                    merged.sort((a, b) => (b.timestamp || b.id || 0) - (a.timestamp || a.id || 0));
-
-                                    localStorage.setItem('expiry_batches_history', JSON.stringify(merged));
-                                    app.updateBatchesHistoryBadge();
-
-                                    const currentBatch = merged.find(b => b.id === app.activeBatchId);
-                                    if (!currentBatch && json.activeBatchId) {
-                                        const cloudActive = merged.find(b => b.id === json.activeBatchId);
-                                        if (cloudActive) {
-                                            app.activeBatchId = cloudActive.id;
-                                            app.activeBatchName = cloudActive.name || 'دفعة عامة';
-                                            localStorage.setItem('expiry_active_batch_id', cloudActive.id);
-                                            app.records = cloudActive.records || [];
-                                            localStorage.setItem('expiry_recorded_items', JSON.stringify(app.records));
-                                            app.updateActiveBatchBanner();
-                                            app.updatePreviewCount();
-                                            if (app.currentTab === 'preview') {
-                                                app.renderTable();
-                                            }
                                         }
                                     }
+                                });
 
-                                    if (document.getElementById('modalBatchesHistory')?.classList.contains('active')) {
-                                        app.renderBatchesHistoryList();
+                                const merged = Array.from(localMap.values());
+                                merged.sort((a, b) => (b.timestamp || b.id || 0) - (a.timestamp || a.id || 0));
+
+                                localStorage.setItem('expiry_batches_history', JSON.stringify(merged));
+                                app.updateBatchesHistoryBadge();
+
+                                const currentBatch = merged.find(b => b.id === app.activeBatchId);
+                                if (!currentBatch && json.activeBatchId) {
+                                    const cloudActive = merged.find(b => b.id === json.activeBatchId);
+                                    if (cloudActive) {
+                                        app.activeBatchId = cloudActive.id;
+                                        app.activeBatchName = cloudActive.name || 'دفعة عامة';
+                                        localStorage.setItem('expiry_active_batch_id', cloudActive.id);
+                                        app.records = cloudActive.records || [];
+                                        localStorage.setItem('expiry_recorded_items', JSON.stringify(app.records));
+                                        app.updateActiveBatchBanner();
+                                        app.updatePreviewCount();
+                                        if (app.currentTab === 'preview') {
+                                            app.renderTable();
+                                        }
                                     }
-                                    break;
+                                }
+
+                                if (document.getElementById('modalBatchesHistory')?.classList.contains('active')) {
+                                    app.renderBatchesHistoryList();
                                 }
                             }
-                        } catch(e) {}
-                    }
+                        }
+                    } catch(e) {}
                 } catch(e) {
                     console.warn("loadCloudBatchesHistory error:", e);
                 }
@@ -4531,17 +4951,12 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
             deleteBatchFromCloud: async (batchId) => {
                 try {
-                    const rawId = String(app.userId || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || localStorage.getItem('last_user_id') || '66').trim();
-                    const cleanId = rawId.replace(/^User\s*/i, '');
-                    const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
-
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-batches/delete`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ userId: uid, batchId })
-                        }).catch(() => {})
-                    ));
+                    const uid = app.getCleanUserId ? app.getCleanUserId() : '66';
+                    await fetch(`${app.WORKER_URL}/api/expiry-batches/delete`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ userId: uid, batchId })
+                    }).catch(() => {});
                 } catch(e) {}
             },
 
@@ -4549,68 +4964,666 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 const history = app.loadBatchesHistory();
                 const badge = document.getElementById('badgeBatchesHistoryCount');
                 if (badge) badge.innerText = history.length;
+                const bTab = document.getElementById('countBatchesTab');
+                if (bTab) bTab.innerText = history.length;
+                const allItemsCount = history.reduce((sum, b) => sum + (b.records ? b.records.length : (b.count || 0)), 0);
+                const allTab = document.getElementById('countAllBatchesItemsTab');
+                if (allTab) allTab.innerText = allItemsCount;
+            },
+
+            batchesModalTab: 'list', // 'list' أو 'all_cards'
+            _lastFilteredAllBatchRecords: [],
+
+            scrollBatchesModalToTop: () => {
+                const box = document.getElementById('modalBatchesHistoryBox') || document.querySelector('#modalBatchesHistory .modal-box');
+                if (box) {
+                    box.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            },
+
+            switchBatchesModalTab: (tab) => {
+                app.batchesModalTab = tab;
+                const btnList = document.getElementById('btnBatchTabList');
+                const btnCards = document.getElementById('btnBatchTabAllCards');
+                const wrapList = document.getElementById('wrapperBatchesListView');
+                const wrapCards = document.getElementById('wrapperBatchesAllCardsView');
+
+                if (tab === 'list') {
+                    if (btnList) {
+                        btnList.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)';
+                        btnList.style.color = '#fff';
+                    }
+                    if (btnCards) {
+                        btnCards.style.background = 'transparent';
+                        btnCards.style.color = '#94a3b8';
+                    }
+                    if (wrapList) wrapList.style.display = 'flex';
+                    if (wrapCards) wrapCards.style.display = 'none';
+                } else {
+                    if (btnCards) {
+                        btnCards.style.background = 'linear-gradient(135deg, #2563eb, #1d4ed8)';
+                        btnCards.style.color = '#fff';
+                    }
+                    if (btnList) {
+                        btnList.style.background = 'transparent';
+                        btnList.style.color = '#94a3b8';
+                    }
+                    if (wrapList) wrapList.style.display = 'none';
+                    if (wrapCards) wrapCards.style.display = 'flex';
+                }
+                app.scrollBatchesModalToTop();
+                app.renderBatchesHistoryList();
+            },
+
+            setBatchDateFilterQuick: (mode) => {
+                const inputDate = document.getElementById('inputBatchHistoryDate');
+                if (!inputDate) return;
+                if (mode === 'all') {
+                    inputDate.value = '';
+                } else if (mode === 'today') {
+                    const d = new Date();
+                    const y = d.getFullYear();
+                    const m = String(d.getMonth() + 1).padStart(2, '0');
+                    const day = String(d.getDate()).padStart(2, '0');
+                    inputDate.value = `${y}-${m}-${day}`;
+                } else if (mode === 'yesterday') {
+                    const d = new Date(Date.now() - 86400000);
+                    const y = d.getFullYear();
+                    const m = String(d.getMonth() + 1).padStart(2, '0');
+                    const day = String(d.getDate()).padStart(2, '0');
+                    inputDate.value = `${y}-${m}-${day}`;
+                }
+                app.renderBatchesHistoryList();
+            },
+
+            matchesDateFilter: (rec, batch, targetDateStr) => {
+                if (!targetDateStr) return true;
+                try {
+                    const parts = targetDateStr.split('-');
+                    if (parts.length < 3) return true;
+                    const year = parts[0];
+                    const month = String(parseInt(parts[1], 10)).padStart(2, '0');
+                    const day = String(parseInt(parts[2], 10)).padStart(2, '0');
+
+                    const dmySlash = `${day}/${month}/${year}`;
+                    const dmyDash = `${day}-${month}-${year}`;
+                    const ymdDash = `${year}-${month}-${day}`;
+                    const mdySlash = `${month}/${day}/${year}`;
+                    const dShort = `${parseInt(parts[2], 10)}/${parseInt(parts[1], 10)}/${year}`;
+
+                    const rTime = rec.timestamp || rec.scannedAt || (typeof rec.id === 'number' && rec.id > 1500000000000 ? rec.id : 0);
+                    if (rTime) {
+                        const dt = new Date(rTime);
+                        if (dt.getFullYear() === parseInt(year, 10) && (dt.getMonth() + 1) === parseInt(month, 10) && dt.getDate() === parseInt(day, 10)) {
+                            return true;
+                        }
+                    }
+
+                    const entryStr = String(rec['Entry Date'] || '');
+                    if (entryStr.includes(dmySlash) || entryStr.includes(dmyDash) || entryStr.includes(ymdDash) || entryStr.includes(dShort) || entryStr.includes(mdySlash)) {
+                        return true;
+                    }
+
+                    if (batch) {
+                        const bTime = batch.timestamp || (typeof batch.id === 'number' && batch.id > 1500000000000 ? batch.id : 0);
+                        if (bTime) {
+                            const bdt = new Date(bTime);
+                            if (bdt.getFullYear() === parseInt(year, 10) && (bdt.getMonth() + 1) === parseInt(month, 10) && bdt.getDate() === parseInt(day, 10)) {
+                                return true;
+                            }
+                        }
+                        const bDateStr = String(batch.date || '');
+                        if (bDateStr.includes(dmySlash) || bDateStr.includes(dmyDash) || bDateStr.includes(ymdDash) || bDateStr.includes(dShort)) {
+                            return true;
+                        }
+                    }
+                } catch(e) {}
+                return false;
             },
 
             openBatchesHistoryModal: () => {
+                if (typeof app.loadPharmacyInventory === 'function') {
+                    app.loadPharmacyInventory().then(() => app.renderBatchesHistoryList());
+                }
+                app.updateBatchesHistoryBadge();
                 app.renderBatchesHistoryList();
                 app.openModal('modalBatchesHistory');
+                setTimeout(() => app.scrollBatchesModalToTop(), 50);
             },
 
             renderBatchesHistoryList: () => {
-                const container = document.getElementById('batchesHistoryListContainer');
                 const emptyEl = document.getElementById('emptyBatchesHistoryState');
-                if (!container) return;
 
-                const q = (document.getElementById('inputBatchHistoryFilter')?.value || '').toLowerCase().trim();
+                // 📁 1. عرض قائمة الدفعات التقليدية
+                if (app.batchesModalTab === 'list') {
+                    const container = document.getElementById('batchesHistoryListContainer');
+                    if (!container) return;
+
+                    const q = (document.getElementById('inputBatchHistoryFilter')?.value || '').toLowerCase().trim();
+                    const history = app.loadBatchesHistory();
+
+                    const filtered = q ? history.filter(b => 
+                        (b.name || '').toLowerCase().includes(q) || 
+                        (b.date || '').toLowerCase().includes(q)
+                    ) : history;
+
+                    if (filtered.length === 0) {
+                        container.innerHTML = '';
+                        if (emptyEl) emptyEl.style.display = 'block';
+                        return;
+                    }
+                    if (emptyEl) emptyEl.style.display = 'none';
+
+                    container.innerHTML = filtered.map(b => {
+                        const isActive = b.id === app.activeBatchId;
+                        const recCount = b.count || (b.records ? b.records.length : 0);
+                        const bRecords = (b.id === app.activeBatchId && app.records && app.records.length > 0) ? app.records : (b.records || []);
+                        const inDbCount = bRecords.filter(r => app.isItemInPharmacyData(r.Code, r['Expiry Date'])).length;
+                        const totalCount = bRecords.length;
+                        const isAllInDb = totalCount > 0 && inDbCount === totalCount;
+
+                        return `
+                        <div style="background:rgba(15,23,42,0.85); border:${isActive ? '2px solid #10b981' : (isAllInDb ? '1.5px solid rgba(16,185,129,0.5)' : '1.5px solid rgba(59,130,246,0.3)')}; border-radius:16px; padding:14px; box-shadow:${isActive ? '0 0 16px rgba(16,185,129,0.3)' : '0 4px 15px rgba(0,0,0,0.3)'}; display:flex; flex-direction:column; gap:10px;">
+                            <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
+                                <div style="flex:1;">
+                                    <div style="font-weight:800; color:#fff; font-size:14.5px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                                        <span style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; padding:2px 8px; border-radius:6px; font-size:11px;">دفعة</span>
+                                        <span>${b.name || 'بدون اسم'}</span>
+                                        ${isActive ? '<span style="background:rgba(16,185,129,0.2); color:#34d399; border:1px solid #10b981; padding:1px 7px; border-radius:6px; font-size:10.5px; font-weight:800;">الدفعة النشطة حالياً ✓</span>' : ''}
+                                        ${isAllInDb ? `
+                                            <span style="background:rgba(16,185,129,0.2); color:#34d399; border:1px solid #10b981; padding:1px 7px; border-radius:6px; font-size:10.5px; font-weight:800; display:inline-flex; align-items:center; gap:3px;">
+                                                <span style="display:inline-block; width:5px; height:5px; border-radius:50%; background:#10b981;"></span>
+                                                مدمجة بالداتا بالكامل ✓
+                                            </span>
+                                        ` : (inDbCount > 0 ? `
+                                            <span style="background:rgba(59,130,246,0.2); color:#60a5fa; border:1px solid rgba(59,130,246,0.4); padding:1px 7px; border-radius:6px; font-size:10.5px; font-weight:700;">
+                                                ${inDbCount}/${totalCount} في الداتا
+                                            </span>
+                                        ` : `
+                                            <span style="background:rgba(245,158,11,0.15); color:#fbbf24; border:1px solid rgba(245,158,11,0.35); padding:1px 7px; border-radius:6px; font-size:10.5px;">
+                                                غير مدمجة ⏳
+                                            </span>
+                                        `)}
+                                    </div>
+                                    <div style="font-size:11.5px; color:#94a3b8; margin-top:3px;">📅 ${b.date || ''}</div>
+                                </div>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="app.deleteBatchHistory(${b.id})" style="padding:4px 8px; font-size:11px; border-radius:8px;" title="حذف هذه الدفعة من السجل">🗑️</button>
+                            </div>
+
+                            <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; background:rgba(0,0,0,0.25); padding:8px 10px; border-radius:10px; text-align:center; font-size:12px;">
+                                <div><span style="color:#94a3b8;">الأصناف:</span> <b style="color:#f59e0b;">${recCount}</b></div>
+                                <div><span style="color:#94a3b8;">القطع:</span> <b style="color:#10b981;">${b.totalUnits || 0}</b></div>
+                                <div><span style="color:#94a3b8;">الإجمالي:</span> <b style="color:#60a5fa;">${b.totalVal || 0} SAR</b></div>
+                            </div>
+
+                            <div style="display:flex; gap:8px; flex-wrap:wrap;">
+                                <button type="button" class="btn" onclick="app.switchActiveBatch(${b.id})" style="flex:1.3; min-width:140px; padding:9px 12px; font-size:12.5px; font-weight:800; background:${isActive ? 'linear-gradient(135deg, #10b981, #059669)' : 'linear-gradient(135deg, #2563eb, #1d4ed8)'}; color:#fff; border-radius:10px; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 3px 10px rgba(16,185,129,0.35);">
+                                    <span>📂 فتح ومتابعة العمل</span>
+                                    <span style="background:rgba(0,0,0,0.25); padding:1px 6px; border-radius:6px; font-size:11px;">${recCount} صنف</span>
+                                </button>
+                                ${!isAllInDb ? `
+                                <button type="button" class="btn btn-warning" onclick="app.mergeSingleBatchIntoInventory(${b.id})" style="padding:9px 12px; font-size:12px; font-weight:800; border-radius:10px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; display:flex; align-items:center; gap:4px; box-shadow:0 3px 10px rgba(245,158,11,0.35);" title="إضافة أصناف هذه الدفعة فقط لداتا صيدليتك">
+                                    <span>📥 إضافة للداتا</span>
+                                </button>
+                                ` : `
+                                <span style="display:inline-flex; align-items:center; padding:9px 12px; font-size:11.5px; font-weight:800; border-radius:10px; background:rgba(16,185,129,0.15); color:#10b981; border:1px solid rgba(16,185,129,0.4);">
+                                    ✓ مضافة بالداتا
+                                </span>
+                                `}
+                                <button type="button" class="btn btn-success" onclick="app.exportBatchExcelById(${b.id})" style="padding:9px 12px; font-size:12px; border-radius:10px;" title="تصدير هذه الدفعة إكسيل">
+                                    📊 إكسيل
+                                </button>
+                            </div>
+                        </div>
+                        `;
+                    }).join('');
+                    return;
+                }
+
+                // 📋 2. عرض كروت كل الدفعات مجمعة مع فلتر التاريخ والبحث
+                const allCardsContainer = document.getElementById('allBatchesCardsContainer');
+                if (!allCardsContainer) return;
+
+                const targetDate = (document.getElementById('inputBatchHistoryDate')?.value || '').trim();
+                const q = (document.getElementById('inputBatchAllCardsSearch')?.value || '').toLowerCase().trim();
                 const history = app.loadBatchesHistory();
 
-                const filtered = q ? history.filter(b => 
-                    (b.name || '').toLowerCase().includes(q) || 
-                    (b.date || '').toLowerCase().includes(q)
-                ) : history;
+                let allRecords = [];
+                history.forEach(b => {
+                    const recs = (b.id === app.activeBatchId && app.records && app.records.length > 0) ? app.records : (b.records || []);
+                    recs.forEach(r => {
+                        allRecords.push({
+                            ...r,
+                            _batchId: b.id,
+                            _batchName: b.name || 'دفعة عامة',
+                            _batchDate: b.date || ''
+                        });
+                    });
+                });
+
+                // فلترة بالتاريخ والبحث
+                let filtered = allRecords.filter(r => {
+                    const matchesDate = app.matchesDateFilter(r, { date: r._batchDate, id: r._batchId }, targetDate);
+                    if (!matchesDate) return false;
+
+                    if (q) {
+                        const matchQ = String(r.Code || '').toLowerCase().includes(q) ||
+                                       String(r.Description || '').toLowerCase().includes(q) ||
+                                       String(r._batchName || '').toLowerCase().includes(q) ||
+                                       String(r.Location || '').toLowerCase().includes(q);
+                        if (!matchQ) return false;
+                    }
+                    return true;
+                });
+
+                // تحديث بادج الأصناف غير السداسية في كل الدفعات
+                const non6BatchesCount = allRecords.filter(r => String(r.Code || '').trim().length !== 6).length;
+                const badgeBatchesNon6 = document.getElementById('badgeBatchesNon6DigitCount');
+                if (badgeBatchesNon6) badgeBatchesNon6.innerText = non6BatchesCount;
+
+                if (app.filterBatchesNon6DigitOnly) {
+                    filtered = filtered.filter(r => String(r.Code || '').trim().length !== 6);
+                }
+
+                // فرز تنازلي حسب الأحدث
+                const parseTime = (r) => {
+                    if (r.timestamp && typeof r.timestamp === 'number') return r.timestamp;
+                    if (r.scannedAt && typeof r.scannedAt === 'number') return r.scannedAt;
+                    if (typeof r.id === 'number' && r.id > 1500000000000) return r.id;
+                    return 0;
+                };
+                filtered.sort((a, b) => parseTime(b) - parseTime(a));
+
+                app._lastFilteredAllBatchRecords = filtered;
+
+                // تحديث الإحصائيات
+                const totalUnits = filtered.reduce((s, r) => s + (parseInt(r.Quantity, 10) || 1), 0);
+                const totalSAR = filtered.reduce((s, r) => s + (parseFloat(r['Total Value']) || 0), 0);
+
+                const elItems = document.getElementById('statAllBatchesItems');
+                if (elItems) elItems.innerText = filtered.length;
+                const elUnits = document.getElementById('statAllBatchesUnits');
+                if (elUnits) elUnits.innerText = totalUnits;
+                const elSAR = document.getElementById('statAllBatchesSAR');
+                if (elSAR) elSAR.innerText = `${totalSAR.toFixed(2)} SAR`;
 
                 if (filtered.length === 0) {
-                    container.innerHTML = '';
+                    allCardsContainer.innerHTML = '';
                     if (emptyEl) emptyEl.style.display = 'block';
                     return;
                 }
                 if (emptyEl) emptyEl.style.display = 'none';
 
-                container.innerHTML = filtered.map(b => {
-                    const isActive = b.id === app.activeBatchId;
-                    const recCount = b.count || (b.records ? b.records.length : 0);
+                allCardsContainer.innerHTML = filtered.map(rec => {
+                    let imgUrl = `https://placehold.co/70x70/1e293b/f59e0b?text=${rec.Code}`;
+                    if (rec.image_url && String(rec.image_url).startsWith('http')) {
+                        imgUrl = `${app.WORKER_URL}/img?src=${encodeURIComponent(rec.image_url.trim())}`;
+                    }
+                    const cleanExpiry = String(rec['Expiry Date'] || '').replace(/\s+12:00:00\s*AM/i, '').replace(/\s+00:00:00/i, '').trim();
+                    const inDb = app.isItemInPharmacyData(rec.Code, rec['Expiry Date']);
+                    const isUnreg = !((app.pharmacyData || app.data || []).find(d => String(d.Code).trim() === String(rec.Code).trim())) || String(rec.Code).trim().length !== 6;
+
                     return `
-                    <div style="background:rgba(15,23,42,0.85); border:${isActive ? '2px solid #10b981' : '1.5px solid rgba(59,130,246,0.3)'}; border-radius:16px; padding:14px; box-shadow:${isActive ? '0 0 16px rgba(16,185,129,0.3)' : '0 4px 15px rgba(0,0,0,0.3)'}; display:flex; flex-direction:column; gap:10px;">
-                        <div style="display:flex; justify-content:space-between; align-items:flex-start; gap:8px;">
-                            <div style="flex:1;">
-                                <div style="font-weight:800; color:#fff; font-size:14.5px; display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
-                                    <span style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; padding:2px 8px; border-radius:6px; font-size:11px;">دفعة</span>
-                                    <span>${b.name || 'بدون اسم'}</span>
-                                    ${isActive ? '<span style="background:rgba(16,185,129,0.2); color:#34d399; border:1px solid #10b981; padding:1px 7px; border-radius:6px; font-size:10.5px; font-weight:800;">الدفعة النشطة حالياً ✓</span>' : ''}
-                                </div>
-                                <div style="font-size:11.5px; color:#94a3b8; margin-top:3px;">📅 ${b.date || ''}</div>
+                    <div class="record-item-card" data-batch-code="${rec.Code}" id="batch-card-${rec.id || (rec.Code + '_' + rec['Expiry Date'])}" style="background:rgba(30,41,59,0.85); border:1.5px solid ${inDb ? 'rgba(16,185,129,0.5)' : 'rgba(59,130,246,0.35)'}; border-radius:16px; padding:12px; box-shadow:0 4px 15px rgba(0,0,0,0.3); display:flex; flex-direction:column; gap:8px;">
+                        <div style="display:flex; justify-content:space-between; align-items:center; gap:8px; flex-wrap:wrap;">
+                            <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+                                <span style="background:linear-gradient(135deg, #8b5cf6, #6366f1); color:#fff; padding:2px 8px; border-radius:6px; font-size:11px; font-weight:800;">🏷️ ${rec._batchName}</span>
+                                <span style="background:rgba(59,130,246,0.2); color:#60a5fa; border:1px solid rgba(59,130,246,0.4); padding:2px 8px; border-radius:6px; font-weight:800; font-family:monospace; font-size:12px;">#${rec.Code}</span>
+                                ${inDb ? `
+                                    <span style="background:rgba(16, 185, 129, 0.22); color:#10b981; border:1px solid rgba(16, 185, 129, 0.5); padding:2px 8px; border-radius:6px; font-weight:800; font-size:11px; display:inline-flex; align-items:center; gap:4px; box-shadow:0 0 10px rgba(16,185,129,0.25);">
+                                        <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#10b981;"></span>
+                                        في الداتا ✓
+                                    </span>
+                                ` : `
+                                    <span style="background:rgba(245, 158, 11, 0.18); color:#fbbf24; border:1px solid rgba(245, 158, 11, 0.4); padding:2px 8px; border-radius:6px; font-weight:700; font-size:11px; display:inline-flex; align-items:center; gap:4px;">
+                                        <span style="display:inline-block; width:6px; height:6px; border-radius:50%; background:#fbbf24;"></span>
+                                        غير مدمج ⏳
+                                    </span>
+                                `}
                             </div>
-                            <button type="button" class="btn btn-danger btn-sm" onclick="app.deleteBatchHistory(${b.id})" style="padding:4px 8px; font-size:11px; border-radius:8px;" title="حذف هذه الدفعة من السجل">🗑️</button>
+                            <div style="display:flex; align-items:center; gap:8px;">
+                                <span style="font-size:11px; color:#38bdf8; font-family:monospace;" dir="ltr">${rec['Entry Date'] || rec._batchDate || ''}</span>
+                                <button type="button" class="btn btn-danger btn-sm" onclick="app.deleteRecordFromAnyBatch(${rec.id}, '${rec.Code}', '${(rec['Expiry Date'] || '').replace(/'/g, "\\'")}', ${rec._batchId})" title="حذف هذا الصنف نهائياً" style="padding:3px 8px; font-size:11px; border-radius:7px;">🗑️</button>
+                            </div>
                         </div>
 
-                        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:6px; background:rgba(0,0,0,0.25); padding:8px 10px; border-radius:10px; text-align:center; font-size:12px;">
-                            <div><span style="color:#94a3b8;">الأصناف:</span> <b style="color:#f59e0b;">${recCount}</b></div>
-                            <div><span style="color:#94a3b8;">القطع:</span> <b style="color:#10b981;">${b.totalUnits || 0}</b></div>
-                            <div><span style="color:#94a3b8;">الإجمالي:</span> <b style="color:#60a5fa;">${b.totalVal || 0} SAR</b></div>
+                        <div style="display:flex; gap:10px; align-items:center;">
+                            <img src="${imgUrl}" alt="Thumb" style="width:48px; height:48px; min-width:48px; object-fit:contain; border-radius:8px; background:rgba(0,0,0,0.3); border:1px solid rgba(255,255,255,0.1);">
+                            <div style="flex:1; overflow:hidden;">
+                                <div style="font-weight:700; color:#fff; font-size:13px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${rec.Description || ('صنف #' + rec.Code)}</div>
+                                <div style="font-size:11px; color:#94a3b8; margin-top:2px;">${rec['Item Class'] || 'MDCN'}</div>
+                                <div style="margin-top:4px; background:#ffffff; padding:2px 6px; border-radius:6px; display:inline-block; border:1px solid #cbd5e1;">
+                                    <svg class="all-batches-barcode" data-code="${rec.Code}"></svg>
+                                </div>
+                                <!-- زر ربط الباركود بكود سداسي في الماستر -->
+                                ${isUnreg ? `
+                                    <button type="button" class="btn btn-warning btn-sm" onclick="app.openLinkGtinModal('${rec.Code}', ${rec.id || null})" title="ربط هذا الباركود بكود سداسي في الماستر" style="margin-top:7px; font-size:11px; font-weight:800; padding:5px 10px; border-radius:8px; background:linear-gradient(135deg, #f59e0b, #d97706); color:#fff; border:none; box-shadow:0 2px 6px rgba(245,158,11,0.3); display:inline-flex; align-items:center; gap:5px; width:100%; justify-content:center; cursor:pointer;">
+                                        <span>➕ إضافة للماستر (ربط بكود سداسي)</span>
+                                    </button>
+                                ` : `
+                                    <button type="button" class="btn btn-ghost btn-sm" onclick="app.openAddGtinToCodeModal('${rec.Code}')" title="إضافة باركود أو GTIN إضافي لهذا الصنف في الماستر" style="margin-top:6px; font-size:10.5px; padding:2px 8px; border-radius:6px; border:1px dashed rgba(245,158,11,0.4); color:#fbbf24; display:inline-flex; align-items:center; gap:4px; cursor:pointer;">
+                                        <span>➕ إضافة باركود GTIN</span>
+                                    </button>
+                                `}
+                            </div>
                         </div>
 
-                        <div style="display:flex; gap:8px;">
-                            <button type="button" class="btn" onclick="app.switchActiveBatch(${b.id})" style="flex:1.3; padding:9px 12px; font-size:12.5px; font-weight:800; background:${isActive ? 'linear-gradient(135deg, #10b981, #059669)' : 'linear-gradient(135deg, #2563eb, #1d4ed8)'}; color:#fff; border-radius:10px; display:flex; align-items:center; justify-content:center; gap:6px; box-shadow:0 3px 10px rgba(16,185,129,0.35);">
-                                <span>📂 فتح ومتابعة العمل</span>
-                                <span style="background:rgba(0,0,0,0.25); padding:1px 6px; border-radius:6px; font-size:11px;">${recCount} صنف</span>
-                            </button>
-                            <button type="button" class="btn btn-success" onclick="app.exportBatchExcelById(${b.id})" style="padding:9px 12px; font-size:12px; border-radius:10px;" title="تصدير هذه الدفعة إكسيل">
-                                📊 إكسيل
-                            </button>
+                        <div style="display:grid; grid-template-columns:1fr 1fr; gap:6px; font-size:11.5px; border-top:1px solid rgba(255,255,255,0.08); padding-top:8px;">
+                            <div><span style="color:#94a3b8;">تاريخ الانتهاء:</span> <b style="color:#fbbf24; font-family:monospace;">${cleanExpiry}</b></div>
+                            <div><span style="color:#94a3b8;">الكمية:</span> <b style="color:#fff;">${rec.Quantity || 1}</b></div>
+                            <div><span style="color:#94a3b8;">الموقع:</span> <b style="color:#34d399;">${rec.Location || 'P0066'}</b></div>
+                            <div><span style="color:#94a3b8;">الإجمالي:</span> <b style="color:#10b981;">${rec['Total Value'] || '0.00'} SAR</b></div>
                         </div>
                     </div>
                     `;
                 }).join('');
+
+                try {
+                    allCardsContainer.querySelectorAll('.all-batches-barcode').forEach(el => {
+                        const c = el.getAttribute('data-code');
+                        if (c && typeof JsBarcode !== 'undefined') {
+                            try {
+                                JsBarcode(el, c, {
+                                    format: /^\d{13}$/.test(c) ? 'EAN13' : (/^\d{8}$/.test(c) ? 'EAN8' : (/^\d{12}$/.test(c) ? 'UPC' : 'CODE128')),
+                                    width: 1.2,
+                                    height: 28,
+                                    displayValue: true,
+                                    fontSize: 10,
+                                    font: 'monospace',
+                                    margin: 2,
+                                    lineColor: '#0f172a',
+                                    background: '#ffffff'
+                                });
+                            } catch(err) {
+                                try {
+                                    JsBarcode(el, c, { format: 'CODE128', width: 1.1, height: 26, displayValue: true, margin: 2 });
+                                } catch(e) {}
+                            }
+                        }
+                    });
+                } catch(e) {}
+            },
+
+            exportAllBatchesExcel: () => {
+                const list = app._lastFilteredAllBatchRecords || [];
+                if (!list || list.length === 0) {
+                    app.notify("لا توجد أصناف معروضة لتصديرها", "warning");
+                    return;
+                }
+                try {
+                    const headers = [
+                        'Code', 'Description', 'Item Class', 'Unit Price', 'Location',
+                        'Expiry Date', 'Quantity', 'Total Value', 'Entry Date', 'Batch Name'
+                    ];
+                    const rows = [headers];
+                    list.forEach(r => {
+                        rows.push([
+                            String(r.Code || ''),
+                            String(r.Description || ''),
+                            String(r['Item Class'] || 'MDCN'),
+                            String(r['Unit Price'] || '0.00'),
+                            String(r.Location || 'P0066'),
+                            String(r['Expiry Date'] || ''),
+                            String(r.Quantity || '1'),
+                            String(r['Total Value'] || '0.00'),
+                            String(r['Entry Date'] || ''),
+                            String(r._batchName || '')
+                        ]);
+                    });
+                    const ws = XLSX.utils.aoa_to_sheet(rows);
+                    ws['!cols'] = [
+                        { wch: 14 }, { wch: 34 }, { wch: 14 }, { wch: 12 }, { wch: 12 },
+                        { wch: 22 }, { wch: 12 }, { wch: 14 }, { wch: 24 }, { wch: 20 }
+                    ];
+                    const wb = XLSX.utils.book_new();
+                    XLSX.utils.book_append_sheet(wb, ws, "All_Batches");
+                    const dateFilter = document.getElementById('inputBatchHistoryDate')?.value || 'All';
+                    const fileName = `All_Batches_Expiry_${dateFilter}_${Date.now()}.xlsx`;
+                    XLSX.writeFile(wb, fileName);
+                    app.notify(`تم تصدير ${list.length} صنف من الدفعات بنجاح! 📊`, "success");
+                } catch(e) {
+                    console.error("Export error:", e);
+                    app.notify("Export failed: " + e.message, "error");
+                }
+            },
+
+            mergeAllBatchesIntoInventory: async () => {
+                const list = app._lastFilteredAllBatchRecords || [];
+                if (!list || list.length === 0) {
+                    app.notify("لا توجد أصناف معروضة لدمجها في الداتا", "warning");
+                    return;
+                }
+
+                const currentPharm = app.getCleanUserId ? app.getCleanUserId() : (localStorage.getItem('last_user_id') || '66');
+                const count = list.length;
+
+                app.showConfirmDialog({
+                    title: "إضافة كل الدفعات للداتا",
+                    message: `هل تريد دمج وإضافة كافة الأصناف المعروضة (${count} صنف من مختلف الدفعات) إلى فحص الإكسباير لصيدليتك (${currentPharm})؟`,
+                    type: 'merge',
+                    confirmText: "تأكيد الدمج الشامل 📥",
+                    cancelText: "إلغاء ✖",
+                    onConfirm: async () => {
+                        const loader = document.getElementById('globalLoader');
+                        if (loader) loader.style.display = 'flex';
+
+                        try {
+                            const uniqueMap = new Map();
+                            list.forEach(rec => {
+                                let formattedExp = "";
+                                const parts = String(rec['Expiry Date'] || '').trim().split(/[\/\-\s]/);
+                                if (parts.length >= 3) {
+                                    let d = parts[0], m = parts[1], y = parts[2];
+                                    if (y.length === 4) formattedExp = `${y}-${m.padStart(2, '0')}-01`;
+                                    else if (d.length === 4) formattedExp = `${d}-${m.padStart(2, '0')}-01`;
+                                }
+                                if (!formattedExp) {
+                                    const dt = new Date(rec['Expiry Date']);
+                                    if (!isNaN(dt.getTime())) formattedExp = dt.toISOString().slice(0, 7) + "-01";
+                                    else formattedExp = "2027-01-01";
+                                }
+
+                                const c = String(rec.Code).trim();
+                                const key = `${c}_${formattedExp}`;
+                                if (!uniqueMap.has(key)) {
+                                    uniqueMap.set(key, {
+                                        code: c,
+                                        name: rec.Description || `Item #${c}`,
+                                        brand: rec['Brand'] || rec.Brand || rec['Item Class'] || 'MDCN', catA: rec['Category Level A'] || '', catB: rec['Category Level B'] || '', catC: rec['Category Level C'] || '',
+                                        expiryDate: formattedExp,
+                                        status: 'pending'
+                                    });
+                                }
+                            });
+
+                            const newProducts = Array.from(uniqueMap.values());
+
+                            const res = await fetch(`${app.WORKER_URL}/api/inventory/sync`, {
+                                method: 'POST',
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({
+                                    userId: currentPharm,
+                                    newProducts: newProducts
+                                })
+                            });
+
+                            if (!res.ok) throw new Error("Sync to inventory failed");
+                            const json = await res.json();
+                            const added = (json && typeof json.addedCount === 'number') ? json.addedCount : 0;
+                            const alreadyInDb = Math.max(0, newProducts.length - added);
+
+                            await app.loadPharmacyInventory();
+                            if (loader) loader.style.display = 'none';
+
+                            if (added > 0) {
+                                const msg = alreadyInDb > 0
+                                    ? `تم بنجاح إضافة ودمج ${added} صنف جديد، و ${alreadyInDb} صنف كانت مسجلة مسبقاً في داتا صيدليتك (${currentPharm})! 🎉`
+                                    : `تم بنجاح إضافة كافة الأصناف (${added} صنف) في فحص الإكسباير لصيدليتك (${currentPharm})! 🎉`;
+                                app.notify(msg, "success");
+                            } else {
+                                app.notify(`جميع الأصناف المعروضة (${newProducts.length} صنف) مضافة ومسجلة بالفعل مسبقاً في داتا صيدليتك (${currentPharm}) ولا توجد أصناف جديدة! ✓`, "info");
+                            }
+
+                            app.renderBatchesHistoryList();
+                        } catch(err) {
+                            if (loader) loader.style.display = 'none';
+                            app.notify("فشل الدمج: " + err.message, "error");
+                        }
+                    }
+                });
+            },
+
+            mergeSingleBatchIntoInventory: async (batchId) => {
+                const history = app.loadBatchesHistory();
+                const b = history.find(item => item.id === batchId);
+                if (!b) return;
+                const records = (b.id === app.activeBatchId && app.records && app.records.length > 0) ? app.records : (b.records || []);
+                if (!records || records.length === 0) {
+                    app.notify("هذه الدفعة فارغة ولا تحتوي على أصناف", "warning");
+                    return;
+                }
+
+                const currentPharm = app.getCleanUserId ? app.getCleanUserId() : (localStorage.getItem('last_user_id') || '66');
+                const count = records.length;
+
+                app.showConfirmDialog({
+                    title: "إضافة الدفعة للداتا",
+                    message: `هل تريد دمج وإضافة أصناف الدفعة (${b.name || 'دفعة'}) بعدد (${count} صنف) إلى فحص الإكسباير لصيدليتك (${currentPharm})؟`,
+                    type: 'merge',
+                    confirmText: "تأكيد الإضافة للداتا 📥",
+                    cancelText: "إلغاء ✖",
+                    onConfirm: async () => {
+                        const loader = document.getElementById('globalLoader');
+                        if (loader) loader.style.display = 'flex';
+
+                        try {
+                            const uniqueMap = new Map();
+                            records.forEach(rec => {
+                                let formattedExp = "";
+                                const parts = String(rec['Expiry Date'] || '').trim().split(/[\/\-\s]/);
+                                if (parts.length >= 3) {
+                                    let d = parts[0], m = parts[1], y = parts[2];
+                                    if (y.length === 4) formattedExp = `${y}-${m.padStart(2, '0')}-01`;
+                                    else if (d.length === 4) formattedExp = `${d}-${m.padStart(2, '0')}-01`;
+                                }
+                                if (!formattedExp) {
+                                    const dt = new Date(rec['Expiry Date']);
+                                    if (!isNaN(dt.getTime())) formattedExp = dt.toISOString().slice(0, 7) + "-01";
+                                    else formattedExp = "2027-01-01";
+                                }
+
+                                const c = String(rec.Code).trim();
+                                const key = `${c}_${formattedExp}`;
+                                if (!uniqueMap.has(key)) {
+                                    uniqueMap.set(key, {
+                                        code: c,
+                                        name: rec.Description || `Item #${c}`,
+                                        brand: rec['Brand'] || rec.Brand || rec['Item Class'] || 'MDCN', catA: rec['Category Level A'] || '', catB: rec['Category Level B'] || '', catC: rec['Category Level C'] || '',
+                                        expiryDate: formattedExp,
+                                        status: 'pending'
+                                    });
+                                }
+                            });
+
+                            const newProducts = Array.from(uniqueMap.values());
+                            const res = await fetch(`${app.WORKER_URL}/api/inventory/sync`, {
+                                method: 'POST',
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({
+                                    userId: currentPharm,
+                                    newProducts: newProducts
+                                })
+                            });
+
+                            if (!res.ok) throw new Error("Sync failed");
+                            const json = await res.json();
+                            const added = (json && typeof json.addedCount === 'number') ? json.addedCount : 0;
+                            const alreadyInDb = Math.max(0, newProducts.length - added);
+
+                            await app.loadPharmacyInventory();
+                            if (loader) loader.style.display = 'none';
+
+                            if (added > 0) {
+                                const msg = alreadyInDb > 0
+                                    ? `تم بنجاح إضافة ${added} صنف جديد، و ${alreadyInDb} صنف كانت مسجلة مسبقاً في داتا صيدليتك (${currentPharm})! 🎉`
+                                    : `تم بنجاح إضافة كافة أصناف الدفعة (${added} صنف) في فحص الإكسباير لصيدليتك (${currentPharm})! 🎉`;
+                                app.notify(msg, "success");
+                            } else {
+                                app.notify(`جميع أصناف هذه الدفعة (${newProducts.length} صنف) مضافة بالفعل مسبقاً في داتا صيدليتك (${currentPharm}) ولا توجد أصناف جديدة! ✓`, "info");
+                            }
+
+                            app.renderBatchesHistoryList();
+                        } catch(err) {
+                            if (loader) loader.style.display = 'none';
+                            console.error("Merge batch error:", err);
+                            app.notify("فشل الدمج: " + err.message, "error");
+                        }
+                    }
+                });
+            },
+
+            searchInBatchesCards: (rawCode) => {
+                if (!rawCode) return;
+                const clean = String(rawCode).trim().replace(/^0+/, '');
+                const cards = document.querySelectorAll('#allBatchesCardsContainer .record-item-card');
+                if (!cards || cards.length === 0) return;
+
+                let targetCard = null;
+                cards.forEach(card => {
+                    const c = String(card.getAttribute('data-batch-code') || '').trim().replace(/^0+/, '');
+                    if (c === clean) {
+                        targetCard = card;
+                    }
+                });
+
+                if (targetCard) {
+                    const inp = document.getElementById('inputBatchAllCardsSearch');
+                    if (inp) inp.value = '';
+
+                    targetCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    targetCard.classList.add('card-search-highlight');
+                    setTimeout(() => {
+                        targetCard.classList.remove('card-search-highlight');
+                    }, 4500);
+
+                    app.notify(`تم التمرير لكارت الصنف (#${clean}) مع إضاءة الوهج ✨`, "success");
+                } else {
+                    app.notify(`لم يتم العثور على الصنف (#${clean}) في كروت الدفعات المعروضة`, "warning");
+                }
+            },
+
+            deleteRecordFromAnyBatch: (recId, code, expiryDate, batchId) => {
+                app.showConfirmDialog({
+                    title: "حذف صنف من الدفعة",
+                    message: `هل تريد حذف هذا الصنف (#${code}) نهائياً من الدفعة؟`,
+                    type: 'danger',
+                    confirmText: "حذف نهائياً 🗑️",
+                    cancelText: "إلغاء",
+                    onConfirm: () => {
+                        const history = app.loadBatchesHistory();
+                        const b = history.find(item => item.id === batchId);
+                        if (b && Array.isArray(b.records)) {
+                            b.records = b.records.filter(r => r.id !== recId && String(r.id) !== String(recId));
+                            b.count = b.records.length;
+                            b.totalUnits = b.records.reduce((s, r) => s + (parseInt(r.Quantity, 10) || 1), 0);
+                            b.totalVal = b.records.reduce((s, r) => s + (parseFloat(r['Total Value']) || 0), 0).toFixed(2);
+                            app.saveBatchesHistory(history);
+                        }
+
+                        if (batchId === app.activeBatchId && Array.isArray(app.records)) {
+                            app.records = app.records.filter(r => r.id !== recId && String(r.id) !== String(recId));
+                            try {
+                                localStorage.setItem('expiry_recorded_items', JSON.stringify(app.records));
+                            } catch(e) {}
+                            if (typeof app.updatePreviewCount === 'function') app.updatePreviewCount();
+                            if (typeof app.renderTable === 'function') app.renderTable();
+                        }
+
+                        app.renderBatchesHistoryList();
+                        app.updateBatchesHistoryBadge();
+                        app.notify("تم حذف الصنف من الدفعة بنجاح 🗑️", "info");
+                    }
+                });
             },
 
             deleteBatchHistory: (id) => {
@@ -5008,7 +6021,7 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                     return {
                         code: String(rec.Code).trim(),
                         name: rec.Description || rec['أسم المنتج'] || `Item #${rec.Code}`,
-                        brand: rec['Item Class'] || 'MDCN',
+                        brand: rec['Brand'] || rec.Brand || rec['Item Class'] || 'MDCN', catA: rec['Category Level A'] || '', catB: rec['Category Level B'] || '', catC: rec['Category Level C'] || '',
                         expiryDate: formattedExp,
                         status: 'pending'
                     };
@@ -5110,11 +6123,52 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
 
             // CLOUDFLARE WORKER & KV INTEGRATION
             WORKER_URL: "https://tracker-new.meralmohamed121022.workers.dev",
+            _autoSyncTimer: null,
+            _syncInProgress: false,
+
+            getCleanUserId: () => {
+                const rawId = String(app.userId || localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
+                return rawId.replace(/^User\s*/i, '') || '66';
+            },
+
+            showAutoSyncNotice: (msg) => {
+                let badge = document.getElementById('autoSyncNoticeBadge');
+                if (!badge) {
+                    badge = document.createElement('div');
+                    badge.id = 'autoSyncNoticeBadge';
+                    badge.style.cssText = "position:fixed;bottom:24px;left:24px;background:rgba(16,185,129,0.95);color:#fff;padding:8px 16px;border-radius:24px;font-size:13px;font-weight:bold;z-index:99999;box-shadow:0 4px 16px rgba(0,0,0,0.35);transition:opacity 0.4s ease;pointer-events:none;font-family:'Cairo',sans-serif;";
+                    document.body.appendChild(badge);
+                }
+                badge.innerText = msg;
+                badge.style.opacity = '1';
+                setTimeout(() => { if (badge) badge.style.opacity = '0'; }, 3000);
+            },
+
+            checkAutoSync: (force = false) => {
+                if (app._autoSyncTimer) {
+                    clearTimeout(app._autoSyncTimer);
+                    app._autoSyncTimer = null;
+                }
+
+                const pending = (app.records || []).filter(r => !r.synced);
+                if (pending.length === 0) return;
+
+                // مزامنة فورية إذا وصلنا إلى 10 أصناف أو أكثر، أو إذا طُلب الإجبار
+                if (pending.length >= 10 || force) {
+                    app.syncPendingToCloud(true);
+                } else {
+                    // إذا كان هناك أصناف معلقة (أقل من 10)، نجدول مزامنة تلقائية بعد 30 ثانية لضمان حفظ كل شيء
+                    app._autoSyncTimer = setTimeout(() => {
+                        const p = (app.records || []).filter(r => !r.synced);
+                        if (p.length > 0) {
+                            app.syncPendingToCloud(true);
+                        }
+                    }, 30000);
+                }
+            },
 
             loadCloudRecords: async () => {
-                const rawId = String(localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
-                const cleanId = rawId.replace(/^User\s*/i, '');
-                const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
+                const uid = app.getCleanUserId();
 
                 let deletedKeys = new Set();
                 try {
@@ -5125,39 +6179,37 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 let authoritativeCloudFetched = false;
                 const validCloudKeys = new Set();
 
-                for (const uid of targetIds) {
-                    try {
-                        const res = await fetch(`${app.WORKER_URL}/api/expiry-entries/load?userId=${encodeURIComponent(uid)}`);
-                        if (res.ok) {
-                            const json = await res.json();
-                            if (json.success && Array.isArray(json.entries)) {
-                                authoritativeCloudFetched = true;
-                                const existingKeys = new Set(app.records.map(r => String(r.id || (r.Code + '_' + r['Expiry Date']))));
+                try {
+                    const res = await fetch(`${app.WORKER_URL}/api/expiry-entries/load?userId=${encodeURIComponent(uid)}`);
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (json.success && Array.isArray(json.entries)) {
+                            authoritativeCloudFetched = true;
+                            const existingKeys = new Set(app.records.map(r => String(r.id || (r.Code + '_' + r['Expiry Date']))));
 
-                                json.entries.forEach(e => {
-                                    const key = String(e.id || (e.Code + '_' + e['Expiry Date']));
-                                    const idKey = String(e.id || '');
-                                    // If deleted on this machine, purge from cloud
-                                    if (deletedKeys.has(key) || (idKey && deletedKeys.has(idKey))) {
-                                        app.deleteRecordFromCloud(e.id, e.Code, e['Expiry Date']);
-                                        return;
-                                    }
+                            json.entries.forEach(e => {
+                                const key = String(e.id || (e.Code + '_' + e['Expiry Date']));
+                                const idKey = String(e.id || '');
+                                // If deleted on this machine, purge from cloud
+                                if (deletedKeys.has(key) || (idKey && deletedKeys.has(idKey))) {
+                                    app.deleteRecordFromCloud(e.id, e.Code, e['Expiry Date']);
+                                    return;
+                                }
 
-                                    validCloudKeys.add(key);
-                                    if (idKey) validCloudKeys.add(idKey);
+                                validCloudKeys.add(key);
+                                if (idKey) validCloudKeys.add(idKey);
 
-                                    if (!existingKeys.has(key)) {
-                                        e.synced = true;
-                                        app.records.push(e);
-                                        existingKeys.add(key);
-                                        hasChanges = true;
-                                    }
-                                });
-                            }
+                                if (!existingKeys.has(key)) {
+                                    e.synced = true;
+                                    app.records.push(e);
+                                    existingKeys.add(key);
+                                    hasChanges = true;
+                                }
+                            });
                         }
-                    } catch(e) {
-                        console.warn("Cloudflare load note:", e);
                     }
+                } catch(e) {
+                    console.warn("Cloudflare load note:", e);
                 }
 
                 // 🚀 Remote Deletion Sync: If item was synced to cloud, but cloud no longer has it, it was deleted on another device (e.g. PC). Drop it locally too!
@@ -5180,6 +6232,24 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 }
 
                 if (hasChanges || app.records.length > 0) {
+                    const parseRecTime = (r) => {
+                        if (r && r.timestamp) return Number(r.timestamp);
+                        if (r && r.scannedAt) return Number(r.scannedAt);
+                        if (r && r['Entry Date']) {
+                            const parsed = new Date(r['Entry Date']).getTime();
+                            if (!isNaN(parsed) && parsed > 0) return parsed;
+                        }
+                        if (r && r.id) {
+                            const num = Number(r.id);
+                            if (!isNaN(num) && num > 1000000000) return num;
+                        }
+                        return 0;
+                    };
+                    app.records.sort((a, b) => {
+                        const diff = parseRecTime(b) - parseRecTime(a);
+                        if (diff !== 0) return diff;
+                        return (Number(b.id) || 0) - (Number(a.id) || 0);
+                    });
                     app.saveLocalRecords();
                     app.updatePreviewCount();
                     if (document.getElementById('tabPreview') && document.getElementById('tabPreview').classList.contains('active')) {
@@ -5189,86 +6259,101 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 app.loadCloudBatchesHistory();
             },
 
-            syncSingleToCloud: async (rec) => {
-                const rawId = String(localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
-                const cleanId = rawId.replace(/^User\s*/i, '');
-                const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
-
-                try {
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-entries/sync`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ userId: uid, newEntries: [rec] })
-                        }).catch(() => {})
-                    ));
-                    rec.synced = true;
-                    app.saveLocalRecords();
-                    app.updatePreviewCount();
-                } catch(e) {
-                    console.warn("Cloudflare single sync note:", e);
-                }
-            },
-
-            syncPendingToCloud: async () => {
-                const rawId = String(localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
-                const cleanId = rawId.replace(/^User\s*/i, '');
-                const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
+            syncPendingToCloud: async (silent = false) => {
+                if (app._syncInProgress) return;
+                const uid = app.getCleanUserId();
 
                 const pending = app.records.filter(r => !r.synced);
                 if (pending.length === 0) {
-                    app.notify("جميع الأصناف متزامنة مع Cloudflare KV بالفعل ✓", "success");
+                    if (!silent) app.notify("جميع الأصناف متزامنة مع السحاب بالفعل ✓", "success");
                     return;
                 }
 
+                app._syncInProgress = true;
                 try {
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-entries/sync`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ userId: uid, newEntries: pending })
-                        }).catch(() => {})
-                    ));
+                    const res = await fetch(`${app.WORKER_URL}/api/expiry-entries/sync`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ userId: uid, newEntries: pending })
+                    });
 
-                    pending.forEach(r => r.synced = true);
-                    app.saveLocalRecords();
-                    app.updatePreviewCount();
-                    app.notify(`تمت مزامنة ${pending.length} صنف بنجاح مع Cloudflare KV! ⚡`, "success");
+                    if (res.ok) {
+                        const json = await res.json();
+                        if (json.success) {
+                            pending.forEach(r => r.synced = true);
+                            app.saveLocalRecords();
+                            app.updatePreviewCount();
+
+                            // ⚡ دمج تلقائي في فحص الإكسباير لصيدلية المستخدم
+                            try {
+                                const currentPharm = localStorage.getItem('user_assigned_pharmacy') || '66';
+                                const invProducts = [];
+                                pending.forEach(rec => {
+                                    const rawExp = String(rec['Expiry Date'] || '').trim();
+                                    if (!rawExp) return;
+                                    let formattedExp = rawExp;
+                                    const parts = rawExp.split('/');
+                                    if (parts.length === 3) {
+                                        formattedExp = `${parts[2]}-${parts[1].padStart(2, '0')}-${parts[0].padStart(2, '0')}`;
+                                    }
+                                    const c = String(rec.Code).trim();
+                                    invProducts.push({
+                                        code: c,
+                                        name: rec.Description || `Item #${c}`,
+                                        brand: rec['Brand'] || rec.Brand || rec['Item Class'] || 'MDCN', catA: rec['Category Level A'] || '', catB: rec['Category Level B'] || '', catC: rec['Category Level C'] || '',
+                                        expiryDate: formattedExp,
+                                        status: 'pending'
+                                    });
+                                });
+                                if (invProducts.length > 0) {
+                                    fetch(`${app.WORKER_URL}/api/inventory/sync`, {
+                                        method: 'POST',
+                                        headers: { "Content-Type": "application/json" },
+                                        body: JSON.stringify({ userId: currentPharm, newProducts: invProducts })
+                                    }).then(async r => {
+                                        if (r.ok && typeof app.loadPharmacyInventory === 'function') {
+                                            await app.loadPharmacyInventory();
+                                            if (typeof app.renderTable === 'function') app.renderTable();
+                                            if (typeof app.renderBatchesHistoryList === 'function') app.renderBatchesHistoryList();
+                                        }
+                                    }).catch(() => {});
+                                }
+                            } catch(e) {}
+
+                            if (!silent) {
+                                app.notify(`تمت المزامنة والدمج التلقائي لـ ${pending.length} صنف في فحص الإكسباير بنجاح! ⚡`, "success");
+                            } else {
+                                app.showAutoSyncNotice(`☁️ تمت المزامنة والدمج التلقائي (${pending.length} صنف)`);
+                            }
+                        }
+                    }
                 } catch (err) {
                     console.error("Cloudflare sync error:", err);
-                    app.notify("فشل المزامنة مع كلاود فلار: " + err.message, "error");
+                    if (!silent) app.notify("فشل المزامنة مع كلاود فلار: " + err.message, "error");
+                } finally {
+                    app._syncInProgress = false;
                 }
             },
 
             deleteRecordFromCloud: async (id, code, expiryDate) => {
-                const rawId = String(localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
-                const cleanId = rawId.replace(/^User\s*/i, '');
-                const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
-
+                const uid = app.getCleanUserId();
                 try {
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-entries/delete`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ userId: uid, id, code, expiryDate })
-                        }).catch(() => {})
-                    ));
+                    await fetch(`${app.WORKER_URL}/api/expiry-entries/delete`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ userId: uid, id, code, expiryDate })
+                    }).catch(() => {});
                 } catch(e) {}
             },
 
             clearAllFromCloud: async () => {
-                const rawId = String(localStorage.getItem('last_user_id') || localStorage.getItem('inv_uid') || localStorage.getItem('pharmacy_number') || '66').trim();
-                const cleanId = rawId.replace(/^User\s*/i, '');
-                const targetIds = Array.from(new Set([cleanId, `User ${cleanId}`, rawId, '66', 'User 66'])).filter(Boolean);
-
+                const uid = app.getCleanUserId();
                 try {
-                    await Promise.all(targetIds.map(uid =>
-                        fetch(`${app.WORKER_URL}/api/expiry-entries/clear-all`, {
-                            method: 'POST',
-                            headers: { 'Content-Type': 'application/json' },
-                            body: JSON.stringify({ userId: uid })
-                        }).catch(() => {})
-                    ));
+                    await fetch(`${app.WORKER_URL}/api/expiry-entries/clear-all`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({ userId: uid })
+                    }).catch(() => {});
                 } catch(e) {}
             },
 
@@ -5307,9 +6392,21 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
             }
         };
 
-        // Window Onload
+        // Window Onload & Mobile Exit Safety Listeners
         window.addEventListener('DOMContentLoaded', () => {
             app.init();
+        });
+
+        // 📱 أمان الموبايل: إذا قام العامل بقفل الشاشة أو الانتقال لتطبيق آخر يتم فوراً حفظ أي أصناف معلقة
+        document.addEventListener('visibilitychange', () => {
+            if (document.visibilityState === 'hidden' && typeof app.checkAutoSync === 'function') {
+                app.checkAutoSync(true);
+            }
+        });
+        window.addEventListener('beforeunload', () => {
+            if (typeof app.checkAutoSync === 'function') {
+                app.checkAutoSync(true);
+            }
         });
     </script>
 </body>
