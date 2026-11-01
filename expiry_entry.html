@@ -10,6 +10,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+    <script src="categories_compact.js"></script>
     <script src="barcode_mapping.js" defer></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="https://github.com/meralmohamed121022-cyber/photos/blob/main/expiry.png?raw=true">
@@ -2205,7 +2206,20 @@ CREATE POLICY "Allow public insert and select" ON expiry_entries FOR ALL USING (
                 }
 
                 if (hexCode) {
-                    return app.DB_MAP.get(hexCode) || app.DB_MAP.get(hexCode.replace(/^0+/, '')) || { Code: hexCode, 'Item Description': `Item #${hexCode}`, 'أسم المنتج': '', 'Item Class': 'MDCN', 'Unit Price': 0.00 };
+                    const item = app.DB_MAP.get(hexCode) || app.DB_MAP.get(hexCode.replace(/^0+/, '')) || { Code: hexCode, 'Item Description': Item #, 'أسم المنتج': '', 'Item Class': 'MDCN', 'Unit Price': 0.00 };
+                    if (window.COMPACT_CATEGORIES && window.COMPACT_CATEGORIES.M) {
+                        const cEntry = window.COMPACT_CATEGORIES.M[hexCode] || window.COMPACT_CATEGORIES.M[hexCode.replace(/^0+/, '')];
+                        if (cEntry) {
+                            const A = window.COMPACT_CATEGORIES.A || [];
+                            const B = window.COMPACT_CATEGORIES.B || [];
+                            const C = window.COMPACT_CATEGORIES.C || [];
+                            if ((!item['Category Level A'] || item['Category Level A'] === 'Uncategorized') && cEntry[0]) item['Category Level A'] = A[cEntry[0] - 1];
+                            if ((!item['Category Level B'] || item['Category Level B'] === 'Uncategorized') && cEntry[1]) item['Category Level B'] = B[cEntry[1] - 1];
+                            if ((!item['Category Level C'] || item['Category Level C'] === 'Uncategorized') && cEntry[2]) item['Category Level C'] = C[cEntry[2] - 1];
+                            if ((!item['Brand'] || item['Brand'] === 'OTHER') && cEntry[3]) item['Brand'] = cEntry[3];
+                        }
+                    }
+                    return item;
                 }
 
                 return {

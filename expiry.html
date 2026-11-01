@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/css/tom-select.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/tom-select@2.2.2/dist/js/tom-select.complete.min.js"></script>
 <script src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
-<script src="barcode_mapping.js?v=20261101_3" defer></script>
+<script src="categories_compact.js?v=20261101_10"></script>
 
     <style>
         :root {
@@ -3321,7 +3321,7 @@ header {
     let DB_MAP = new Map();
     let BARCODE_MAP = new Map();
 const ONLINE_WORKER_URL = "https://online.meralmohamed121022.workers.dev";
-    const app = {
+    const app = window.app = {
         data: [], 
         exploreData: [], 
         allRegisteredUsers: [], 
@@ -3614,14 +3614,144 @@ const ONLINE_WORKER_URL = "https://online.meralmohamed121022.workers.dev";
             return null;
         },
 
-        reEnrichData: () => {
-            if (!DB_MAP || DB_MAP.size === 0) return;
+
+        ensureCategories: async function() {
+            if (window.COMPACT_CATEGORIES && window.COMPACT_CATEGORIES.M) {
+                return true;
+            }
+            if (window._compactLoadingPromise) {
+                return window._compactLoadingPromise;
+            }
+            window._compactLoadingPromise = (async () => {
+                if (window.COMPACT_CATEGORIES && window.COMPACT_CATEGORIES.M) return true;
+
+                // 1. Try IndexedDB cache
+                try {
+                    const cached = await app.getCompactFromIDB();
+                    if (cached && cached.M && Object.keys(cached.M).length > 1000) {
+                        window.COMPACT_CATEGORIES = cached;
+                        console.log("Loaded compact categories instantly from IndexedDB.");
+                        return true;
+                    }
+                } catch(e) {}
+
+                // 2. Fetch categories_compact.js
+                try {
+                    console.log("Fetching categories_compact.js...");
+                    const res = await fetch('categories_compact.js?v=20261101_10');
+                    if (res.ok) {
+                        const scriptText = await res.text();
+                        const fn = new Function(scriptText);
+                        fn();
+                        if (window.COMPACT_CATEGORIES && window.COMPACT_CATEGORIES.M) {
+                            console.log("Categories compact loaded successfully via fetch!");
+                            app.saveCompactToIDB(window.COMPACT_CATEGORIES).catch(()=>{});
+                            return true;
+                        }
+                    }
+                } catch (err) {
+                    console.error("Error loading categories_compact:", err);
+                }
+                return false;
+            })();
+            return window._compactLoadingPromise;
+        },
+
+        getCompactFromIDB: () => {
+            return new Promise((resolve) => {
+                if (!window.indexedDB) return resolve(null);
+                try {
+                    const req = indexedDB.open('MasterBarcodeDB_v3', 1);
+                    req.onsuccess = (e) => {
+                        const db = e.target.result;
+                        if (!db.objectStoreNames.contains('masterStore')) return resolve(null);
+                        const tx = db.transaction('masterStore', 'readonly');
+                        const getReq = tx.objectStore('masterStore').get('compact_categories');
+                        getReq.onsuccess = (ev) => resolve(ev.target.result ? ev.target.result.data : null);
+                        getReq.onerror = () => resolve(null);
+                    };
+                    req.onerror = () => resolve(null);
+                } catch(e) { resolve(null); }
+            });
+        },
+
+        saveCompactToIDB: (data) => {
+            return new Promise((resolve) => {
+                if (!window.indexedDB || !data) return resolve(false);
+                try {
+                    const req = indexedDB.open('MasterBarcodeDB_v3', 1);
+                    req.onsuccess = (e) => {
+                        const db = e.target.result;
+                        if (!db.objectStoreNames.contains('masterStore')) return resolve(false);
+                        const tx = db.transaction('masterStore', 'readwrite');
+                        tx.objectStore('masterStore').put({ id: 'compact_categories', data: data });
+                        tx.oncomplete = () => resolve(true);
+                        tx.onerror = () => resolve(false);
+                    };
+                    req.onerror = () => resolve(false);
+                } catch(e) { resolve(false); }
+            });
+        },
+
+        getCategoryForCode: (rawCode) => {
+
+            if (!rawCode || !window.COMPACT_CATEGORIES || !window.COMPACT_CATEGORIES.M) return null;
+            const clean = String(rawCode).trim().replace(/[\s\-_]/g, '');
+            const noZeros = clean.replace(/^0+/, '');
+            const entry = window.COMPACT_CATEGORIES.M[clean] || window.COMPACT_CATEGORIES.M[noZeros];
+            if (!entry) return null;
+            const A = window.COMPACT_CATEGORIES.A || [];
+            const B = window.COMPACT_CATEGORIES.B || [];
+            const C = window.COMPACT_CATEGORIES.C || [];
+            return {
+                catA: (entry[0] && A[entry[0] - 1]) ? A[entry[0] - 1] : 'Uncategorized',
+                catB: (entry[1] && B[entry[1] - 1]) ? B[entry[1] - 1] : 'Uncategorized',
+                catC: (entry[2] && C[entry[2] - 1]) ? C[entry[2] - 1] : 'Uncategorized',
+                brand: (entry[3] && entry[3] !== 'OTHER') ? entry[3] : 'OTHER'
+            };
+        },
+
+        onMasterMappingLoaded: (mappingData) => {
+            if (!mappingData || !mappingData.gtins) return;
+            console.log("Master mapping loaded! Initializing maps and re-enriching data...");
+            app.buildMasterMaps(mappingData);
+            app.reEnrichData(true);
+            app.isMasterLoaded = true;
+            app.updateMasterStatusBadge();
+            app.saveToIndexedDB(mappingData).catch(() => {});
+        },
+
+        reEnrichData: async (force = false) => {
+            await app.ensureCategories();
             let updated = false;
             const isAr = (str) => /[\u0600-\u06FF]/.test(str || '');
-            if (Array.isArray(app.data)) {
-                app.data.forEach(p => {
+            const enrichList = (list) => {
+                if (!Array.isArray(list)) return;
+                list.forEach(p => {
                     const c = String(p.code || '').trim();
                     const local = app.findInMaster(c);
+                    const catInfo = app.getCategoryForCode(c);
+
+                    const catA = (local && local['Category Level A'] && local['Category Level A'] !== 'Uncategorized')
+                        ? local['Category Level A']
+                        : (catInfo && catInfo.catA !== 'Uncategorized' ? catInfo.catA : null);
+                    if (catA && (!p.catA || p.catA === 'Uncategorized' || force)) { p.catA = catA; updated = true; }
+
+                    const catB = (local && local['Category Level B'] && local['Category Level B'] !== 'Uncategorized')
+                        ? local['Category Level B']
+                        : (catInfo && catInfo.catB !== 'Uncategorized' ? catInfo.catB : null);
+                    if (catB && (!p.catB || p.catB === 'Uncategorized' || force)) { p.catB = catB; updated = true; }
+
+                    const catC = (local && local['Category Level C'] && local['Category Level C'] !== 'Uncategorized')
+                        ? local['Category Level C']
+                        : (catInfo && catInfo.catC !== 'Uncategorized' ? catInfo.catC : null);
+                    if (catC && (!p.catC || p.catC === 'Uncategorized' || force)) { p.catC = catC; updated = true; }
+
+                    const brand = (local && local.Brand && local.Brand !== 'OTHER')
+                        ? local.Brand
+                        : (catInfo && catInfo.brand && catInfo.brand !== 'OTHER' ? catInfo.brand : null);
+                    if (brand && (!p.brand || p.brand === 'OTHER' || force)) { p.brand = brand; updated = true; }
+
                     if (local) {
                         if (local['أسم المنتج'] && (!p.nameAr || isAr(local['أسم المنتج']))) { 
                             p.nameAr = local['أسم المنتج']; 
@@ -3632,34 +3762,11 @@ const ONLINE_WORKER_URL = "https://online.meralmohamed121022.workers.dev";
                             updated = true; 
                         }
                         if (!p.itemurl && local.itemurl) { p.itemurl = local.itemurl; updated = true; }
-                        if (local['Category Level A'] && (!p.catA || p.catA === 'Uncategorized')) { p.catA = local['Category Level A']; updated = true; }
-                        if (local['Category Level B'] && (!p.catB || p.catB === 'Uncategorized')) { p.catB = local['Category Level B']; updated = true; }
-                        if (local['Category Level C'] && (!p.catC || p.catC === 'Uncategorized')) { p.catC = local['Category Level C']; updated = true; }
-                        if (local.Brand && (!p.brand || p.brand === 'OTHER')) { p.brand = local.Brand; updated = true; }
                     }
                 });
-            }
-            if (Array.isArray(app.exploreData)) {
-                app.exploreData.forEach(p => {
-                    const c = String(p.code || '').trim();
-                    const local = app.findInMaster(c);
-                    if (local) {
-                        if (local['أسم المنتج'] && (!p.nameAr || isAr(local['أسم المنتج']))) { 
-                            p.nameAr = local['أسم المنتج']; 
-                            updated = true; 
-                        }
-                        if (local['Item Description'] && (!p.nameEn || isAr(p.nameEn) || p.nameEn !== local['Item Description'])) { 
-                            p.nameEn = local['Item Description']; 
-                            updated = true; 
-                        }
-                        if (!p.itemurl && local.itemurl) { p.itemurl = local.itemurl; updated = true; }
-                        if (local['Category Level A'] && (!p.catA || p.catA === 'Uncategorized')) { p.catA = local['Category Level A']; updated = true; }
-                        if (local['Category Level B'] && (!p.catB || p.catB === 'Uncategorized')) { p.catB = local['Category Level B']; updated = true; }
-                        if (local['Category Level C'] && (!p.catC || p.catC === 'Uncategorized')) { p.catC = local['Category Level C']; updated = true; }
-                        if (local.Brand && (!p.brand || p.brand === 'OTHER')) { p.brand = local.Brand; updated = true; }
-                    }
-                });
-            }
+            };
+            enrichList(app.data);
+            enrichList(app.exploreData);
 
             // تحديث فوري لجميع الصور المعروضة على الكروت في الصفحة
             document.querySelectorAll('.card-img').forEach(img => {
@@ -3924,7 +4031,8 @@ const ONLINE_WORKER_URL = "https://online.meralmohamed121022.workers.dev";
 
 init: async () => {
     // 1. تحميل قاعدة البيانات المركزية
-    try { await Promise.race([app.loadExternalDB(), new Promise(r => setTimeout(r, 4000))]); } catch(e) {}
+    window.app = app;
+    app.loadExternalDB().catch(e => console.warn(e));
     if (typeof app.loadCustomGtinMappings === 'function') {
         app.loadCustomGtinMappings();
     }
@@ -3982,13 +4090,11 @@ init: async () => {
     if (localId && localId !== 'null') {
         const inputField = document.getElementById('userId');
         if (inputField) inputField.value = localId;
-        // الدخول الفوري دون إبطاء أو حجب الصفحة
-        app.login();
+        app.login(localId);
     } else if (inIframe) {
-        // في حال كان داخل الإطار دون معرّف محدد، افتح فوراً بصيدلية 66
         const inputField = document.getElementById('userId');
         if (inputField) inputField.value = '66';
-        app.login();
+        app.login('66');
     }
     
     console.log("Expiry System Initialized.");
@@ -4038,10 +4144,11 @@ notify: (msg, type = 'success') => {
     }, 4000);
 },
 
-login: async () => {
-    const inputField = document.getElementById('userId');
-    const id = String(inputField ? inputField.value : '').trim();
+login: async (overrideId) => {
+        const inputField = document.getElementById('userId');
+    const id = String(overrideId || (inputField ? inputField.value : '')).trim();
     if (!id) return app.notify("Enter user ID", "error");
+    if (inputField) inputField.value = id;
 
     const showAppUI = (displayName) => {
         const loginScreen = document.getElementById('loginScreen');
@@ -4090,24 +4197,44 @@ login: async () => {
 },
               load: async () => {
             try {
-                const res = await fetch(`${WORKER_URL}/api/inventory/load?userId=${app.userId}`);
+                const [res, _] = await Promise.all([
+                    fetch(`${WORKER_URL}/api/inventory/load?userId=${app.userId}`),
+                    app.ensureCategories()
+                ]);
                 const json = await res.json();
                 const isAr = (str) => /[\u0600-\u06FF]/.test(str || '');
                 app.data = (json.products || []).filter(p => p.status !== 'deleted').map(p => {
                     const codeStr = String(p.code || '').trim();
                     const local = app.findInMaster(codeStr);
+                    const catInfo = app.getCategoryForCode(codeStr);
                     const pName = String(p.name || '').trim();
+
+                    const catA = (local && local['Category Level A'] && local['Category Level A'] !== 'Uncategorized')
+                        ? local['Category Level A']
+                        : (catInfo && catInfo.catA !== 'Uncategorized' ? catInfo.catA : (p.catA || 'Uncategorized'));
+
+                    const catB = (local && local['Category Level B'] && local['Category Level B'] !== 'Uncategorized')
+                        ? local['Category Level B']
+                        : (catInfo && catInfo.catB !== 'Uncategorized' ? catInfo.catB : (p.catB || 'Uncategorized'));
+
+                    const catC = (local && local['Category Level C'] && local['Category Level C'] !== 'Uncategorized')
+                        ? local['Category Level C']
+                        : (catInfo && catInfo.catC !== 'Uncategorized' ? catInfo.catC : (p.catC || 'Uncategorized'));
+
+                    const brand = (local && local.Brand && local.Brand !== 'OTHER')
+                        ? local.Brand
+                        : (catInfo && catInfo.brand && catInfo.brand !== 'OTHER' ? catInfo.brand : (p.brand || 'OTHER'));
+
                     return { ...p, 
                         nameEn: (local && local['Item Description']) ? local['Item Description'] : (!isAr(pName) ? pName : (p.nameEn || '')), 
                         nameAr: (local && local['أسم المنتج']) ? local['أسم المنتج'] : (isAr(pName) ? pName : (p.nameAr || '')),
-                        brand: (local && local.Brand && local.Brand !== 'OTHER') ? local.Brand : (p.brand || (local ? local.Brand : "OTHER")),
-                        catA: (local && (local['Category Level A'] || local.catA)) ? (local['Category Level A'] || local.catA) : (p.catA || 'Uncategorized'),
-                        catB: (local && (local['Category Level B'] || local.catB)) ? (local['Category Level B'] || local.catB) : (p.catB || 'Uncategorized'),
-                        catC: (local && (local['Category Level C'] || local.catC)) ? (local['Category Level C'] || local.catC) : (p.catC || 'Uncategorized'),
+                        brand: brand,
+                        catA: catA,
+                        catB: catB,
+                        catC: catC,
                         GTIN: local ? (local.GTIN || local.gtin || local.Gtin || []) : []
                     };
                 });
-                // تأجيل تحميل بيانات استكشاف الصيدليات لتوفير مئات قراءات الـ KV عند كل دخول
                 app.initFilters();
                 app.render(true);
             } catch (e) { console.error(e); }
@@ -4921,10 +5048,12 @@ update: async (code, date, actionStatus, isExplore = false, ownerId = null) => {
             const t = app.i18n[app.language];
             const sourceData = (app.exploreMode && app.exploreData && app.exploreData.length > 0) ? app.exploreData : (app.data || []);
             
-            const brands = [...new Set(sourceData.map(i => i.brand))].filter(Boolean).sort();
-            const catAs = [...new Set(sourceData.map(i => i.catA))].filter(Boolean).sort();
-            const catBs = [...new Set(sourceData.map(i => i.catB))].filter(Boolean).sort();
-            const catCs = [...new Set(sourceData.map(i => i.catC))].filter(Boolean).sort();
+            const brands = [...new Set(sourceData.map(i => i.brand))].filter(b => b && b !== 'OTHER' && b !== 'Uncategorized').sort();
+            const catAs = [...new Set(sourceData.map(i => i.catA))].filter(c => c && c !== 'Uncategorized').sort();
+            const catBs = [...new Set(sourceData.map(i => i.catB))].filter(c => c && c !== 'Uncategorized').sort();
+            const catCs = [...new Set(sourceData.map(i => i.catC))].filter(c => c && c !== 'Uncategorized').sort();
+            if (sourceData.some(i => !i.catA || i.catA === 'Uncategorized')) catAs.push('Uncategorized');
+            if (sourceData.some(i => !i.brand || i.brand === 'OTHER')) brands.push('OTHER');
             const months = [...new Set(sourceData.map(i => i.expiryDate ? i.expiryDate.slice(0, 7) : null))].filter(Boolean).sort();
             
             // تهيئة الفلاتر المتعددة
@@ -4986,13 +5115,13 @@ update: async (code, date, actionStatus, isExplore = false, ownerId = null) => {
             if (selectedA.length > 0) filteredA = filteredA.filter(i => selectedA.includes(i.catA));
             
             if (changedId === 'catA') {
-                const catBs = [...new Set(filteredA.map(i => i.catB))].filter(Boolean).sort();
+                const catBs = [...new Set(filteredA.map(i => i.catB))].filter(c => c && c !== 'Uncategorized').sort();
                 app.fillSelect('catB', catBs, t.catB);
                 
-                const catCs = [...new Set(filteredA.map(i => i.catC))].filter(Boolean).sort();
+                const catCs = [...new Set(filteredA.map(i => i.catC))].filter(c => c && c !== 'Uncategorized').sort();
                 app.fillSelect('catC', catCs, t.catC);
                 
-                const brands = [...new Set(filteredA.map(i => i.brand))].filter(Boolean).sort();
+                const brands = [...new Set(filteredA.map(i => i.brand))].filter(b => b && b !== 'OTHER').sort();
                 app.fillSelect('brand', brands, t.brand);
             }
             
@@ -5000,10 +5129,10 @@ update: async (code, date, actionStatus, isExplore = false, ownerId = null) => {
             if (selectedB.length > 0) filteredB = filteredB.filter(i => selectedB.includes(i.catB));
             
             if (changedId === 'catB') {
-                const catCs = [...new Set(filteredB.map(i => i.catC))].filter(Boolean).sort();
+                const catCs = [...new Set(filteredB.map(i => i.catC))].filter(c => c && c !== 'Uncategorized').sort();
                 app.fillSelect('catC', catCs, t.catC);
                 
-                const brands = [...new Set(filteredB.map(i => i.brand))].filter(Boolean).sort();
+                const brands = [...new Set(filteredB.map(i => i.brand))].filter(b => b && b !== 'OTHER').sort();
                 app.fillSelect('brand', brands, t.brand);
             }
 
@@ -5011,7 +5140,7 @@ update: async (code, date, actionStatus, isExplore = false, ownerId = null) => {
             if (selectedC.length > 0) filteredC = filteredC.filter(i => selectedC.includes(i.catC));
             
             if (changedId === 'catC') {
-                const brands = [...new Set(filteredC.map(i => i.brand))].filter(Boolean).sort();
+                const brands = [...new Set(filteredC.map(i => i.brand))].filter(b => b && b !== 'OTHER').sort();
                 app.fillSelect('brand', brands, t.brand);
             }
             
@@ -10694,7 +10823,12 @@ confirmUpload: async () => {
         }
     });
 
-    window.onload = () => app.init();
+    window.app = app;
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => app.init());
+    } else {
+        app.init();
+    }
     // 1. دالة الصعود بنعومة
 app.scrollToTop = () => {
     window.scrollTo({
