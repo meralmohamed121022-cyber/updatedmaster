@@ -706,5 +706,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:07:50.009Z"
+  },
+  "4463876657062": {
+    "gtin": "4463876657062",
+    "code": "হবন",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:08:02.506Z"
+  },
+  "721378162038": {
+    "gtin": "721378162038",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:08:11.671Z"
+  },
+  "637582154779": {
+    "gtin": "637582154779",
+    "code": "Gvdcv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:14:56.482Z"
   }
 }
