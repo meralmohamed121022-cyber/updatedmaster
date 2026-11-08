@@ -431,5 +431,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:12:14.757Z"
+  },
+  "8399506328605": {
+    "gtin": "8399506328605",
+    "code": "Cgg",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:12:55.447Z"
+  },
+  "7591000618263": {
+    "gtin": "7591000618263",
+    "code": "Frr",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:13:21.191Z"
   }
 }
