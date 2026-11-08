@@ -739,5 +739,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:14:56.482Z"
+  },
+  "6955050960542": {
+    "gtin": "6955050960542",
+    "code": "ততই",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:15:06.706Z"
+  },
+  "3433402282588": {
+    "gtin": "3433402282588",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:16:38.009Z"
   }
 }
