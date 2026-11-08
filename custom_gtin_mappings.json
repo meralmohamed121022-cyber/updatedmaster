@@ -453,5 +453,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:13:21.191Z"
+  },
+  "519335501743": {
+    "gtin": "519335501743",
+    "code": "Cvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:14:00.662Z"
+  },
+  "044406110185": {
+    "gtin": "044406110185",
+    "code": "du😡💋",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:15:09.197Z"
   }
 }
