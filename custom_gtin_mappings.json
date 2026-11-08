@@ -1432,5 +1432,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:04:59.172Z"
+  },
+  "759848830385": {
+    "gtin": "759848830385",
+    "code": "সনসমসজস্ডৃডৃ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:05:52.609Z"
+  },
+  "7110764133760": {
+    "gtin": "7110764133760",
+    "code": "ডডট",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:06:13.665Z"
   }
 }
