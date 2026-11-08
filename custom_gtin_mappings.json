@@ -1575,5 +1575,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:14:43.995Z"
+  },
+  "8682538611204": {
+    "gtin": "8682538611204",
+    "code": "110405",
+    "nameAr": "سمارت-فيت ماغنيسيوم جليسينات 60 كبسول",
+    "nameEn": "SMART-VIT MAGNESIUM GLYCINATE 60CAPS",
+    "brand": "SMART",
+    "activeIngredient": "",
+    "unitPrice": 99,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:26:51.732Z"
   }
 }
