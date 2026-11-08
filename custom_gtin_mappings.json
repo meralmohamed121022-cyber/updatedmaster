@@ -959,5 +959,27 @@
     "unitPrice": 19.55,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%86%D9%8A%D9%81%D9%8A%D8%A7-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D8%AF%D9%8A%D8%B1%D9%85%D8%A7-%D9%83%D9%86%D8%AA%D8%B1%D9%88%D9%84-%D9%83%D9%88%D9%84-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2MTQ5NHxpbWFnZS93ZWJwfGFEWTBMMmd4TUM4NU5qRXhPVFV4TVRFeU1qSXlMekkxTXpNM09GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJlMjEyMGEyMjIwYzkwNjhlZThmYmMxN2NlYmM4NWI1Y2RjYzg2NWJkMTdhNDc3YjA5NzhmOGNlZWYyODA2Mjg",
     "addedAt": "2026-11-08T10:40:25.417Z"
+  },
+  "4730888196392": {
+    "gtin": "4730888196392",
+    "code": "202190",
+    "nameAr": "دوف رول اون الاصلي- 50 مل",
+    "nameEn": "DOVE ROLL ON ORIGINAL 50 ML",
+    "brand": "DOVE",
+    "activeIngredient": "",
+    "unitPrice": 22.91,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D9%81-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D9%85%D8%B6%D8%A7%D8%AF-%D9%84%D9%84%D8%AA%D8%B9%D8%B1%D9%82-%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%89-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzOTMzMHxpbWFnZS93ZWJwfGFHUm1MMmhsWWk4NU5qQXhPRFl5TnpZeU5USTJMekl3TWpFNU1GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDNmYzQwMGUxNWE1NTUwYzYzOWU3ZGZmMTM2ZmI2NDRkMmQ0MzlkM2I0NjJkYjRjZjM5NjJmYzNjZGZlY2QzZTI",
+    "addedAt": "2026-11-08T10:41:20.439Z"
+  },
+  "6294015195859": {
+    "gtin": "6294015195859",
+    "code": "257972",
+    "nameAr": "كوزمو مضاد تعرق رول اون بودرة سوفت 60 مل",
+    "nameEn": "COSMO DEO ROLL ON POWDER SOFT 60 ML",
+    "brand": "COSMO",
+    "activeIngredient": "",
+    "unitPrice": 8.69,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:41:47.958Z"
   }
 }
