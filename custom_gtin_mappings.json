@@ -827,5 +827,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:20:02.414Z"
+  },
+  "742412844031": {
+    "gtin": "742412844031",
+    "code": "তবব",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:24:57.829Z"
   }
 }
