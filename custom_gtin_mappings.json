@@ -1729,5 +1729,16 @@
     "unitPrice": 14.3,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B2%D9%84%D9%8A%D9%86-%D9%85%D8%B1%D8%B7%D8%A8-%D8%B4%D9%81%D8%A7%D9%87-%D8%A8%D8%A7%D9%84%D8%B1%D9%88%D8%B2-7-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w5OTUwMHxpbWFnZS93ZWJwfGFHWXhMMmhtWlM4NU16TTFPVEUzTlRRek5EVTBMekl6TVRNMk5GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGQ5YWNhYWI3MzRkZDM0ZjQ0Njc5ZWU0ZmExY2U4OGE1OTBiZmE1YmJkNzM2ZjQ4YjM4ZjFjNTY4NTc4NjY0MzE",
     "addedAt": "2026-11-08T13:07:13.599Z"
+  },
+  "3274129121060": {
+    "gtin": "3274129121060",
+    "code": "3274129121060",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T13:47:25.427Z"
   }
 }
