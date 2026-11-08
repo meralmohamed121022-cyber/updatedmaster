@@ -1105,13 +1105,24 @@
   },
   "http://www.farlinglobal.com": {
     "gtin": "http://www.farlinglobal.com",
-    "code": "252905",
-    "nameAr": "فارلين رضع رضاعة و ع زهيري 270 مل",
-    "nameEn": "FARLIN BABY WN BOTTLE PNK 270 ML",
+    "code": "252901",
+    "nameAr": "فارلين رضع رضاعة و ع مع يد زهري 270 مل",
+    "nameEn": "FARLIN BABY WN BOTTLE PNK W/HNDL 270 ML",
     "brand": "FARLIN",
     "activeIngredient": "",
-    "unitPrice": 32,
-    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B1%D9%84%D9%8A%D9%86-%D8%B1%D8%B6%D8%B9-%D8%B1%D8%B6%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%B9%D9%86%D9%82-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9-%D8%B2%D9%87%D9%8A%D8%B1%D9%8A-270-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxODQ3NjJ8aW1hZ2Uvd2VicHxhR05rTDJnek1pODVOVEUxTXpjeE1qWTJNRGM0THpJMU1qa3dOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkMDlhOWU0YmY5NWNhOTljOTU5YjE2YjRiZjc3MjY3OTVmMDAwOTUwY2FlOTZjNGU1ZmQ1MTM2ZDJjZWQ0NTgx",
-    "addedAt": "2026-11-08T11:34:43.218Z"
+    "unitPrice": 39,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B1%D9%84%D9%8A%D9%86-%D8%B1%D8%B6%D8%A7%D8%B9%D8%A9-%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%B9%D9%86%D9%82-%D9%88%D8%A7%D8%B3%D8%B9%D8%A9-%D9%85%D8%B9-%D9%8A%D8%AF-%D8%B2%D9%87%D8%B1%D9%8A-270-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0NjY5MHxpbWFnZS93ZWJwfGFHVTRMMmc0T0M4NU56VTNOVEF4TlRnM05EZzJMekkxTWprd01WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGQxMDY1ZTFjNmY2Yjg3ZmE2N2I4YjNmZjllMjZmMGFkZDgyYjk5YWY1N2NhZjlkM2YyNTkxZGY0NjFhMmRjNjY",
+    "addedAt": "2026-11-08T11:35:16.872Z"
+  },
+  "4710962127481": {
+    "gtin": "4710962127481",
+    "code": "210417",
+    "nameAr": "فارلين رضاعه بلاستيك رسومات ملونه 250مل",
+    "nameEn": "FARLIN FEEDING BO.PLASTIC SN250 NF-767",
+    "brand": "FARLIN",
+    "activeIngredient": "",
+    "unitPrice": 26,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B1%D9%84%D9%8A%D9%86-%D8%B1%D8%B6%D8%A7%D8%B9%D9%87-%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%A8%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D9%84%D9%88%D9%86%D8%A9-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1OTk1NHxpbWFnZS93ZWJwfGFERmhMMmcyT1M4NU56VTFOalF5TVRNME5UVTRMekl4TURReE4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGZhZjY1YzBhZDc2NTJmYmFjYTE3NWJjM2RhYTFhZWE5YTFiMjRiNjYyNDQxOWQxNTNkM2ExZTQwY2Y2ZjYzZmQ",
+    "addedAt": "2026-11-08T11:35:48.342Z"
   }
 }
