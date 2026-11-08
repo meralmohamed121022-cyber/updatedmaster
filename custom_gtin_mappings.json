@@ -1619,5 +1619,27 @@
     "unitPrice": 95,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D9%83%D9%8A%D9%88%D8%AA%D8%B4%D9%8A%D9%83-%D8%A7%D9%86%D8%B3%D8%AA%D8%A7%D9%86%D8%AA-%D8%B4%D8%B1%D8%A7%D9%8A%D8%B7-%D8%AC%D9%87%D8%A7%D8%B2-%D9%82%D9%8A%D8%A7%D8%B3-%D9%86%D8%B3%D8%A8%D8%A9-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-%D8%A8%D8%A7%D9%84%D8%AF%D9%85-50-%D9%82%D8%B7%D8%B9%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3Njk1NnxpbWFnZS93ZWJwfGFESmhMMmhqT0M4NU5UYzFORFE0TVRneU9ERTBMekl5T0RJeU0xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDRjNmM0YWI3YjIzOWQ3NzFlNTRlYTJmNzAxNTkxMDQ4OTIyYTI3MTE3MWI4YjMzYTIxZjMzZWE5MGU5YTc1NWU",
     "addedAt": "2026-11-08T12:46:08.209Z"
+  },
+  "6286841000568": {
+    "gtin": "6286841000568",
+    "code": "512072",
+    "nameAr": "بريمي شرائط قياس السكر 50 شريط",
+    "nameEn": "PREMI BLOOD GLUCOSE BS-602 50 STRIPS",
+    "brand": "PREMI",
+    "activeIngredient": "",
+    "unitPrice": 99,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A8%D8%B1%D9%8A%D9%85%D9%8A-%D8%B4%D8%B1%D8%A7%D9%8A%D8%B7-%D8%B7%D8%A8%D9%8A%D8%A9-%D8%AF%D9%82%D9%8A%D9%82%D8%A9-%D9%84%D9%82%D9%8A%D8%A7%D8%B3-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%85-50-%D8%B4%D8%B1%D9%8A%D8%B7_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4NzQ2NnxpbWFnZS93ZWJwfGFHTTNMMmd4Tnk4NU5qRXlNREUxTnpNd056RTRMelV4TWpBM01sOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDIwNzc3NDk4MzcxYzU1MGQ4NjQxNTZlMmJmNzVmMWZkMzEwNmEwNDc3NDcxOWZkMDE0NjZiZWY3ZmEzMTVlNWM",
+    "addedAt": "2026-11-08T12:46:38.365Z"
+  },
+  "http://www.pharmaplast.eg": {
+    "gtin": "http://www.pharmaplast.eg",
+    "code": "511140",
+    "nameAr": "دوا-ايد لصقات للبشرة الحساسة 20 قطعة",
+    "nameEn": "DAWA-AID SENSITIVE SKIN PL 20 PC",
+    "brand": "DAWA-AID",
+    "activeIngredient": "",
+    "unitPrice": 10,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D8%A7-%D8%A7%D9%8A%D8%AF-%D9%84%D8%A7%D8%B5%D9%82%D8%A7%D8%AA-%D8%B7%D8%A8%D9%8A%D8%A9-%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9-%D9%85%D8%AA%D9%86%D9%88%D8%B9%D8%A9-20-%D9%82%D8%B7%D8%B9%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDMxMzJ8aW1hZ2Uvd2VicHxhREUwTDJnNE15ODVOakF3TXpnMk9Ea3hPREEyTHpVeE1URTBNRjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwwN2I4NmJkNjk4NWE0MjExZWY0NzE0MjBmMWZhZjk0OTMzZDMyZTgyNTVlZjEyZjA4OTcwNWI0NTM4YWQ1ZmM4",
+    "addedAt": "2026-11-08T12:48:19.918Z"
   }
 }
