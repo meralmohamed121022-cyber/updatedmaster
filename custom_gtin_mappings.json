@@ -1498,5 +1498,60 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:11:11.655Z"
+  },
+  "494006547384": {
+    "gtin": "494006547384",
+    "code": "ডতত",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:11:31.996Z"
+  },
+  "888312041528": {
+    "gtin": "888312041528",
+    "code": "বগগ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:11:56.760Z"
+  },
+  "570753941481": {
+    "gtin": "570753941481",
+    "code": "ততত",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:12:04.803Z"
+  },
+  "5027092866081": {
+    "gtin": "5027092866081",
+    "code": "ররর",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:12:10.512Z"
+  },
+  "4022022456081": {
+    "gtin": "4022022456081",
+    "code": "ডডট",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:12:14.442Z"
   }
 }
