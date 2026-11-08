@@ -1894,5 +1894,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T14:51:13.934Z"
+  },
+  "3760277340755": {
+    "gtin": "3760277340755",
+    "code": "256871",
+    "nameAr": "ميدي سيروم اكسترا سي 30 مل",
+    "nameEn": "MEDEE SERUM EXTRA C 30 ML",
+    "brand": "MEDEE",
+    "activeIngredient": "",
+    "unitPrice": 212.75,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%85%D9%8A%D8%AF%D9%8A-%D8%B3%D9%8A%D8%B1%D9%88%D9%85-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%B3%D9%8A-%D8%A7%D9%83%D8%B3%D8%AA%D8%B1%D8%A7-%D8%B3%D9%8A-%D9%84%D8%B9%D9%84%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%D9%84%D8%AA%D9%82%D8%AF%D9%85-%D9%81%D9%8A-%D8%A7%D9%84%D8%B9%D9%85%D8%B1-%D9%88%D8%A7%D9%84%D8%AA%D9%81%D8%AA%D9%8A%D8%AD-30-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3NTcxMnxpbWFnZS93ZWJwfGFEY3dMMmhpTXk4NU56RXpNemd4TVRRMk5qVTBMekkxTmpnM01WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDA2OGM5OTYzZGU1OTE5M2I3YjNjNGM0ZjI0ZDNiZWQwYWJiYWNhYWI3Mjg5NTFkZDNhOGM4YzViZTkzZTQzOWE",
+    "addedAt": "2026-11-08T18:26:48.228Z"
   }
 }
