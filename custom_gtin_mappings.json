@@ -1300,5 +1300,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T11:54:09.430Z"
+  },
+  "941547518811": {
+    "gtin": "941547518811",
+    "code": "এট",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T11:54:28.160Z"
+  },
+  "604532062934": {
+    "gtin": "604532062934",
+    "code": "তট",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T11:55:37.637Z"
   }
 }
