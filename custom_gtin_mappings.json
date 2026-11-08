@@ -552,5 +552,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:21:38.265Z"
+  },
+  "8084308944077": {
+    "gtin": "8084308944077",
+    "code": "233275",
+    "nameAr": "هيد&شولدرز شامبو النعناع المنعش 1000مل",
+    "nameEn": "H&S SH MENTHOL REFRESH 1000ML",
+    "brand": "HEAD & SHOULDERS",
+    "activeIngredient": "",
+    "unitPrice": 40.83,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%87%D9%8A%D8%AF-%D8%A7%D9%86%D8%AF-%D8%B4%D9%88%D9%84%D8%AF%D8%B1%D8%B2-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D8%B6%D8%AF-%D8%A7%D9%84%D9%82%D8%B4%D8%B1%D8%A9-%D8%A8%D8%A7%D9%84%D9%86%D8%B9%D9%86%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D9%86%D8%B9%D8%B4-1000-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4MjQ5NHxpbWFnZS93ZWJwfGFHRTRMMmhpTWk4NU5qSTBNakUwTURRME56QXlMekl6TXpJM05WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDQwMzBjMWE3ZTczMDhiMzg5ZmUyOWZkZDM1MTU1OWU2ZDkzNjgzOGI5MDEzM2ZiN2IwNGY3MDM4NzAzNWE2YTA",
+    "addedAt": "2026-11-08T08:33:31.531Z"
   }
 }
