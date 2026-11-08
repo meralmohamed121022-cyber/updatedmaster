@@ -497,5 +497,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:16:25.073Z"
+  },
+  "177407220383": {
+    "gtin": "177407220383",
+    "code": "Gvdcv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:18:57.304Z"
+  },
+  "9314839023934": {
+    "gtin": "9314839023934",
+    "code": "214221",
+    "nameAr": "باكو رابان بلاك اكس اس اكستريم ( عطر نسا",
+    "nameEn": "PACO RABBANNE  BXSFH LEXCES EXTREME 80ML",
+    "brand": "PACO RABBANNE",
+    "activeIngredient": "",
+    "unitPrice": 380,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:19:36.790Z"
   }
 }
