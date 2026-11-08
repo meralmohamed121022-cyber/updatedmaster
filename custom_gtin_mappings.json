@@ -299,5 +299,16 @@
     "unitPrice": 155.66,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D9%88%D9%8A%D9%84%D8%A7%D8%AA%D9%85-%D8%A8%D8%AE%D8%A7%D8%AE-%D8%A7%D9%84%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D9%88%D8%A7%D9%84%D9%88%D9%82%D8%A7%D9%8A%D8%A9-%D9%85%D9%86-%D8%A7%D9%84%D8%B4%D9%85%D8%B3-%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9-150%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0MDUyMHxpbWFnZS93ZWJwfGFHSTRMMmc0TkM4NU56TXdORGt3TXpBeU5EazBMekkxTnpVMk5GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDU4OWFkNjJhYmI0ZjZjOGJjMGEwYTBiM2E5ZmRiNDU3MWMzNTY4MWVjODY5ZGVlOTFmM2UzYzQ2YjEyZTdhNzY",
     "addedAt": "2026-11-08T06:49:00.349Z"
+  },
+  "6287052091260": {
+    "gtin": "6287052091260",
+    "code": "287052091260",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T07:33:00.682Z"
   }
 }
