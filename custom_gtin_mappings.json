@@ -1696,5 +1696,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:54:38.948Z"
+  },
+  "01122008": {
+    "gtin": "01122008",
+    "code": "234732",
+    "nameAr": "غارنيه ماء ميسيلار منظف 700مل",
+    "nameEn": "GARNIER MICELLAR WATER SENSITIVE 700ML",
+    "brand": "GARNIER",
+    "activeIngredient": "",
+    "unitPrice": 43.68,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AC%D8%A7%D8%B1%D9%86%D9%8A%D9%8A%D9%87-%D9%85%D8%A7%D8%A1-%D9%85%D9%8A%D8%B3%D9%8A%D9%84%D8%A7%D8%B1-%D9%85%D9%86%D8%B8%D9%81-%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%B3%D8%A9-700-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyMTQxNjB8aW1hZ2Uvd2VicHxhREl5TDJneVpTODVORFV3T1RJd09UTTFORFUwTHpJek5EY3pNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkN2MxNWQ5NzY1ZmJlMjc4NjIxYmNiNzA5MDk5YjU1ZjkwZmM3ZmE5MzVhNTkyY2Q3NzVhZDRjZTM2YjNiMDg5",
+    "addedAt": "2026-11-08T12:59:53.686Z"
   }
 }
