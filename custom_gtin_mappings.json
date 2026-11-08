@@ -32,6 +32,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%8A%D8%B3-%D9%88%D9%8A%D8%AF%D9%85%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B9%D9%8A%D8%AF-10-%D8%A7%D9%8A%D9%87-%D8%A7%D8%AA%D8%B4-%D8%A7%D9%8A%D9%87-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyNzEyNHxpbWFnZS93ZWJwfGFERXlMMmd5WXk4NU16WTROell5TURVMk56TTBMell3TURRMU5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJhYjEyYmVhN2ZmYzcxZDVkNDNkNmZhODc1OGJjMTkxMmRjZmEyZDM4MTE5ZTZhZjVlZDkzZTBiNWUxM2M3Yjk",
     "addedAt": "2026-11-08T07:54:46.816Z"
   },
+  "21213530": {
+    "gtin": "21213530",
+    "code": "203438",
+    "nameAr": "فينوس ماكينه بريز 1حبة 2 رأس",
+    "nameEn": "VENUS RAZOR BREEZE 1PCS 2 REFILL",
+    "brand": "VENUS",
+    "activeIngredient": "",
+    "unitPrice": 76.3,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AC%D9%8A%D9%84%D9%8A%D8%AA-%D9%81%D9%8A%D9%86%D9%88%D8%B3-%D8%A8%D8%B1%D9%8A%D8%B2-%D9%85%D8%A7%D9%83%D9%8A%D9%86%D8%A9-%D8%AD%D9%84%D8%A7%D9%82%D8%A9-%D9%86%D8%B3%D8%A7%D9%8A%D9%8A%D8%A9-%D9%85%D8%B9-%D8%B4%D9%81%D8%B1%D8%AA%D9%8A%D9%86-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4ODYzNnxpbWFnZS93ZWJwfGFEWXhMMmhpTmk4NU5qQTJPREF3TXpFd016QXlMekl3TXpRek9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDYwOWM2NGI5MzZiY2M2YTdkZjA5ZTJmNWMwNmViOGY0ODFjNDE4MTI2ZjNlNGRlNGYwMmNlZjUxY2VkNjg0OGY",
+    "addedAt": "2026-11-08T10:18:20.331Z"
+  },
   "40033845": {
     "gtin": "40033845",
     "code": "600455",
@@ -761,5 +772,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:16:38.009Z"
+  },
+  "8886304602025": {
+    "gtin": "8886304602025",
+    "code": "256475",
+    "nameAr": "فازلين زيت للجسم شيمر 200 مل",
+    "nameEn": "VASELINE BODY OIL SHIMMER 200 ML",
+    "brand": "VASELINE",
+    "activeIngredient": "",
+    "unitPrice": 49.56,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B2%D9%84%D9%8A%D9%86-%D8%B2%D9%8A%D8%AA-%D9%84%D9%84%D8%AC%D8%B3%D9%85-%D8%A8%D9%84%D9%85%D8%B3%D8%A9-%D9%84%D8%A7%D9%85%D8%B9%D8%A9-%D9%85%D8%B4%D9%85%D8%B3%D8%A9-%D9%81%D8%A7%D9%86%D9%8A%D9%84%D9%8A%D8%A7-%D8%AC%D9%84%D9%88-%D9%85%D8%B9-%D8%B2%D8%A8%D8%AF%D8%A9-%D8%A7%D9%84%D9%83%D8%A7%D9%83%D8%A7%D9%88-200-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4NTM3NnxpbWFnZS93ZWJwfGFHVTNMMmd3WWk4NU5qQTNNRGcxTmpJeE1qYzRMekkxTmpRM05WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDhmMGEzOWEyYmM1YjhiODIwOWZhMzAwMzllYTliNmZjNzAzOTFjN2QwODA5YTZhNGNiNTFkMDQ0NzA3NzdiYTg",
+    "addedAt": "2026-11-08T09:53:18.852Z"
+  },
+  "6295199819432": {
+    "gtin": "6295199819432",
+    "code": "258040",
+    "nameAr": "كوزمو لوشن للجسم باللافندر 400 مل",
+    "nameEn": "COSMO BODY LOTION LAVENDR 400 ML",
+    "brand": "COSMO",
+    "activeIngredient": "",
+    "unitPrice": 8.69,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T09:53:35.072Z"
   }
 }
