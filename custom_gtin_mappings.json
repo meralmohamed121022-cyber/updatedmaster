@@ -519,5 +519,38 @@
     "unitPrice": 380,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:19:36.790Z"
+  },
+  "6287052091376": {
+    "gtin": "6287052091376",
+    "code": "Hgv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:20:22.929Z"
+  },
+  "024130820789": {
+    "gtin": "024130820789",
+    "code": "507802",
+    "nameAr": "د.اورجانيك منتجات خاصة بالتصدير فقط",
+    "nameEn": "DR. ORG CREAM PRO COL+A.AG M BLOOD 50ML",
+    "brand": "Dr ORGANIC",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:20:34.518Z"
+  },
+  "8724380010009": {
+    "gtin": "8724380010009",
+    "code": "GCC",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:21:38.265Z"
   }
 }
