@@ -838,5 +838,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:24:57.829Z"
+  },
+  "6286511000089": {
+    "gtin": "6286511000089",
+    "code": "257411",
+    "nameAr": "بيور لايف كلوتات للدورة 7 قطعة 4XL",
+    "nameEn": "PURE LIFE PANTY 4XL",
+    "brand": "PURE LIFE",
+    "activeIngredient": "",
+    "unitPrice": 20,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A8%D9%8A%D9%88%D8%B1-%D9%84%D8%A7%D9%8A%D9%81-%D8%B3%D8%B1%D8%A7%D9%88%D9%8A%D9%84-%D9%86%D8%B3%D8%A7%D9%8A%D9%8A%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%B1%D8%A9-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9-%D9%85%D9%82%D8%A7%D8%B3-4XL-7-%D9%82%D8%B7%D8%B9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w5MjY1OHxpbWFnZS93ZWJwfGFHVmpMMmcxWmk4NU56RXpOems0TURnMk5qZzJMekkxTnpReE1WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGIxYWUxYTc4MDVhZTVmYjE2YjVmNmI4MGE5MDJkYTc0MzUxZDM2YWFiNjk3MzRiY2Q5NjNiMWQyMTdmZjJjYjg",
+    "addedAt": "2026-11-08T10:25:28.709Z"
   }
 }
