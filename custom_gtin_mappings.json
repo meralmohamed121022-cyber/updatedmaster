@@ -1454,5 +1454,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:06:13.665Z"
+  },
+  "8886304605064": {
+    "gtin": "8886304605064",
+    "code": "গগনন",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:08:04.865Z"
+  },
+  "9880404606050": {
+    "gtin": "9880404606050",
+    "code": "গবব",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:08:10.840Z"
   }
 }
