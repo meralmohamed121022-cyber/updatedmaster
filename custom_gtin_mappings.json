@@ -387,5 +387,16 @@
     "unitPrice": 3250,
     "imageUrl": "",
     "addedAt": "2026-11-08T07:59:43.701Z"
+  },
+  "619001045035": {
+    "gtin": "619001045035",
+    "code": "Gvdcv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:04:54.115Z"
   }
 }
