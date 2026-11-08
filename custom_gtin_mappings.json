@@ -1476,5 +1476,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:08:10.840Z"
+  },
+  "3610340653735": {
+    "gtin": "3610340653735",
+    "code": "গআডগ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:11:02.363Z"
+  },
+  "6007060113293": {
+    "gtin": "6007060113293",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:11:11.655Z"
   }
 }
