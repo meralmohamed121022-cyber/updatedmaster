@@ -1553,5 +1553,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:12:14.442Z"
+  },
+  "4006138157384": {
+    "gtin": "4006138157384",
+    "code": "তডমহরজ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:12:50.502Z"
+  },
+  "2291009424401": {
+    "gtin": "2291009424401",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T12:14:43.995Z"
   }
 }
