@@ -475,5 +475,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T08:15:09.197Z"
+  },
+  "5020056010001": {
+    "gtin": "5020056010001",
+    "code": "Ghh",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:16:25.073Z"
   }
 }
