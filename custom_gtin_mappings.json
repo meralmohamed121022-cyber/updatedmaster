@@ -915,5 +915,16 @@
     "unitPrice": 60,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D8%B1%D9%88%D9%84%D8%A7-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D8%A7%D9%84%D8%B9%D9%88%D8%AF-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A-%D9%85%D8%B6%D8%A7%D8%AF-%D9%84%D9%84%D8%AA%D8%B9%D8%B1%D9%82-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4NDk4OHxpbWFnZS93ZWJwfGFESTFMMmd6WkM4NU5Ua3lOVGd6TkRnM05URTRMekkxTURNM09WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGNiZDk2NjE0YmRjMGE2YzI0MGMzMjQ2NGRjZWFjNzk3NWQwNmYyMGU0OGYzMWNmOTU3NDg3NjZiMmIyMjM4MDU",
     "addedAt": "2026-11-08T10:32:36.612Z"
+  },
+  "4690979020671": {
+    "gtin": "4690979020671",
+    "code": "511319",
+    "nameAr": "بليد مزيل عرق ايه اي 2 150 جم 6*4",
+    "nameEn": "BLADE AI DEO 2 150 ML",
+    "brand": "BLADE",
+    "activeIngredient": "",
+    "unitPrice": 19.13,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T10:36:55.006Z"
   }
 }
