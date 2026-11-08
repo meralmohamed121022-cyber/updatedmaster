@@ -1322,5 +1322,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T11:55:37.637Z"
+  },
+  "3612625145874": {
+    "gtin": "3612625145874",
+    "code": "208745",
+    "nameAr": "شامبو ضد االقشره العاديه والجافه",
+    "nameEn": "VICHY DERCOS ANTIDANDRUF DRY SH 200ML",
+    "brand": "VICHY",
+    "activeIngredient": "",
+    "unitPrice": 89.49,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D9%8A%D8%B4%D9%89-%D8%AF%D9%8A%D8%B1%D9%83%D9%88%D8%B3-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D8%B6%D8%AF-%D8%A7%D9%84%D9%82%D8%B4%D8%B1%D8%A9-%D9%84%D9%84%D8%B4%D8%B9%D8%B1-%D8%A7%D9%84%D8%AC%D8%A7%D9%81-200-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1OTQ5NHxpbWFnZS93ZWJwfGFHRXlMMmcxWlM4NU5UWTJNelkzTlRRM05ESXlMekl3T0RjME5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDk5NjgzZWJhZDA3NWU3ZTY0M2FhMTRhM2JkYzFjYjgwYWIyZmU5NzE4YTIwMDY4YzA5YTFiYTY1NWMzNWFhOWQ",
+    "addedAt": "2026-11-08T11:57:08.220Z"
   }
 }
