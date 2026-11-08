@@ -1135,5 +1135,27 @@
     "unitPrice": 26,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B1%D9%84%D9%8A%D9%86-%D8%B1%D8%B6%D8%A7%D8%B9%D9%87-%D8%A8%D9%84%D8%A7%D8%B3%D8%AA%D9%8A%D9%83-%D8%A8%D8%B1%D8%B3%D9%88%D9%85%D8%A7%D8%AA-%D9%85%D9%84%D9%88%D9%86%D8%A9-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1OTk1NHxpbWFnZS93ZWJwfGFERmhMMmcyT1M4NU56VTFOalF5TVRNME5UVTRMekl4TURReE4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGZhZjY1YzBhZDc2NTJmYmFjYTE3NWJjM2RhYTFhZWE5YTFiMjRiNjYyNDQxOWQxNTNkM2ExZTQwY2Y2ZjYzZmQ",
     "addedAt": "2026-11-08T11:35:48.342Z"
+  },
+  "1344832007424": {
+    "gtin": "1344832007424",
+    "code": "101838",
+    "nameAr": "كيو في ليب بالم 15 مج",
+    "nameEn": "QV LIP BALM 15 GM",
+    "brand": "QV",
+    "activeIngredient": "",
+    "unitPrice": 37,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%83%D9%8A%D9%88%D9%81%D9%89-%D8%A8%D9%84%D8%B3%D9%85-%D9%85%D8%B1%D8%B7%D8%A8-%D8%A7%D9%84%D8%B4%D9%81%D8%A7%D9%87-15-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2NDEwNnxpbWFnZS93ZWJwfGFEWmtMMmhrWlM4NU56UXdPVGN3TnpVME1EYzRMekV3TVRnek9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGU0OGFhMGNkYzBjMTI3MjA0Y2Y0ZjhiYzgyZDY1ZTYyNTczMzJiNTgxZGI0ZWQ1YWI5YTAxNDgzMjJiOTViY2E",
+    "addedAt": "2026-11-08T11:43:31.372Z"
+  },
+  "9314839022456": {
+    "gtin": "9314839022456",
+    "code": "101828",
+    "nameAr": "كيو في بار 100 مج",
+    "nameEn": "QV BAR 100 GM",
+    "brand": "QV",
+    "activeIngredient": "",
+    "unitPrice": 39,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%83%D9%8A%D9%88%D9%81%D9%89-%D8%B5%D8%A7%D8%A8%D9%88%D9%86-%D9%82%D8%B7%D8%B9-%D8%AE%D8%A7%D9%84%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%B9%D8%B7%D9%88%D8%B1-%D9%84%D8%AA%D9%84%D8%B7%D9%8A%D9%81-%D9%88%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4-%D8%A7%D9%84%D8%AC%D9%84%D8%AF-100-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w5NjU4NHxpbWFnZS93ZWJwfGFHUmlMMmd5TWk4NU56UXdOemd5TXpNNE1EYzRMekV3TVRneU9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDI3Yzc2MDhiMjE1YWI1NDgwNjNjNzRjZjI4ZWFkNDc1NDkwYjgzM2FjYjRiZTgzMTk0MzUyYjg2MmEwNTQ0MDY",
+    "addedAt": "2026-11-08T11:43:48.478Z"
   }
 }
