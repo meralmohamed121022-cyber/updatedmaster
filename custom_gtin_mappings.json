@@ -1267,5 +1267,27 @@
     "unitPrice": 77.44,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D9%83%D8%B1%D8%A7%D9%8A-%D8%AC%D9%84-%D8%AA%D9%88%D9%86%D9%8A%D9%83-%D9%84%D8%AA%D8%B3%D8%A7%D9%82%D8%B7-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-30-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxNDIxNzh8aW1hZ2Uvd2VicHxhR1kwTDJobE1TODVNekkyTlRjd056QXdPRE13THpJd01qSTNNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxmMjY0ZTBjODQ5N2YzMWY1OGJmZThmMzNhN2U2OGIxMjMzYWQ3M2M3NGZhNWQ1ZDA5MzAyMGJiYjljYWVhYWE2",
     "addedAt": "2026-11-08T11:52:51.662Z"
+  },
+  "012606566989": {
+    "gtin": "012606566989",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T11:53:57.244Z"
+  },
+  "4289004567108": {
+    "gtin": "4289004567108",
+    "code": "ডতত",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T11:54:09.430Z"
   }
 }
