@@ -1751,5 +1751,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-08T13:50:20.179Z"
+  },
+  "6281006623477": {
+    "gtin": "6281006623477",
+    "code": "6281006623477",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T13:50:44.054Z"
   }
 }
