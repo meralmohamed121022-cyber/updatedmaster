@@ -937,5 +937,27 @@
     "unitPrice": 20.3,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%86%D9%8A%D9%81%D9%8A%D8%A7-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D8%A7%D8%B3%D9%88%D8%AF-%D9%88-%D8%A7%D8%A8%D9%8A%D8%B6-%D9%84%D9%84%D8%B1%D8%AC%D8%A7%D9%84-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2OTYzOHxpbWFnZS93ZWJwfGFHTmpMMmhtWVM4NU5qQTFPVFUzT0RFeU1qVTBMekl5TnpjME1WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDA0NTFmMDA3NTRmZDMxZDEyMDYyOTMyNmVlOTkzMDcwMzJkODk3YjdhNmU5OTU1ZjlmNWY4YjAyNTBhMmExNDQ",
     "addedAt": "2026-11-08T10:39:17.122Z"
+  },
+  "8000038582860": {
+    "gtin": "8000038582860",
+    "code": "205999",
+    "nameAr": "نيفيا رول فريش حريمى مزيل عرق 50مل",
+    "nameEn": "NIVEA DEO ROLLL FRESH W 50ML",
+    "brand": "NIVEA",
+    "activeIngredient": "",
+    "unitPrice": 20.3,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%86%D9%8A%D9%81%D9%8A%D8%A7-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D9%81%D8%B1%D9%8A%D8%B4-%D9%86%D8%A7%D8%AA%D8%B4%D9%88%D8%B1%D8%A7%D9%84-%D9%84%D9%84%D9%86%D8%B3%D8%A7%D8%A1-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2MTc1OHxpbWFnZS93ZWJwfGFHRmhMMmcwWXk4NU5qRXhNek16T1RreU5EYzRMekl3TlRrNU9WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDBlNmJhMmFkNTZkYThhZWEzYTQyMDJmMjI1ZTc4Y2VlNzJjNTZmMjAzMmQxNGQ5YzI0NWIyZmRiYmJkOThiNDU",
+    "addedAt": "2026-11-08T10:39:35.490Z"
+  },
+  "4006000174501": {
+    "gtin": "4006000174501",
+    "code": "253378",
+    "nameAr": "نيفيا رول راحة اضافية  50 مل",
+    "nameEn": "NIVEA DEO ROLL Defend Extra Comfort 50 M",
+    "brand": "NIVEA",
+    "activeIngredient": "",
+    "unitPrice": 19.55,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%86%D9%8A%D9%81%D9%8A%D8%A7-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%B1%D9%88%D9%84-%D8%A7%D9%88%D9%86-%D8%AF%D9%8A%D8%B1%D9%85%D8%A7-%D9%83%D9%86%D8%AA%D8%B1%D9%88%D9%84-%D9%83%D9%88%D9%84-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2MTQ5NHxpbWFnZS93ZWJwfGFEWTBMMmd4TUM4NU5qRXhPVFV4TVRFeU1qSXlMekkxTXpNM09GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJlMjEyMGEyMjIwYzkwNjhlZThmYmMxN2NlYmM4NWI1Y2RjYzg2NWJkMTdhNDc3YjA5NzhmOGNlZWYyODA2Mjg",
+    "addedAt": "2026-11-08T10:40:25.417Z"
   }
 }
