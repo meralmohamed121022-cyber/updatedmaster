@@ -409,5 +409,27 @@
     "unitPrice": 13.81,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D8%A7%D8%A8%D8%B1-%D9%87%D8%B1%D8%A8%D9%88%D9%84%D9%8A%D9%86-%D9%81%D8%A7%D8%B2%D9%84%D9%8A%D9%86-%D8%A8%D8%A7%D9%84%D8%A7%D9%84%D9%88%D9%81%D9%8A%D8%B1%D8%A7-115-%D9%85%D9%84-%D9%85%D8%AC%D8%A7%D9%86%D8%A7-540-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3NTIyOHxpbWFnZS93ZWJwfGFEUTVMMmd6T0M4NU56TXdOek01TVRBNU9URTRMell3TURFNU5GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGE1MmJjNTBkMDI4MDhjZTI2ODJjMzI4ZWJhMWJiYTM4NTg1YzdhY2NhNTJiNTJhMDQ4YTI5ODE3ZGU1ZWY4ZTI",
     "addedAt": "2026-11-08T08:07:46.965Z"
+  },
+  "4903123644167": {
+    "gtin": "4903123644167",
+    "code": "200979",
+    "nameAr": "بوبشن كيدزسائل استحمام وشامبو سبورت200مل",
+    "nameEn": "BUBCHEN KIDS SH&SHWSPORTFUN200",
+    "brand": "BUBCHEN",
+    "activeIngredient": "",
+    "unitPrice": 16,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:05:13.841Z"
+  },
+  "6513341036088": {
+    "gtin": "6513341036088",
+    "code": "Vsbnz",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:12:14.757Z"
   }
 }
