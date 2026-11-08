@@ -1586,5 +1586,27 @@
     "unitPrice": 99,
     "imageUrl": "",
     "addedAt": "2026-11-08T12:26:51.732Z"
+  },
+  "034412103455": {
+    "gtin": "034412103455",
+    "code": "108038",
+    "nameAr": "ماغني-ويل ماغنسيوم بيس جليسنات 90 كبسولة",
+    "nameEn": "MAGNI-WELL MAGNESIUM BISGLYCINATE 90 CAP",
+    "brand": "WELLBIOTIC",
+    "activeIngredient": "",
+    "unitPrice": 149,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%85%D8%A7%D8%BA%D9%86%D9%89%D9%88%D9%8A%D9%84-%D9%85%D9%83%D9%85%D9%84-%D8%BA%D8%B0%D8%A7%D9%8A%D9%8A-%D9%85%D8%A7%D8%BA%D9%86%D8%B3%D9%8A%D9%88%D9%85-%D8%A8%D9%8A%D8%B3-%D8%AC%D9%84%D9%8A%D8%B3%D9%86%D8%A7%D8%AA-300-%D9%85%D8%AC%D9%85-90-%D9%83%D8%A8%D8%B3%D9%88%D9%84%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4MDY2NHxpbWFnZS93ZWJwfGFHWXpMMmhpTlM4NU56STRPRE00TnpJNU56VTRMekV3T0RBek9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDlkMTkwY2YzMWRjZjllMTkxNGRmYjlmNzE4NDEwZjU3YjRjMzQ0NGI4YjVlMDlkMmYyZjA2Y2ZlZDhiY2M3YTA",
+    "addedAt": "2026-11-08T12:27:14.482Z"
+  },
+  "04028741": {
+    "gtin": "04028741",
+    "code": "508720",
+    "nameAr": "رونزافيت جلوتاثيون 60 كبسول",
+    "nameEn": "RONZAVIT GLUTATHIONE 60 CAPUSLE",
+    "brand": "RONZAVIT",
+    "activeIngredient": "",
+    "unitPrice": 249,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B1%D9%88%D9%86%D8%B2%D8%A7%D9%81%D9%8A%D8%AA-%D9%85%D9%83%D9%85%D9%84-%D8%BA%D8%B0%D8%A7%D9%8A%D9%8A-%D8%AC%D9%84%D9%88%D8%AA%D8%A7%D8%AB%D9%8A%D9%88%D9%86-60-%D9%83%D8%A8%D8%B3%D9%88%D9%84%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w5ODYzNHxpbWFnZS93ZWJwfGFHVTJMMmc1WlM4NU16WTNNemN3T0RreE1qazBMelV3T0RjeU1GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDBmZGEzNjgxYmJjMTBkNDA5ZWM2OGQzM2E1ZWFiNDViOWVjMDAxMDFiYjI4ZmZiODYyMGM2MjRhNDkxMmI1YzQ",
+    "addedAt": "2026-11-08T12:33:12.485Z"
   }
 }
