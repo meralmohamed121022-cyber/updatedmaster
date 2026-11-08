@@ -1784,5 +1784,16 @@
     "unitPrice": 0,
     "imageUrl": "https://api.se-7en.com/media/offer-images/nahdi/59/59c042f74989b51dea5f610066a4b9eb1d81261aa344b2755092611c0fba2e2c.webp",
     "addedAt": "2026-11-08T13:53:05.006Z"
+  },
+  "8684295007405": {
+    "gtin": "8684295007405",
+    "code": "6281006623477",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "https://api.se-7en.com/media/offer-images/nahdi/59/59c042f74989b51dea5f610066a4b9eb1d81261aa344b2755092611c0fba2e2c.webp",
+    "addedAt": "2026-11-08T13:56:55.414Z"
   }
 }
