@@ -981,5 +981,16 @@
     "unitPrice": 8.69,
     "imageUrl": "",
     "addedAt": "2026-11-08T10:41:47.958Z"
+  },
+  "777490181211": {
+    "gtin": "777490181211",
+    "code": "245255",
+    "nameAr": "سيجنال معجون اطفال 50 مل",
+    "nameEn": "SIGNAL T/P KIDS FRUITY 50 ML",
+    "brand": "SIGNAL",
+    "activeIngredient": "",
+    "unitPrice": 13.87,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B3%D9%8A%D8%AC%D9%86%D8%A7%D9%84-%D9%85%D8%B9%D8%AC%D9%88%D9%86-%D8%A7%D8%B3%D9%86%D8%A7%D9%86-%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%A8%D9%86%D9%83%D9%87%D8%A9-%D8%A7%D9%84%D9%81%D9%88%D8%A7%D9%83%D9%87-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyMjkyMDB8aW1hZ2Uvd2VicHxhRFkwTDJoaU5TODVOVEF4T1RBeE5USXdPVEkyTHpJME5USTFOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwxZWVkNWY2Y2VkNTI3ODVhMTFjNmE3NDJmMThjOWFhYTdjMWNhZDgyNmQzYTc5M2Q4NjA2NDMwYWM2NDkxMmEw",
+    "addedAt": "2026-11-08T10:53:19.838Z"
   }
 }
