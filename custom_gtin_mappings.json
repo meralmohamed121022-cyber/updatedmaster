@@ -2026,5 +2026,16 @@
     "unitPrice": 195,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B3%D9%88%D8%A8%D8%B1%D8%A7%D9%83%D8%AA%D9%8A%D9%81-%D9%85%D9%83%D9%85%D9%84-%D8%BA%D8%B0%D8%A7%D9%8A%D9%8A-30-%D9%83%D8%A8%D8%B3%D9%88%D9%84%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyMTIyNzh8aW1hZ2Uvd2VicHxhRFUxTDJoak9TODVNelkzTnpVeE56SXdPVGt3THpVd09UQTBPVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwxMzljNGEwYThmN2U4MDg1MmY2MTZlZTViNjhmNGMxN2Q5ZDRhMTViMzdlM2JkOTBkNzhiMjkxOWY3MDVlYjBm",
     "addedAt": "2026-11-09T15:22:35.866Z"
+  },
+  "Babyjoy": {
+    "gtin": "Babyjoy",
+    "code": "252161",
+    "nameAr": "بيبي جوي مقاس7 كلوت 26 حفاض",
+    "nameEn": "BABY JOY S7 PANTS 26",
+    "brand": "BABY JOY",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-09T21:07:34.475Z"
   }
 }
