@@ -742,14 +742,14 @@
   },
   "6287052091376": {
     "gtin": "6287052091376",
-    "code": "256775",
-    "nameAr": "ليسو عبوة التوفير الكاملة لقمل الشعر",
-    "nameEn": "LICOO ANTI LICE VALUE PACK",
-    "brand": "LICOO",
+    "code": "Hgv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
     "activeIngredient": "",
-    "unitPrice": 78.22,
-    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B111-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D9%88%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA4MzJ8aW1hZ2Uvd2VicHxhR1V6TDJnNVpTODVOekV6TWpneU5qUTJNRFEyTHpJMU5qYzNOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkOWFlMzc0YzkwZDg5Zjk2MTFkOTJlZjJlOGIyZjA3MTZjOGY0NDQxOTQzZmViOWQyMTg2NDA2NWZiMzJmNTZj",
-    "addedAt": "2026-11-08T07:36:51.766Z"
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:20:22.929Z"
   },
   "024130820789": {
     "gtin": "024130820789",
@@ -2048,5 +2048,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-10T07:12:16.055Z"
+  },
+  "http://biofoodnutrition.com/": {
+    "gtin": "http://biofoodnutrition.com/",
+    "code": "300122",
+    "nameAr": "فابيميلك حليب رضع",
+    "nameEn": "FABIMILK 1 900GM",
+    "brand": "FABIMILK",
+    "activeIngredient": "",
+    "unitPrice": 105.09,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A8%D9%8A-%D9%85%D9%8A%D9%84%D9%83-%D8%AD%D9%84%D9%8A%D8%A8-%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-1-%D9%85%D9%86-06-%D8%B4%D9%87%D9%88%D8%B1-900-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4NDQxMjR8aW1hZ2Uvd2VicHxhR1ZpTDJobVpTODVORFEyT0RZeU56UTVOekkyTHpNd01ERXlNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxlZTMzZDRkNjU0MTZhYjYyMTc0MGZmNTNiN2U5NzhkMjM4YzM1MTY0YjFmZGUyYTJmYzRjMTE1ZTc2MmI5MzNi",
+    "addedAt": "2026-11-10T09:28:52.326Z"
   }
 }
