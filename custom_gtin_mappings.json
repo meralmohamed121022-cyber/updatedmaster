@@ -153,6 +153,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A8%D9%8A%D9%88-%D8%A8%D8%A7%D9%84%D8%A7%D9%86%D8%B3-%D8%AF%D9%8A%D8%B1%D9%85%D8%A7-%D8%B3%D9%88%D8%AB-%D8%AC%D9%84-%D9%85%D9%86%D8%B8%D9%81-%D9%88%D9%85%D9%87%D8%AF%D9%8A-%D9%84%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzNTAwODJ8aW1hZ2Uvd2VicHxhRFZsTDJnNFl5ODVNell3TmpFeU9EZzBOVEV3THpVd05qYzVNVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxlMWMxZjkzYWU1NGM2YjQzYzc0ODU1YmJmMDA5MzI3MDg1NmMwZTc3ZmI2MTBjYmNlZThmNDg5OTYzN2Y3N2Mw",
     "addedAt": "2026-11-08T11:55:30.446Z"
   },
+  "17331238": {
+    "gtin": "17331238",
+    "code": "600455",
+    "nameAr": "لويس ويدمر كريم التجاعيد 10%",
+    "nameEn": "L W CREAM AHA CONCEPT 10% 50 ML",
+    "brand": "L W",
+    "activeIngredient": "",
+    "unitPrice": 156,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%8A%D8%B3-%D9%88%D9%8A%D8%AF%D9%85%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B9%D9%8A%D8%AF-10-%D8%A7%D9%8A%D9%87-%D8%A7%D8%AA%D8%B4-%D8%A7%D9%8A%D9%87-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyNzEyNHxpbWFnZS93ZWJwfGFERXlMMmd5WXk4NU16WTROell5TURVMk56TTBMell3TURRMU5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJhYjEyYmVhN2ZmYzcxZDVkNDNkNmZhODc1OGJjMTkxMmRjZmEyZDM4MTE5ZTZhZjVlZDkzZTBiNWUxM2M3Yjk",
+    "addedAt": "2026-11-10T13:45:00.489Z"
+  },
   "21159327": {
     "gtin": "21159327",
     "code": "244846",
@@ -2092,5 +2103,16 @@
     "unitPrice": 188.1,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D8%B326-%D8%AC%D9%88%D9%84%D8%AF-%D8%AD%D9%84%D9%8A%D8%A8-%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%A7%D9%84%D9%85%D8%B1%D8%AD%D9%84%D8%A9-3-%D9%85%D9%86-13-%D8%B3%D9%86%D9%88%D8%A7%D8%AA-1800-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4MTUwNnxpbWFnZS93ZWJwfGFESXhMMmhtTmk4NU5qSXhNakF4TXpVME56Z3lMek13TURrNU5sOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGM0MzFmMjBlNDQzMmZkOGFkMGMyMGE2OTE3Yzg4MDk2MDBmZTY5OGJkNzhhYTAyY2FkY2Y0NjMwM2JlNGYwMWE",
     "addedAt": "2026-11-10T09:31:22.997Z"
+  },
+  "6287050740498": {
+    "gtin": "6287050740498",
+    "code": "600455",
+    "nameAr": "لويس ويدمر كريم التجاعيد 10%",
+    "nameEn": "L W CREAM AHA CONCEPT 10% 50 ML",
+    "brand": "L W",
+    "activeIngredient": "",
+    "unitPrice": 156,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%8A%D8%B3-%D9%88%D9%8A%D8%AF%D9%85%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B9%D9%8A%D8%AF-10-%D8%A7%D9%8A%D9%87-%D8%A7%D8%AA%D8%B4-%D8%A7%D9%8A%D9%87-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyNzEyNHxpbWFnZS93ZWJwfGFERXlMMmd5WXk4NU16WTROell5TURVMk56TTBMell3TURRMU5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJhYjEyYmVhN2ZmYzcxZDVkNDNkNmZhODc1OGJjMTkxMmRjZmEyZDM4MTE5ZTZhZjVlZDkzZTBiNWUxM2M3Yjk",
+    "addedAt": "2026-11-10T13:47:40.226Z"
   }
 }
