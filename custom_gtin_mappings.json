@@ -742,14 +742,14 @@
   },
   "6287052091376": {
     "gtin": "6287052091376",
-    "code": "Hgv",
-    "nameAr": "",
-    "nameEn": "",
-    "brand": "",
+    "code": "256775",
+    "nameAr": "ليسو عبوة التوفير الكاملة لقمل الشعر",
+    "nameEn": "LICOO ANTI LICE VALUE PACK",
+    "brand": "LICOO",
     "activeIngredient": "",
-    "unitPrice": 0,
-    "imageUrl": "",
-    "addedAt": "2026-11-08T08:20:22.929Z"
+    "unitPrice": 78.22,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B111-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D9%88%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA4MzJ8aW1hZ2Uvd2VicHxhR1V6TDJnNVpTODVOekV6TWpneU5qUTJNRFEyTHpJMU5qYzNOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkOWFlMzc0YzkwZDg5Zjk2MTFkOTJlZjJlOGIyZjA3MTZjOGY0NDQxOTQzZmViOWQyMTg2NDA2NWZiMzJmNTZj",
+    "addedAt": "2026-11-08T07:36:51.766Z"
   },
   "024130820789": {
     "gtin": "024130820789",
@@ -1248,14 +1248,14 @@
   },
   "6287052091314": {
     "gtin": "6287052091314",
-    "code": "256774",
-    "nameAr": "ليسو بخاخ لقمل الشعر 50 مل",
-    "nameEn": "LICOO ANTI LICE SPRAY 50ML",
-    "brand": "LICOO",
+    "code": "2567754",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
     "activeIngredient": "",
-    "unitPrice": 52.13,
-    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA1OTB8aW1hZ2Uvd2VicHxhRGhtTDJnek5TODVOekV6TWpjNE1EVTROVEkyTHpJMU5qYzNORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw4NDAyZTE0MDljMzE4N2U0Mzk0NGY2MGQ1MGVhZTg5N2EwYmRjMDhkYWViYTc0YTA1ZWQ3ZDNhM2Q1Nzc2NDMw",
-    "addedAt": "2026-11-08T11:28:59.100Z"
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T07:37:25.699Z"
   },
   "47559623209099": {
     "gtin": "47559623209099",
@@ -2037,5 +2037,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-09T21:07:34.475Z"
+  },
+  "4005800075018": {
+    "gtin": "4005800075018",
+    "code": "167.90",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-10T07:12:16.055Z"
   }
 }
