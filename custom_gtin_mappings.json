@@ -2290,5 +2290,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-14T22:33:24.621Z"
+  },
+  "075872729021": {
+    "gtin": "075872729021",
+    "code": "400937",
+    "nameAr": "بيبي جوي مقاس3 عبوة التوفير الكبير 84 ح",
+    "nameEn": "BABYJOY S3 GP 84 D",
+    "brand": "BABY JOY",
+    "activeIngredient": "",
+    "unitPrice": 90.18,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A8%D9%8A%D8%A8%D9%8A-%D8%AC%D9%88%D9%8A-%D8%AD%D9%81%D8%A7%D8%B6%D8%A7%D8%AA-%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D9%85%D9%82%D8%A7%D8%B3-3-612-%D9%83%D8%AC%D9%85-%D8%B9%D8%A8%D9%88%D8%A9-%D8%B6%D8%AE%D9%85%D8%A9-84-%D9%82%D8%B7%D8%B9%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4OTAzNnxpbWFnZS93ZWJwfGFEWXhMMmd5WVM4NU5UYzVOelV4TXpReU1URXdMelF3TURrek4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGNjNWY2NDI3NGMwZjhmZTg0MTk5Mjc0YzFkM2ZjNjkzNmRkNDZlMzUwZWI3NmM3OGUxNTg5NDAzNGE2YjVkMTg",
+    "addedAt": "2026-11-14T22:38:15.729Z"
   }
 }
