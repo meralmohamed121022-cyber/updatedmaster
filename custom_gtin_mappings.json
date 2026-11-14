@@ -2224,5 +2224,16 @@
     "unitPrice": 205,
     "imageUrl": "",
     "addedAt": "2026-11-14T22:14:27.952Z"
+  },
+  "4011548053386": {
+    "gtin": "4011548053386",
+    "code": "4011548053386",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-14T22:20:45.570Z"
   }
 }
