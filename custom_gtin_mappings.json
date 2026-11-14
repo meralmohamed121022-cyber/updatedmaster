@@ -21,6 +21,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D9%81%D8%A7%D9%84%D9%88%D9%86-%D9%83%D9%8A%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D8%AA%D8%B1%D8%B7%D9%8A%D8%A8-%D9%88%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D9%83%D8%A7%D9%85%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-90-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxOTU1MzZ8aW1hZ2Uvd2VicHxhREV6TDJobE9DODVNekk1TURZM05ESTFPREl5THpJd05EVTNNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw5NWU0ZTQyZWFlMGFhMmI3ZWJkYjNkMmY3MjJlNTI2MzQ4MGRjYTZkMmQyM2RlYTRjOGMyZTQ0ODg5YmFjODY3",
     "addedAt": "2026-11-08T11:53:52.367Z"
   },
+  "205129": {
+    "gtin": "205129",
+    "code": "205129",
+    "nameAr": " لوكس غسول اليد بالورد 500 مل",
+    "nameEn": "LUX H/W SOFT ROSE 500ML",
+    "brand": "LUX",
+    "activeIngredient": "",
+    "unitPrice": 28.91,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%83%D8%B3-%D8%BA%D8%B3%D9%88%D9%84-%D8%A7%D9%84%D9%8A%D8%AF-%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D8%B1-%D8%A8%D8%B1%D8%A7%D9%8A%D8%AD%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%86%D8%B3%D9%89-500-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzNzM5MTB8aW1hZ2Uvd2VicHxhR1E1TDJnNE9DODVOVEF3T1RnME5UY3pPVGd5THpJd05URXlPVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw5ODEwMDM0MDQzZTkxZWQwNDQ1NzEwNDMyODQxOWVhNmI1YzM3ZDM2NzIyZGRjNTg2NDgyZGIxN2NjN2EwYjEy",
+    "addedAt": "2026-11-14T20:47:59.512Z"
+  },
   "216106": {
     "gtin": "216106",
     "code": "808",
@@ -2169,5 +2180,16 @@
     "unitPrice": 0,
     "imageUrl": "https://api.se-7en.com/media/offer-images/nahdi/59/59c042f74989b51dea5f610066a4b9eb1d81261aa344b2755092611c0fba2e2c.webp",
     "addedAt": "2026-11-11T22:37:56.332Z"
+  },
+  "3014260020866": {
+    "gtin": "3014260020866",
+    "code": "106852",
+    "nameAr": "ديكسبانثينول 250 مل بمب",
+    "nameEn": "DEXPANTHENOL 250 ML PUMP",
+    "brand": "DEXPANTHENOL",
+    "activeIngredient": "",
+    "unitPrice": 86.09,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%8A%D9%83%D8%B3%D8%A8%D8%A7%D9%86%D8%AB%D9%8A%D9%86%D9%88%D9%84-%D9%83%D8%B1%D9%8A%D9%85-%D9%85%D8%B1%D8%B7%D8%A8-%D9%8A%D8%AD%D9%85%D9%8A-%D8%A7%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-%D9%85%D8%B6%D8%AE%D8%A9-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzOTgzNHxpbWFnZS93ZWJwfGFHWmxMMmcxWkM4NU5UZ3dOelkxT1Rjd05EWXlMekV3TmpnMU1sOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDBlZmU3ZjllMjI5YjFiNGQxMjM5OGFhOThkMTcwYzk0MTYzYzM2Y2IzMDUwMzlkODNlMTgzZDYxZDA3YzA1MjM",
+    "addedAt": "2026-11-12T17:38:19.012Z"
   }
 }
