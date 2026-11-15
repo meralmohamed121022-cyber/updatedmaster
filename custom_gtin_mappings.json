@@ -2807,5 +2807,27 @@
     "unitPrice": 18.08,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:46:27.482Z"
+  },
+  "654141000438": {
+    "gtin": "654141000438",
+    "code": "Gvvcc",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:46:49.997Z"
+  },
+  "6286841000551": {
+    "gtin": "6286841000551",
+    "code": "Bbbv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:47:13.482Z"
   }
 }
