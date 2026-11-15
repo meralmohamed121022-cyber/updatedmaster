@@ -2796,5 +2796,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:46:07.511Z"
+  },
+  "740703375905": {
+    "gtin": "740703375905",
+    "code": "203567",
+    "nameAr": "هيربال بلسم 400مل",
+    "nameEn": "H.ESS COND BEAUTIFUL ENDS 400M",
+    "brand": "HERBAL ESSENCE",
+    "activeIngredient": "",
+    "unitPrice": 18.08,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:46:27.482Z"
   }
 }
