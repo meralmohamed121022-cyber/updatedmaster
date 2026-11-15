@@ -362,6 +362,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%8A%D8%B3-%D9%88%D9%8A%D8%AF%D9%85%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D8%AA%D8%AC%D8%A7%D8%B9%D9%8A%D8%AF-10-%D8%A7%D9%8A%D9%87-%D8%A7%D8%AA%D8%B4-%D8%A7%D9%8A%D9%87-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyNzEyNHxpbWFnZS93ZWJwfGFERXlMMmd5WXk4NU16WTROell5TURVMk56TTBMell3TURRMU5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDJhYjEyYmVhN2ZmYzcxZDVkNDNkNmZhODc1OGJjMTkxMmRjZmEyZDM4MTE5ZTZhZjVlZDkzZTBiNWUxM2M3Yjk",
     "addedAt": "2026-11-10T13:45:00.489Z"
   },
+  "20192455": {
+    "gtin": "20192455",
+    "code": "Gvvvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:39:55.240Z"
+  },
   "21159327": {
     "gtin": "21159327",
     "code": "244846",
@@ -2708,5 +2719,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:35:42.403Z"
+  },
+  "2211019659969": {
+    "gtin": "2211019659969",
+    "code": "Vsnsnsnsbbssnns",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:38:12.596Z"
+  },
+  "6281027355203": {
+    "gtin": "6281027355203",
+    "code": "Gggg",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:38:33.045Z"
+  },
+  "http://www.aldawaa.com": {
+    "gtin": "http://www.aldawaa.com",
+    "code": "Vvvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:38:37.194Z"
   }
 }
