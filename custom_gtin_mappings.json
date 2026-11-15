@@ -3082,5 +3082,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T18:02:04.321Z"
+  },
+  "9282000960442": {
+    "gtin": "9282000960442",
+    "code": "9282000960442",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T21:20:15.730Z"
   }
 }
