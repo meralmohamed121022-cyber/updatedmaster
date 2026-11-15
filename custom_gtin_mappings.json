@@ -406,6 +406,17 @@
     "imageUrl": "",
     "addedAt": "2026-11-15T11:33:30.943Z"
   },
+  "21399031": {
+    "gtin": "21399031",
+    "code": "Fgg",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:33:41.808Z"
+  },
   "23146045": {
     "gtin": "23146045",
     "code": "গআ",
@@ -2653,5 +2664,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:30:04.988Z"
+  },
+  "2211009293203": {
+    "gtin": "2211009293203",
+    "code": "Ggvvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:35:07.383Z"
   }
 }
