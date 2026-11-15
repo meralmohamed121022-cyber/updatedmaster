@@ -3049,5 +3049,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T15:08:51.188Z"
+  },
+  "3504105035501": {
+    "gtin": "3504105035501",
+    "code": "246407",
+    "nameAr": "موستيلا بيبي موستيلا لوشن 500 مل",
+    "nameEn": "MUSTELA BABY HYDRA BODY LOTION 500 ML",
+    "brand": "MUSTELA",
+    "activeIngredient": "",
+    "unitPrice": 114,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%85%D9%88%D8%B3%D8%AA%D9%8A%D9%84%D8%A7-%D8%A8%D9%8A%D8%A8%D9%8A-%D9%84%D9%88%D8%B4%D9%86-%D9%85%D8%B1%D8%B7%D8%A8-%D9%84%D9%84%D8%A7%D8%B7%D9%81%D8%A7%D9%84-%D8%A8%D8%AE%D9%84%D8%A7%D8%B5%D8%A9-%D8%A7%D9%84%D8%A7%D9%81%D9%88%D9%83%D8%A7%D8%AF%D9%88-500-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyODQ0MzR8aW1hZ2Uvd2VicHxhRE5rTDJnd015ODVOVEUxTVRnME5qZzFNRGcyTHpJME5qUXdOMTh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxhMDI3YzBhZDk4OTJmNTM5Y2I1Yjk0Y2UxZmJhN2NkZDY0OGY3NmY3YjJhOTE1OTBhNmJlNWE5ZjYyMzNkOWZi",
+    "addedAt": "2026-11-15T17:32:41.629Z"
+  },
+  "6281001767015": {
+    "gtin": "6281001767015",
+    "code": "6281001767015",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T18:02:04.321Z"
   }
 }
