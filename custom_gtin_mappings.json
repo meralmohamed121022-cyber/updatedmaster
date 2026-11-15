@@ -153,6 +153,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%85%D8%A7%D8%B1%D9%81%D9%8A%D9%84%D9%88%D8%B3-%D8%A7%D9%86%D8%B1%D8%AC%D9%8A-%D8%BA%D8%B0%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%84%D9%83%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D9%83%D8%A7-20-%D9%81%D9%8A%D8%A7%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMjMzNzZ8aW1hZ2Uvd2VicHxhRFl4TDJnMk1TODVNelkyT0RZd016QXdNekU0THpVd056azRORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkMzc1MGVjNmZlODgwZWZiZDU3OTkxNWJlYTk1ZmRkODJmZDA3ZjBhMzBjMzliODkxYmI3YjQzYjg1YmUyZWMy",
     "addedAt": "2026-11-15T05:56:27.726Z"
   },
+  "546413": {
+    "gtin": "546413",
+    "code": "246413",
+    "nameAr": "سيبتيفا معقم لليد . 50 مل",
+    "nameEn": "SEPTIVA HAND SANITIZER GEL 50 ML",
+    "brand": "SEPTIVA",
+    "activeIngredient": "",
+    "unitPrice": 13,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B3%D8%A8%D8%AA%D9%8A%D9%81%D8%A7-%D8%AC%D9%84-%D9%85%D8%B9%D9%82%D9%85-%D9%84%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D8%AD%D8%AC%D9%85-%D8%A7%D9%84%D8%AC%D9%8A%D8%A8-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3Nzc5MHxpbWFnZS93ZWJwfGFEYzNMMmd5Tmk4NU5Ua3lOVFV3T1RFMk1USTJMekkwTmpReE0xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGUyNWYzMjZlNjVjODY2ZTFmNzdmYWQ3ZDBjNjI3OTE3MGFlODBiM2ZhYzBjZWEzM2Y3MWFmYTU2YTI1OGEzYjQ",
+    "addedAt": "2026-11-15T12:45:30.150Z"
+  },
   "617686": {
     "gtin": "617686",
     "code": "107686",
@@ -383,6 +394,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:39:55.240Z"
+  },
+  "20221704": {
+    "gtin": "20221704",
+    "code": "202228",
+    "nameAr": "دوف سائل الاستحمام منعش+لوفا",
+    "nameEn": "DOVE S/G FRESH TOUC+KIT250",
+    "brand": "DOVE",
+    "activeIngredient": "",
+    "unitPrice": 32.13,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D9%81-%D8%B3%D8%A7%D9%8A%D9%84-%D8%A7%D8%B3%D8%AA%D8%AD%D9%85%D8%A7%D9%85-%D8%AC%D9%88-%D9%81%D8%B1%D9%8A%D8%B4-%D8%A8%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%B4%D8%A7%D9%89-%D8%A7%D9%84%D8%A7%D8%AE%D8%B6%D8%B1-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzOTkyNTJ8aW1hZ2Uvd2VicHxhR1JoTDJobU5DODVOVEF3T0RnNE5qazBPREUwTHpJd01qSXlPRjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw2YjliOTY2YmMyZWQ4Y2Y1ZWNkYzEzZWNhMmZjYTNmZThmMzJjNDdmYzVkZThlMDVlNzI3NzRmMWJjNGVkMjcy",
+    "addedAt": "2026-11-15T12:44:48.694Z"
   },
   "21099272": {
     "gtin": "21099272",
@@ -2939,5 +2961,16 @@
     "unitPrice": 26.74,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%83%D8%B3-%D8%BA%D8%B3%D9%88%D9%84-%D8%A7%D9%84%D8%AC%D8%B3%D9%85-%D9%84%D9%85%D8%B3%D8%A9-%D9%85%D8%AE%D9%85%D9%84%D9%8A%D8%A9-250-%D9%85%D9%84-%D9%84%D9%88%D9%81%D9%87-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1MzE5MDR8aW1hZ2Uvd2VicHxhR1E1TDJnMVlTODVOVEF4TURZM05qQTRNRGswTHpJd05URTJPVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwxNjRhMDBhMzU0ZDc2MDdjMWI2N2FiM2I1MGM1OGI2NDE3NmVjNmUxNWY0YTA1ZmRiNGQxNzZkMzk0ZDAyZjM1",
     "addedAt": "2026-11-15T12:44:30.819Z"
+  },
+  "08941152": {
+    "gtin": "08941152",
+    "code": "204858",
+    "nameAr": "لايف بوي جل استحمام عناية مع لوفا 300مل",
+    "nameEn": "LIFEBUOY S/G CARE WITH PUFF 300 M",
+    "brand": "LIFEBUOY",
+    "activeIngredient": "",
+    "unitPrice": 30,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D8%A7%D9%8A%D9%81%D8%A8%D9%88%D9%89-%D8%BA%D8%B3%D9%88%D9%84-%D8%A7%D9%84%D8%AC%D8%B3%D9%85-%D8%B6%D8%AF-%D8%A7%D9%84%D8%A8%D9%83%D8%AA%D9%8A%D8%B1%D9%8A%D8%A7-%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D9%86%D8%A7%D8%B9%D9%85%D8%A9-300-%D9%85%D9%84-%D9%84%D9%88%D9%81%D8%A9-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzMjkzMTh8aW1hZ2Uvd2VicHxhR00zTDJneU1TODVOVEF3T0RrNE56ZzNNelU0THpJd05EZzFPRjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw5NDk4MDY2ZjRjNWQyYjAyYjgwN2Q0ZTI1MzU1YTFhODk0MTZhYjA2ZDQwMTA3NjYxZTdiY2U5ZDRlYWJmODQ5",
+    "addedAt": "2026-11-15T12:51:46.691Z"
   }
 }
