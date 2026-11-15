@@ -373,6 +373,17 @@
     "imageUrl": "",
     "addedAt": "2026-11-15T11:39:55.240Z"
   },
+  "21099272": {
+    "gtin": "21099272",
+    "code": "Gvvvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:40:17.478Z"
+  },
   "21159327": {
     "gtin": "21159327",
     "code": "244846",
@@ -2763,5 +2774,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:38:37.194Z"
+  },
+  "760706553728": {
+    "gtin": "760706553728",
+    "code": "Vvccc",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:40:13.483Z"
+  },
+  "290141000292": {
+    "gtin": "290141000292",
+    "code": "Vcccc",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:46:07.511Z"
   }
 }
