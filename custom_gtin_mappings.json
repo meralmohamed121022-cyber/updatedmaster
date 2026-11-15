@@ -2862,5 +2862,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:48:25.845Z"
+  },
+  "5050566748514": {
+    "gtin": "5050566748514",
+    "code": "253692",
+    "nameAr": "فنتي بيوتي مكياج جلوس 06 سليبِر 6 مل",
+    "nameEn": "FENTY BEAUTY M-UP 06GLASSSLIPPER 6 ML",
+    "brand": "FENTY BEAUTY",
+    "activeIngredient": "",
+    "unitPrice": 115,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:48:51.115Z"
+  },
+  "279503651099": {
+    "gtin": "279503651099",
+    "code": "Www",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:49:38.758Z"
   }
 }
