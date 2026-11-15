@@ -2587,5 +2587,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:24:24.620Z"
+  },
+  "7690505563204": {
+    "gtin": "7690505563204",
+    "code": "Ggbv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:25:54.118Z"
   }
 }
