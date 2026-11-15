@@ -2620,5 +2620,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:27:26.910Z"
+  },
+  "8886304602018": {
+    "gtin": "8886304602018",
+    "code": "Ggbv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:27:53.213Z"
+  },
+  "044940313196": {
+    "gtin": "044940313196",
+    "code": "Ggvvv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:30:04.988Z"
   }
 }
