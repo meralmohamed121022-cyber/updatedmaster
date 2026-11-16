@@ -527,6 +527,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D9%81-%D8%B3%D8%A7%D9%8A%D9%84-%D8%A7%D8%B3%D8%AA%D8%AD%D9%85%D8%A7%D9%85-%D8%AC%D9%88-%D9%81%D8%B1%D9%8A%D8%B4-%D8%A8%D8%A7%D9%84%D8%AE%D9%8A%D8%A7%D8%B1-%D9%88%D8%A7%D9%84%D8%B4%D8%A7%D9%89-%D8%A7%D9%84%D8%A7%D8%AE%D8%B6%D8%B1-250-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzOTkyNTJ8aW1hZ2Uvd2VicHxhR1JoTDJobU5DODVOVEF3T0RnNE5qazBPREUwTHpJd01qSXlPRjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw2YjliOTY2YmMyZWQ4Y2Y1ZWNkYzEzZWNhMmZjYTNmZThmMzJjNDdmYzVkZThlMDVlNzI3NzRmMWJjNGVkMjcy",
     "addedAt": "2026-11-15T12:44:48.694Z"
   },
+  "20424400": {
+    "gtin": "20424400",
+    "code": "202148",
+    "nameAr": "دوف ديو كريم للعرق 50 مل",
+    "nameEn": "DOVE DEO CREAM ORIGINAL 50 ML",
+    "brand": "DOVE",
+    "activeIngredient": "",
+    "unitPrice": 27.39,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%88%D9%81-%D9%83%D8%B1%D9%8A%D9%85-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D9%85%D8%B6%D8%A7%D8%AF-%D9%84%D9%84%D8%AA%D8%B9%D8%B1%D9%82-%D8%A7%D9%84%D8%A7%D8%B5%D9%84%D9%89-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0NDg3MnxpbWFnZS93ZWJwfGFEUTRMMmhsTWk4NU5qQXhPRFEyTWpRM05EVTBMekl3TWpFME9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGQ0NzdiNThhZjcwZjBiZGFlMmE2NmNhNWRmMzhmYWYzMmViYWI1NzEyOTNjYzg3MTUzM2VkN2ViY2M3ODY2NGM",
+    "addedAt": "2026-11-16T11:28:42.047Z"
+  },
   "21099272": {
     "gtin": "21099272",
     "code": "Gvvvv",
@@ -3467,5 +3478,16 @@
     "unitPrice": 29.65,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D9%84%D9%8A%D8%B2-%D8%A7%D9%86%D8%AF-%D9%84%D8%A7%D9%81-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D8%AC%D8%A7%D9%81-%D9%84%D8%AC%D9%85%D9%8A%D8%B9-%D8%A7%D9%86%D9%88%D8%A7%D8%B9-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-%D8%B3%D9%88%D9%8A%D8%AA-200-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w4NzU0OHxpbWFnZS93ZWJwfGFHWmxMMmd4TWk4NU56TXdOalU0T0RJNE16RTRMelV4TWpBeE4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDZmZTRiY2UxOWQxN2FkMzU0ZDU3NDg1YTNlNzg2NWJhNjA5NzU4OWJmZjhjZjFkNzVmMmIxNDUyMzE4MWI1OGE",
     "addedAt": "2026-11-16T11:00:14.709Z"
+  },
+  "06249033": {
+    "gtin": "06249033",
+    "code": "201797",
+    "nameAr": "دابر بلسم للتحكم في تساقط الشعر",
+    "nameEn": "DABUR V. COND HAIRFALL CONTROL 400M",
+    "brand": "VATIKA",
+    "activeIngredient": "",
+    "unitPrice": 16.8,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D8%A7%D8%A8%D8%B1-%D8%A8%D9%84%D8%B3%D9%85-%D9%84%D9%84%D8%AA%D8%AD%D9%83%D9%85-%D9%81%D9%8A-%D8%AA%D8%B3%D8%A7%D9%82%D8%B7-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-400-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzNzQ4MnxpbWFnZS93ZWJwfGFHSTBMMmc1TXk4NU16QXpOelEwTlRjM05UWTJMekl3TVRjNU4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDlmZjM5MDkyNGUyMzJhYjBiYmYxY2U2OTE2MzgzNTk1OTEyZTc2MDNmNTM0Nzc1ZjY2OTg1ZjAyNTM2MjdiNWI",
+    "addedAt": "2026-11-16T07:26:03.158Z"
   }
 }
