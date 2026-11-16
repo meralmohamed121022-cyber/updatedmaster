@@ -3720,5 +3720,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-16T13:56:19.839Z"
+  },
+  "691117833621": {
+    "gtin": "691117833621",
+    "code": "509074",
+    "nameAr": "دينتو فرشاة -متوسطة 2 حبة",
+    "nameEn": "DENTU TB INTERDENT 2 PC MEDIUM",
+    "brand": "DENTU",
+    "activeIngredient": "",
+    "unitPrice": 29.95,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AF%D9%86%D8%AA%D9%88-%D9%81%D8%B1%D8%B4%D8%A7%D8%A9-%D8%A7%D8%B3%D9%86%D8%A7%D9%86-%D8%B1%D9%82%D8%A8%D8%A9-%D8%A8%D8%B2%D8%A7%D9%88%D9%8A%D8%A9-%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D9%85%D8%AA%D9%88%D8%B3%D8%B7%D8%A9-2-%D9%82%D8%B7%D8%B9%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0NTgyNTh8aW1hZ2Uvd2VicHxhRFkzTDJnNVppODVORFUxT1RreE16VTNORGN3THpVd09UQTNORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxjMjU0ZGI2NmEyOGUxM2VjM2EyZTkxOTIwNzhkOGE3OWYyMWFjZDIwNDJlOTg1OThmNDY5MDk1YmZlNmYyMjcz",
+    "addedAt": "2026-11-16T14:08:22.466Z"
   }
 }
