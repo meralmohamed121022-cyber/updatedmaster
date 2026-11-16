@@ -3104,5 +3104,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T21:20:15.730Z"
+  },
+  "237503651099": {
+    "gtin": "237503651099",
+    "code": "229609",
+    "nameAr": "جهاز الضغط الإيجابي المستمرعادي",
+    "nameEn": "PHILIPS CPAP DORMA 200",
+    "brand": "PHILIPS",
+    "activeIngredient": "",
+    "unitPrice": 3250,
+    "imageUrl": "https://api.se-7en.com/media/offer-images/united/46/464670f01da9764fb7c41fe8b4c833b32483be1a9d92e7e1fa0210106e35490d.webp",
+    "addedAt": "2026-11-15T11:49:43.576Z"
+  },
+  "5291494651099": {
+    "gtin": "5291494651099",
+    "code": "Gvdcv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T11:49:48.465Z"
+  },
+  "9314839023774": {
+    "gtin": "9314839023774",
+    "code": "ববহৃমনবব",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:08:52.601Z"
   }
 }
