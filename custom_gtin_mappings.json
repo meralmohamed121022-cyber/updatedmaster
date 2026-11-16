@@ -3654,5 +3654,16 @@
     "unitPrice": 26.09,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B1%D9%8A%D9%83%D8%B3%D9%88%D9%86%D8%A7-%D9%85%D9%88%D8%B4%D9%86-%D8%B3%D9%86%D8%B3-%D8%A8%D8%AE%D8%A7%D8%AE-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D8%A7%D9%86%D8%AA%D8%B9%D8%A7%D8%B4-%D8%A7%D9%84%D8%A8%D9%88%D8%AF%D8%B1%D8%A9-%D9%84%D9%84%D9%86%D8%B3%D8%A7%D8%A1-150-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0NDExMHxpbWFnZS93ZWJwfGFHSXlMMmcyWkM4NU5qazRPVGczTlRjek1qYzRMekl4TXpRek0xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDcxNGU0NmNhOTExZGJmYjk2YWI0ZGYxZmNlMTk2NDU4YmQ5Njg1YTIwYjJhZWRmYmJkZTE1NDkwMTU4Zjc0NGU",
     "addedAt": "2026-11-16T13:08:14.110Z"
+  },
+  "654339490744": {
+    "gtin": "654339490744",
+    "code": "দদদদদদ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T13:09:48.562Z"
   }
 }
