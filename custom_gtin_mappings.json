@@ -43,6 +43,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A7%D9%81%D8%A7%D9%84%D9%88%D9%86-%D9%83%D9%8A%D8%B1-%D9%83%D8%B1%D9%8A%D9%85-%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D8%AA%D8%B1%D8%B7%D9%8A%D8%A8-%D9%88%D8%B9%D9%86%D8%A7%D9%8A%D8%A9-%D9%83%D8%A7%D9%85%D9%84%D8%A9-%D8%A8%D8%A7%D9%84%D9%8A%D8%AF%D9%8A%D9%86-90-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxOTU1MzZ8aW1hZ2Uvd2VicHxhREV6TDJobE9DODVNekk1TURZM05ESTFPREl5THpJd05EVTNNbDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw5NWU0ZTQyZWFlMGFhMmI3ZWJkYjNkMmY3MjJlNTI2MzQ4MGRjYTZkMmQyM2RlYTRjOGMyZTQ0ODg5YmFjODY3",
     "addedAt": "2026-11-08T11:53:52.367Z"
   },
+  "200349": {
+    "gtin": "200349",
+    "code": "200349",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:13:54.851Z"
+  },
   "200377": {
     "gtin": "200377",
     "code": "200351",
@@ -53,6 +64,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T07:52:49.382Z"
+  },
+  "200631": {
+    "gtin": "200631",
+    "code": "200351",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:28:09.237Z"
   },
   "205129": {
     "gtin": "205129",
@@ -108,6 +130,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T07:52:31.976Z"
+  },
+  "230861": {
+    "gtin": "230861",
+    "code": "200351",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:14:08.550Z"
   },
   "236776": {
     "gtin": "236776",
@@ -229,6 +262,17 @@
     "unitPrice": 290,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%85%D8%A7%D8%B1%D9%81%D9%8A%D9%84%D9%88%D8%B3-%D8%A7%D9%86%D8%B1%D8%AC%D9%8A-%D8%BA%D8%B0%D8%A7%D8%A1-%D8%A7%D9%84%D9%85%D9%84%D9%83%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D9%85%D8%A7%D9%83%D8%A7-20-%D9%81%D9%8A%D8%A7%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMjMzNzZ8aW1hZ2Uvd2VicHxhRFl4TDJnMk1TODVNelkyT0RZd016QXdNekU0THpVd056azRORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkMzc1MGVjNmZlODgwZWZiZDU3OTkxNWJlYTk1ZmRkODJmZDA3ZjBhMzBjMzliODkxYmI3YjQzYjg1YmUyZWMy",
     "addedAt": "2026-11-15T05:56:27.726Z"
+  },
+  "509441": {
+    "gtin": "509441",
+    "code": "509441",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:13:37.754Z"
   },
   "511459": {
     "gtin": "511459",
