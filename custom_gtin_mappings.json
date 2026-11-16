@@ -3137,5 +3137,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-16T05:08:52.601Z"
+  },
+  "9314839023941": {
+    "gtin": "9314839023941",
+    "code": "ডতত",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:09:24.791Z"
+  },
+  "9314839023804": {
+    "gtin": "9314839023804",
+    "code": "গগজহআআব",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:09:43.278Z"
+  },
+  "724040295676": {
+    "gtin": "724040295676",
+    "code": "ূদদদূ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:12:57.792Z"
   }
 }
