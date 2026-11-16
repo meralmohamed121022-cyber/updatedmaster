@@ -3247,5 +3247,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-16T05:32:19.151Z"
+  },
+  "3796689047593": {
+    "gtin": "3796689047593",
+    "code": "দদদদদদ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:32:35.712Z"
+  },
+  "742612966946": {
+    "gtin": "742612966946",
+    "code": "দদদদদ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:34:28.086Z"
   }
 }
