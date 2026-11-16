@@ -21,6 +21,39 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AC%D8%A7%D9%85%D9%8A%D8%B3%D9%88%D9%86-%D8%B2%D9%86%D9%83-10-%D9%85%D8%AC%D9%85-100-%D9%82%D8%B1%D8%B5_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2MjA2NHxpbWFnZS93ZWJwfGFEVmxMMmd4Tnk4NU56TXhNRGs0TlRReU1URXdMekV3TXpFMk4xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGM0NjQyOTdiMmI2YjJjNDdkOWY2YWNlMDljNzlkMGFjYWIyMDM0M2RkOTFmZDY4ZWY4NTIzZDc1MDk0ZTEwMmQ",
     "addedAt": "2026-11-15T06:55:12.529Z"
   },
+  "106905": {
+    "gtin": "106905",
+    "code": "16905",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:31:47.148Z"
+  },
+  "107502": {
+    "gtin": "107502",
+    "code": "107502",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:31:23.225Z"
+  },
+  "107567": {
+    "gtin": "107567",
+    "code": "107567",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:31:36.509Z"
+  },
   "107676": {
     "gtin": "107676",
     "code": "107676",
@@ -471,6 +504,17 @@
     "unitPrice": 20.4,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B3%D9%89-%D8%B1%D9%88%D9%86%D8%B2-%D8%A8%D9%84%D8%B3-%D8%B2%D9%86%D9%83-%D9%85%D9%83%D9%85%D9%84-%D8%BA%D8%B0%D8%A7%D9%8A%D9%8A-30-%D9%83%D8%A8%D8%B3%D9%88%D9%84%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2NDcyNnxpbWFnZS93ZWJwfGFHWmxMMmd3TWk4NU16WTNOREV4TVRrMU9UTTBMelV3T0Rjek9WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGI2NGI2M2VkNzYwZGY2N2NlNmFmZjViYmE5ZTg2MzUwZDg2MTNiZTJiZDFlYzNjOTc1YWZkMTRlN2UzNmZmZDA",
     "addedAt": "2026-11-15T06:00:33.441Z"
+  },
+  "12301010": {
+    "gtin": "12301010",
+    "code": "223007",
+    "nameAr": "ون تاتش اشرطة قياس السكر سليكت بلس",
+    "nameEn": "ONETOUCH SELECT PLUS STRIPS 50 TEST",
+    "brand": "ONE TOUCH",
+    "activeIngredient": "",
+    "unitPrice": 105,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%88%D8%A7%D9%86-%D8%AA%D8%A7%D8%AA%D8%B4-%D8%B3%D9%8A%D9%84%D9%83%D8%AA-%D8%A8%D9%84%D8%B3-%D8%B4%D8%B1%D8%A7%D9%8A%D8%B7-%D8%AC%D9%87%D8%A7%D8%B2-%D9%82%D9%8A%D8%A7%D8%B3-%D8%A7%D9%84%D8%B3%D9%83%D8%B1-50-%D8%B4%D8%B1%D9%8A%D8%B7_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzMjg5NzJ8aW1hZ2Uvd2VicHxhRFZtTDJnd01TODVNek15TkRjMk9UQXpORFUwTHpJeU16QXdOMTh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw1NWY4MzJiNjc5YzRhYTM4ZTg4MjVlMDQ4YTBkNWY1MDA1MDk4NmRhM2ZkNjk3MTk4NmM1Zjk1YzhmNTM3ODEz",
+    "addedAt": "2026-11-16T12:35:29.740Z"
   },
   "12401905": {
     "gtin": "12401905",
