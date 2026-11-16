@@ -54,6 +54,17 @@
     "imageUrl": "",
     "addedAt": "2026-11-16T12:13:54.851Z"
   },
+  "200375": {
+    "gtin": "200375",
+    "code": "200375",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:30:58.163Z"
+  },
   "200377": {
     "gtin": "200377",
     "code": "200351",
@@ -152,6 +163,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T07:52:31.976Z"
+  },
+  "230379": {
+    "gtin": "230379",
+    "code": "230379",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T12:30:08.132Z"
   },
   "230861": {
     "gtin": "230861",
