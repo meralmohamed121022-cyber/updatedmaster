@@ -3214,5 +3214,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-16T05:27:32.565Z"
+  },
+  "697411700270": {
+    "gtin": "697411700270",
+    "code": "রররররর",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:28:21.804Z"
+  },
+  "230129002801": {
+    "gtin": "230129002801",
+    "code": "ীীীীী",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:28:30.394Z"
+  },
+  "8720672040020": {
+    "gtin": "8720672040020",
+    "code": "দদদদদ",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-16T05:32:19.151Z"
   }
 }
