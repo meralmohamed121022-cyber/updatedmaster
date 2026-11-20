@@ -90718,7 +90718,7 @@
     "Category Level B": "RX-RESPIRATORY SYSTEM",
     "Category Level C": "ASTHMA",
     "Category Level D": "CORTICOST INHALATIONS",
-    "Category Level E": "FLUTICASONE,SALMETEROLXINAFOAT",
+    "Category Level E": "FLUTICASONE,SALMETEROL",
     "Item Range": null,
     "Create Date": null,
     "Unit Price": 159.4,
@@ -90746,7 +90746,7 @@
     "Category Level B": "RX-RESPIRATORY SYSTEM",
     "Category Level C": "ASTHMA",
     "Category Level D": "CORTICOST INHALATIONS",
-    "Category Level E": "FLUTICASONE,SALMETEROLXINAFOAT",
+    "Category Level E": "FLUTICASONE,SALMETEROL",
     "Item Range": null,
     "Create Date": null,
     "Unit Price": 120.85,
@@ -150223,7 +150223,7 @@
     "Category Level B": "RESPIRATORY",
     "Category Level C": "ALLERGY&COLD",
     "Category Level D": "NASAL CORTICOST PREP",
-    "Category Level E": "MOMETASONE FUROATE(NASAL)",
+    "Category Level E": "MOMETASONE,OLOPATADINE",
     "Item Range": null,
     "Create Date": null,
     "Unit Price": 73.5,
@@ -169122,7 +169122,7 @@
     "Brand": "CEKEA",
     "Manufacture": "SUDAIR PHARMA",
     "Vendor Name": null,
-    "itemurl": "No Image",
+    "itemurl": "https://api.se-7en.com/media/offer-images/almujtama/74/74bd019648af4e4733bfc33b5288865ee17f65e14321df7efd6ca6983ae86c84.webp",
     "GTIN": [
       "6286023000850"
     ]
