@@ -4061,5 +4061,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-23T22:14:55.487Z"
+  },
+  "8007352233": {
+    "gtin": "8007352233",
+    "code": "209143",
+    "nameAr": "زينتى اظافر 7860",
+    "nameEn": "ZINATI NAIL FRENCH 7860",
+    "brand": "ZINATI",
+    "activeIngredient": "",
+    "unitPrice": 20,
+    "imageUrl": "",
+    "addedAt": "2026-11-23T18:11:50.136Z"
+  },
+  "128535421715": {
+    "gtin": "128535421715",
+    "code": "508794",
+    "nameAr": "بيوباتدا كوفيد - 19 مجموعة فحص 20 حبة",
+    "nameEn": "BIOPANDA COVID-19 RAPID TEST KIT 20 PCS",
+    "brand": "BIOPANDA",
+    "activeIngredient": "",
+    "unitPrice": 700,
+    "imageUrl": "",
+    "addedAt": "2026-11-23T22:48:44.537Z"
   }
 }
