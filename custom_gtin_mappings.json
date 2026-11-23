@@ -4050,5 +4050,16 @@
     "unitPrice": 142.57,
     "imageUrl": "",
     "addedAt": "2026-11-21T21:12:12.940Z"
+  },
+  "3612624700609": {
+    "gtin": "3612624700609",
+    "code": "3612624700609",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-23T22:14:55.487Z"
   }
 }
