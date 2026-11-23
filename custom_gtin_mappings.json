@@ -4083,5 +4083,16 @@
     "unitPrice": 700,
     "imageUrl": "",
     "addedAt": "2026-11-23T22:48:44.537Z"
+  },
+  "3504105035914": {
+    "gtin": "3504105035914",
+    "code": "Offer",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-23T22:52:30.330Z"
   }
 }
