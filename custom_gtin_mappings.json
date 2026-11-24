@@ -890,6 +890,17 @@
     "imageUrl": "https://api.se-7en.com/media/offer-images/united/46/464670f01da9764fb7c41fe8b4c833b32483be1a9d92e7e1fa0210106e35490d.webp",
     "addedAt": "2026-11-24T06:16:53.930Z"
   },
+  "21396109": {
+    "gtin": "21396109",
+    "code": "250481",
+    "nameAr": "هيد اند شولدرز شامبو يومي 350 مل",
+    "nameEn": "H&S SH DAILY CLEAN 350ML",
+    "brand": "HEAD & SHOULDERS",
+    "activeIngredient": "",
+    "unitPrice": 19.57,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%87%D9%8A%D8%AF-%D8%A7%D9%86%D8%AF-%D8%B4%D9%88%D9%84%D8%AF%D8%B1%D8%B2-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D8%AA%D9%86%D8%B8%D9%8A%D9%81-%D9%8A%D9%88%D9%85%D9%8A-350-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3OTM4MnxpbWFnZS93ZWJwfGFEVXlMMmczT1M4NU5qSTJPVE15T0RNNE5ETXdMekkxTURRNE1WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDUxMzFhODZhNDNlYTgzNmE4OGRhZWQ2ZDJhNzY3ZjJlNWI0OWQ5YzhkYTQ3Mzc5M2ZjYmE4N2Q0NGM3NDYzZTc",
+    "addedAt": "2026-11-24T10:51:14.888Z"
+  },
   "21399031": {
     "gtin": "21399031",
     "code": "Fgg",
@@ -900,6 +911,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T11:33:41.808Z"
+  },
+  "21427108": {
+    "gtin": "21427108",
+    "code": "253698",
+    "nameAr": "بانتين بلسم إنسيابي 500 مل",
+    "nameEn": "PANTENE COND SMOOTH & SILKY 500ML",
+    "brand": "PANTENE",
+    "activeIngredient": "",
+    "unitPrice": 19.49,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%A8%D8%A7%D9%86%D8%AA%D9%8A%D9%86-%D8%A8%D9%84%D8%B3%D9%85-%D8%A7%D9%86%D8%B3%D9%8A%D8%A7%D8%A8%D9%8A-%D9%88%D8%AD%D8%B1%D9%8A%D8%B1%D9%8A-500-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0Njk3NHxpbWFnZS93ZWJwfGFEZGlMMmc0Wmk4NU5qSTBOREUxTVRBNU1UVXdMekkxTXpZNU9GOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDgyOGQ2ZDhhNmRlNWFhZDUwZWRiMWJkNTQ4OTE0ZWEwNTQwNzA0NDU4N2NjYzc3NmI0MmE2MDQ1YjBhMGU1MDQ",
+    "addedAt": "2026-11-24T10:50:19.971Z"
   },
   "22124203": {
     "gtin": "22124203",
