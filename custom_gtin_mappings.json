@@ -362,6 +362,17 @@
     "imageUrl": "",
     "addedAt": "2026-11-16T12:14:08.550Z"
   },
+  "231325": {
+    "gtin": "231325",
+    "code": "287052091260",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T13:24:22.470Z"
+  },
   "236306": {
     "gtin": "236306",
     "code": "236306",
@@ -460,6 +471,17 @@
     "unitPrice": 121,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%87%D9%8A%D9%85%D8%A8-%D8%AF%D9%83%D8%AA%D9%88%D8%B1-%D8%AC%D9%84-%D9%86%D8%B3%D8%A7%D9%8A%D9%8A-%D8%AC%D9%8A-%D8%AA%D8%A7%D9%86%D8%AC%D9%84-30-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDM4NzR8aW1hZ2Uvd2VicHxhREJpTDJoaU5DODVOekEyTWpjek1ERXpOemt3THpJME5EZzFNMTh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxlYzBhZWZjYjE3MjM1MzEzMWE4MmNiODg0MGEyYTM0Y2EwOTRiOTE4ZTI3NDA4ZTI3ZGQ4NGZiMDdjMDQyZWY0",
     "addedAt": "2026-11-10T13:44:09.335Z"
+  },
+  "256291": {
+    "gtin": "256291",
+    "code": "211333",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T13:47:12.378Z"
   },
   "322375": {
     "gtin": "322375",
