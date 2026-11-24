@@ -1033,6 +1033,17 @@
     "imageUrl": "https://api.se-7en.com/media/offer-images/nahdi/9b/9ba9072e3f6516ad00c9a47f4a82be2d11b0c46956b97b8faa78288539c4463e.webp",
     "addedAt": "2026-11-16T07:24:08.130Z"
   },
+  "91658134": {
+    "gtin": "91658134",
+    "code": "238450",
+    "nameAr": "هيربال اسنس بلسم صبار وأفوكادو 400 مل",
+    "nameEn": "HERBAL ESSENCE COND ALO& AVOCADO 400 ML",
+    "brand": "HERBAL ESSENCE",
+    "activeIngredient": "",
+    "unitPrice": 22.75,
+    "imageUrl": "https://api.se-7en.com/media/offer-images/nahdi/de/de6beb741a8e944c5862156c5f4008f9899a8792713d38a4104004b69893e09f.webp",
+    "addedAt": "2026-11-24T10:43:27.140Z"
+  },
   "93575560": {
     "gtin": "93575560",
     "code": "Y",
@@ -3250,14 +3261,14 @@
   },
   "http://www.aldawaa.com": {
     "gtin": "http://www.aldawaa.com",
-    "code": "ডডড",
+    "code": "Vvvv",
     "nameAr": "",
     "nameEn": "",
     "brand": "",
     "activeIngredient": "",
     "unitPrice": 0,
     "imageUrl": "",
-    "addedAt": "2026-11-24T06:23:02.646Z"
+    "addedAt": "2026-11-15T11:38:37.194Z"
   },
   "760706553728": {
     "gtin": "760706553728",
