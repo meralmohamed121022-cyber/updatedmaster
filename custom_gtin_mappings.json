@@ -4589,5 +4589,38 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-24T15:51:43.187Z"
+  },
+  "3600521230268": {
+    "gtin": "3600521230268",
+    "code": "Hhhv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T15:52:06.878Z"
+  },
+  "3614228865814": {
+    "gtin": "3614228865814",
+    "code": "Offer check",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T15:52:21.396Z"
+  },
+  "3838824390994": {
+    "gtin": "3838824390994",
+    "code": "Offer check",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T15:58:27.969Z"
   }
 }
