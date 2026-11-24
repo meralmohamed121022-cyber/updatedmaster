@@ -4204,5 +4204,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-24T08:23:46.504Z"
+  },
+  "8336624839415": {
+    "gtin": "8336624839415",
+    "code": "ডডড",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T08:27:32.848Z"
   }
 }
