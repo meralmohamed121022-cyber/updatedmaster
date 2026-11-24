@@ -76,6 +76,17 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%87%D9%8A%D8%AF%D8%B1%D8%A7%D9%84%D8%A7%D9%8A%D8%AA-%D8%A7%D9%82%D8%B1%D8%A7%D8%B5-%D9%81%D9%88%D8%A7%D8%B1%D8%A9-%D8%A8%D9%86%D9%83%D9%87%D8%A9-%D8%A7%D9%84%D8%AA%D9%81%D8%A7%D8%AD-%D9%88%D8%A7%D9%84%D9%83%D8%B4%D9%85%D8%B4-%D8%A7%D9%84%D8%A7%D8%B3%D9%88%D8%AF-40-%D9%82%D8%B1%D8%B5_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1MzY4OTB8aW1hZ2Uvd2VicHxhRGc0TDJoaFppODVOVFV6T1RnM05UTTBPRGM0THpFd056WTNObDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxjYTViNWM2N2IxOWU3MzIxODUzNmU2YWY2YWJjMmYzOTQwOTkzODhjOWU5NDZkZWJlMjRhMmU3YzYyMjBhNjYz",
     "addedAt": "2026-11-15T06:44:16.976Z"
   },
+  "116504": {
+    "gtin": "116504",
+    "code": "205925",
+    "nameAr": "نتروجينا غسول حب الشباب جريبفروت 177مل",
+    "nameEn": "NG WASH ACNE GRAPEFRUT 177/200ML",
+    "brand": "NEUTREGENA",
+    "activeIngredient": "",
+    "unitPrice": 70.23,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%86%D9%8A%D8%AA%D8%B1%D9%88%D8%AC%D9%8A%D9%86%D8%A7-%D9%81%D8%B1%D9%8A%D8%B4-%D8%A7%D9%86%D8%AF-%D9%83%D9%84%D9%8A%D8%B1-%D8%BA%D8%B3%D9%88%D9%84-%D9%8A%D9%88%D9%85%D9%8A-%D8%AC%D8%B1%D9%8A%D8%A8-%D9%81%D8%B1%D9%88%D8%AA-%D9%88%D8%B1%D8%AF%D9%8A-%D9%88-%D9%81%D9%8A%D8%AA%D8%A7%D9%85%D9%8A%D9%86-%D8%B3%D9%8A-200-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w2Nzc0MHxpbWFnZS93ZWJwfGFHSTFMMmczT0M4NU16STVOREU1TWpnNE5qQTJMekl3TlRreU5WOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfDQ2YjI1N2Y1YWUxYTk2YWIzNWVhMTNiY2NkNWVhN2JmZWZjNGFkYWE5MjdjYzgwMGM5MWEzZmY3MTIwYjY4YTg",
+    "addedAt": "2026-11-15T10:22:51.304Z"
+  },
   "190425": {
     "gtin": "190425",
     "code": "230225",
@@ -153,6 +164,28 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%88%D9%83%D8%B3-%D8%BA%D8%B3%D9%88%D9%84-%D8%A7%D9%84%D9%8A%D8%AF-%D8%A7%D9%84%D9%85%D8%B9%D8%B7%D8%B1-%D8%A8%D8%B1%D8%A7%D9%8A%D8%AD%D8%A9-%D8%A7%D9%84%D9%88%D8%B1%D8%AF-%D8%A7%D9%84%D9%81%D8%B1%D9%86%D8%B3%D9%89-500-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wzNzM5MTB8aW1hZ2Uvd2VicHxhR1E1TDJnNE9DODVOVEF3T1RnME5UY3pPVGd5THpJd05URXlPVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw5ODEwMDM0MDQzZTkxZWQwNDQ1NzEwNDMyODQxOWVhNmI1YzM3ZDM2NzIyZGRjNTg2NDgyZGIxN2NjN2EwYjEy",
     "addedAt": "2026-11-14T20:47:59.512Z"
   },
+  "207147": {
+    "gtin": "207147",
+    "code": "207147",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T07:18:55.230Z"
+  },
+  "207170": {
+    "gtin": "207170",
+    "code": "207170",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-15T07:18:17.267Z"
+  },
   "211333": {
     "gtin": "211333",
     "code": "211333",
@@ -163,6 +196,39 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-16T12:29:50.294Z"
+  },
+  "212086": {
+    "gtin": "212086",
+    "code": "212086",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:56:29.538Z"
+  },
+  "212093": {
+    "gtin": "212093",
+    "code": "212093",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:55:51.767Z"
+  },
+  "213429": {
+    "gtin": "213429",
+    "code": "213429",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:55:26.111Z"
   },
   "213593": {
     "gtin": "213593",
@@ -241,6 +307,17 @@
     "imageUrl": "",
     "addedAt": "2026-11-16T12:14:08.550Z"
   },
+  "236306": {
+    "gtin": "236306",
+    "code": "236306",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:56:14.242Z"
+  },
   "236776": {
     "gtin": "236776",
     "code": "236776",
@@ -273,6 +350,28 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-15T14:22:03.004Z"
+  },
+  "239011": {
+    "gtin": "239011",
+    "code": "239011",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:55:13.136Z"
+  },
+  "239841": {
+    "gtin": "239841",
+    "code": "239841",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-24T12:55:01.075Z"
   },
   "243794": {
     "gtin": "243794",
@@ -460,6 +559,17 @@
     "unitPrice": 13,
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%B3%D8%A8%D8%AA%D9%8A%D9%81%D8%A7-%D8%AC%D9%84-%D9%85%D8%B9%D9%82%D9%85-%D9%84%D9%84%D9%8A%D8%AF%D9%8A%D9%86-%D8%AD%D8%AC%D9%85-%D8%A7%D9%84%D8%AC%D9%8A%D8%A8-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%AE%D8%AF%D8%A7%D9%85-%D8%A7%D9%84%D9%8A%D9%88%D9%85%D9%8A-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3Nzc5MHxpbWFnZS93ZWJwfGFEYzNMMmd5Tmk4NU5Ua3lOVFV3T1RFMk1USTJMekkwTmpReE0xOHdYMkZ5WHpFeU1EQlhlREV5TURCSVgxZEZRbEF1ZDJWaWNBfGUyNWYzMjZlNjVjODY2ZTFmNzdmYWQ3ZDBjNjI3OTE3MGFlODBiM2ZhYzBjZWEzM2Y3MWFmYTU2YTI1OGEzYjQ",
     "addedAt": "2026-11-15T12:45:30.150Z"
+  },
+  "600459": {
+    "gtin": "600459",
+    "code": "600459",
+    "nameAr": "مزيل عرق نسائي فريزيا 2و65ج",
+    "nameEn": "LADY SPEED STICK I/D WILD FRE65gm",
+    "brand": "LADY SPEED",
+    "activeIngredient": "",
+    "unitPrice": 35.25,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%AF%D9%89-%D8%B3%D8%A8%D9%8A%D8%AF-%D8%B3%D8%AA%D9%8A%D9%83-%D9%85%D8%B2%D9%8A%D9%84-%D8%B9%D8%B1%D9%82-%D9%88%D8%A7%D9%8A%D9%84%D8%AF-%D9%81%D8%B1%D9%8A%D8%B2%D9%8A%D8%A7-%D9%81%D8%B1%D9%8A%D8%B4-%D8%A7%D8%B3%D9%86%D8%B3-65-%D8%AC%D9%85_0_1200.webp?context=bWFzdGVyfGltYWdlc3w0NDk5ODJ8aW1hZ2Uvd2VicHxhREF5TDJoa01DODVOREUzTXpVeU56Y3pOall5THpZd01EUTFPVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw1ZGQ3ODYxNTBhNWNhYmUxODA4Zjc2YTRmZDIzZmQ5OTI5YjgyMjMxNjQwY2RkM2M1N2NjZjg0MmNjNTk1MzBh",
+    "addedAt": "2026-11-24T13:00:38.988Z"
   },
   "617686": {
     "gtin": "617686",
@@ -1644,14 +1754,14 @@
   },
   "6287052091376": {
     "gtin": "6287052091376",
-    "code": "Hgv",
-    "nameAr": "",
-    "nameEn": "",
-    "brand": "",
+    "code": "256775",
+    "nameAr": "ليسو عبوة التوفير الكاملة لقمل الشعر",
+    "nameEn": "LICOO ANTI LICE VALUE PACK",
+    "brand": "LICOO",
     "activeIngredient": "",
-    "unitPrice": 0,
-    "imageUrl": "",
-    "addedAt": "2026-11-08T08:20:22.929Z"
+    "unitPrice": 78.22,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B111-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D9%88%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA4MzJ8aW1hZ2Uvd2VicHxhR1V6TDJnNVpTODVOekV6TWpneU5qUTJNRFEyTHpJMU5qYzNOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkOWFlMzc0YzkwZDg5Zjk2MTFkOTJlZjJlOGIyZjA3MTZjOGY0NDQxOTQzZmViOWQyMTg2NDA2NWZiMzJmNTZj",
+    "addedAt": "2026-11-08T07:36:51.766Z"
   },
   "024130820789": {
     "gtin": "024130820789",
@@ -2150,14 +2260,14 @@
   },
   "6287052091314": {
     "gtin": "6287052091314",
-    "code": "256774",
-    "nameAr": "ليسو بخاخ لقمل الشعر 50 مل",
-    "nameEn": "LICOO ANTI LICE SPRAY 50ML",
-    "brand": "LICOO",
+    "code": "2567754",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
     "activeIngredient": "",
-    "unitPrice": 52.13,
-    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA1OTB8aW1hZ2Uvd2VicHxhRGhtTDJnek5TODVOekV6TWpjNE1EVTROVEkyTHpJMU5qYzNORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw4NDAyZTE0MDljMzE4N2U0Mzk0NGY2MGQ1MGVhZTg5N2EwYmRjMDhkYWViYTc0YTA1ZWQ3ZDNhM2Q1Nzc2NDMw",
-    "addedAt": "2026-11-08T11:28:59.100Z"
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T07:37:25.699Z"
   },
   "47559623209099": {
     "gtin": "47559623209099",
@@ -4325,5 +4435,27 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-24T08:27:32.848Z"
+  },
+  "16945630123181": {
+    "gtin": "16945630123181",
+    "code": "509438",
+    "nameAr": "هول ايد إبر وخز للسكر",
+    "nameEn": "HOLLAID SINGLE-USE LANCETS 100 PCS",
+    "brand": "HOLLAID",
+    "activeIngredient": "",
+    "unitPrice": 90,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%87%D9%88%D9%84-%D8%A7%D9%8A%D8%AF-%D8%A7%D8%A8%D8%B1-%D9%88%D8%AE%D8%B2-%D8%A7%D9%85%D9%86%D8%A9-%D9%84%D9%84%D8%A7%D8%B3%D8%AA%D8%B9%D9%85%D8%A7%D9%84-%D9%85%D8%B1%D8%A9-%D9%88%D8%A7%D8%AD%D8%AF%D8%A9-28%D8%AC-100-%D9%82%D8%B7%D8%B9%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w3MjQzNTR8aW1hZ2Uvd2VicHxhR0k0TDJnMk5pODVNelk0TkRBNU1qRXdPVEV3THpVd09UUXpPRjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwzM2M4NDg0Njc3MTM4NGQzNjliM2U2MDc3MTA0NmVhZTQ2ZDQwMzMwNThkMDZlOTQyMWE0MjZjYmViYjRmY2Vk",
+    "addedAt": "2026-11-09T07:10:23.565Z"
+  },
+  "195606606081": {
+    "gtin": "195606606081",
+    "code": "240436",
+    "nameAr": "فازلين جلوتا هيا بشرة متألقة 200 مل",
+    "nameEn": "VASELINE GLUTA HYA SMOOTH RADIANCE 200 M",
+    "brand": "VASELINE",
+    "activeIngredient": "",
+    "unitPrice": 31.26,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%81%D8%A7%D8%B2%D9%84%D9%8A%D9%86-%D9%84%D9%88%D8%B4%D9%86-%D8%AC%D9%84%D9%88%D8%AA%D8%A7-%D9%87%D9%8A%D8%A7-%D9%84%D8%A8%D8%B4%D8%B1%D8%A9-%D9%85%D8%AA%D8%A7%D9%84%D9%82%D8%A9-%D9%88%D8%A7%D8%B4%D8%B1%D8%A7%D9%82%D8%A9-%D9%86%D8%A7%D8%B9%D9%85%D8%A9-200-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wyNjEyMjh8aW1hZ2Uvd2VicHxhREJtTDJnd1ppODVORGMzTVRVNE5qWTJNamN3THpJME1EUXpObDh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXwyOGFiNmUxMzhjMGVjZjEyZWQ1MjM3NWVmZjc0ODUzMWM4NjJhMzRlODIzNjViNzE4ZTI4MWQyMmVjNGFkNmYy",
+    "addedAt": "2026-11-09T07:15:09.966Z"
   }
 }
