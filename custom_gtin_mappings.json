@@ -373,6 +373,28 @@
     "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B111-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D9%88%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA4MzJ8aW1hZ2Uvd2VicHxhR1V6TDJnNVpTODVOekV6TWpneU5qUTJNRFEyTHpJMU5qYzNOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkOWFlMzc0YzkwZDg5Zjk2MTFkOTJlZjJlOGIyZjA3MTZjOGY0NDQxOTQzZmViOWQyMTg2NDA2NWZiMzJmNTZj",
     "addedAt": "2026-11-24T13:22:18.703Z"
   },
+  "207939": {
+    "gtin": "207939",
+    "code": "207939",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-25T13:19:29.386Z"
+  },
+  "208299": {
+    "gtin": "208299",
+    "code": "208299",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-25T13:19:46.352Z"
+  },
   "211333": {
     "gtin": "211333",
     "code": "211333",
@@ -922,6 +944,17 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-25T13:14:58.049Z"
+  },
+  "241388": {
+    "gtin": "241388",
+    "code": "241388",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-25T13:19:38.804Z"
   },
   "241389": {
     "gtin": "241389",
@@ -2656,14 +2689,14 @@
   },
   "6287052091376": {
     "gtin": "6287052091376",
-    "code": "256775",
-    "nameAr": "ليسو عبوة التوفير الكاملة لقمل الشعر",
-    "nameEn": "LICOO ANTI LICE VALUE PACK",
-    "brand": "LICOO",
+    "code": "Hgv",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
     "activeIngredient": "",
-    "unitPrice": 78.22,
-    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%B9%D8%A8%D9%88%D8%A9-%D8%A7%D9%84%D8%AA%D9%88%D9%81%D9%8A%D8%B111-%D8%B4%D8%A7%D9%85%D8%A8%D9%88-%D9%88%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA4MzJ8aW1hZ2Uvd2VicHxhR1V6TDJnNVpTODVOekV6TWpneU5qUTJNRFEyTHpJMU5qYzNOVjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxkOWFlMzc0YzkwZDg5Zjk2MTFkOTJlZjJlOGIyZjA3MTZjOGY0NDQxOTQzZmViOWQyMTg2NDA2NWZiMzJmNTZj",
-    "addedAt": "2026-11-08T07:36:51.766Z"
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-08T08:20:22.929Z"
   },
   "024130820789": {
     "gtin": "024130820789",
@@ -3162,14 +3195,14 @@
   },
   "6287052091314": {
     "gtin": "6287052091314",
-    "code": "2567754",
-    "nameAr": "",
-    "nameEn": "",
-    "brand": "",
+    "code": "256774",
+    "nameAr": "ليسو بخاخ لقمل الشعر 50 مل",
+    "nameEn": "LICOO ANTI LICE SPRAY 50ML",
+    "brand": "LICOO",
     "activeIngredient": "",
-    "unitPrice": 0,
-    "imageUrl": "",
-    "addedAt": "2026-11-08T07:37:25.699Z"
+    "unitPrice": 52.13,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D9%84%D9%8A%D8%B3%D9%88-%D8%A8%D8%AE%D8%A7%D8%AE-%D8%B6%D8%AF-%D9%82%D9%85%D9%84-%D8%A7%D9%84%D8%B4%D8%B9%D8%B1-50-%D9%85%D9%84_0_1200.webp?context=bWFzdGVyfGltYWdlc3wxMDA1OTB8aW1hZ2Uvd2VicHxhRGhtTDJnek5TODVOekV6TWpjNE1EVTROVEkyTHpJMU5qYzNORjh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXw4NDAyZTE0MDljMzE4N2U0Mzk0NGY2MGQ1MGVhZTg5N2EwYmRjMDhkYWViYTc0YTA1ZWQ3ZDNhM2Q1Nzc2NDMw",
+    "addedAt": "2026-11-08T11:28:59.100Z"
   },
   "47559623209099": {
     "gtin": "47559623209099",
@@ -5469,5 +5502,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-24T14:25:34.025Z"
+  },
+  "7702018070732": {
+    "gtin": "7702018070732",
+    "code": "229863",
+    "nameAr": "فينوس ماكينة استخدام واحد سمبلى 8+4 حبة",
+    "nameEn": "VENUS DIS RAZORS SIMPLY 8+4PCS",
+    "brand": "VENUS",
+    "activeIngredient": "",
+    "unitPrice": 71.24,
+    "imageUrl": "https://stgprevapi.al-dawaa.com/medias/%D8%AC%D9%8A%D9%84%D9%8A%D8%AA-%D9%81%D9%8A%D9%86%D9%88%D8%B3-%D9%85%D8%A7%D9%83%D9%8A%D9%86%D8%A9-%D8%AD%D9%84%D8%A7%D9%82%D8%A9-%D9%86%D8%B3%D8%A7%D9%8A%D9%8A-%D8%B3%D9%8A%D9%85%D8%A8%D9%84%D9%8A-84-%D9%82%D8%B7%D8%B9%D8%A9-1-%D8%B9%D8%A8%D9%88%D8%A9_0_1200.webp?context=bWFzdGVyfGltYWdlc3w1MjExMjB8aW1hZ2Uvd2VicHxhREF3TDJoak15ODVOVFE1TURJNE9EVXhOelF5THpJeU9UZzJNMTh3WDJGeVh6RXlNREJYZURFeU1EQklYMWRGUWxBdWQyVmljQXxmOTEwZGZmNjliOTdiZDExZGU3Y2EzYjRlYmNjMjM2ZDc2MTc2NWEzMjhkOGM1NTgzZjAzMGRlZDQ0ZTg0YmEz",
+    "addedAt": "2026-11-25T14:39:23.929Z"
   }
 }
