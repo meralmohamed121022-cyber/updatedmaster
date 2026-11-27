@@ -5568,5 +5568,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-27T19:20:57.913Z"
+  },
+  "6221151005803": {
+    "gtin": "6221151005803",
+    "code": "Y",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-27T20:15:54.731Z"
   }
 }
