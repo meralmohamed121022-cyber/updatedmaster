@@ -5546,5 +5546,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-27T12:57:57.885Z"
+  },
+  "8690506569600": {
+    "gtin": "8690506569600",
+    "code": "8690506569600",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-27T15:28:22.499Z"
   }
 }
