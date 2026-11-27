@@ -5557,5 +5557,16 @@
     "unitPrice": 0,
     "imageUrl": "",
     "addedAt": "2026-11-27T15:28:22.499Z"
+  },
+  "7610994462727": {
+    "gtin": "7610994462727",
+    "code": "Swissl W",
+    "nameAr": "",
+    "nameEn": "",
+    "brand": "",
+    "activeIngredient": "",
+    "unitPrice": 0,
+    "imageUrl": "",
+    "addedAt": "2026-11-27T19:20:57.913Z"
   }
 }
